@@ -20,7 +20,7 @@ export default function CaptiOCRLanding() {
                             <FaGithub className="mr-2" /> View on GitHub
                         </a>
                         <a
-                            href="#features"
+                            href="#capabilities"
                             className="bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 px-6 py-3 rounded-full font-semibold"
                         >
                             Learn More
@@ -30,7 +30,7 @@ export default function CaptiOCRLanding() {
             </header>
 
             {/* AI Capabilities Section */}
-            <section className="py-16 px-4 bg-blue-50">
+            <section id="capabilities" className="py-16 px-4 bg-blue-50">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl font-bold text-center mb-4">Transform Meetings with AI</h2>
                     <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
