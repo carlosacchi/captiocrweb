@@ -29,49 +29,52 @@ export default function CaptiOCRLanding() {
                 </div>
             </header>
 
-            {/* How It Works Section - Moved up for better storytelling */}
-            <section className="py-16 px-4 bg-white">
+            {/* AI Capabilities Section */}
+            <section className="py-16 px-4 bg-blue-50">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-3xl font-bold text-center mb-12">How CaptiOCR Works</h2>
-                    <div className="grid md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                    <h2 className="text-3xl font-bold text-center mb-4">Transform Meetings with AI</h2>
+                    <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                        Submit captured text to AI models to unlock powerful insights and automate post-meeting tasks
+                    </p>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[
                             {
-                                step: 1,
-                                title: "Enable Live Captions",
-                                description: "Turn on live captions in your meeting software (Teams, Zoom, etc.)",
-                                icon: <ChatBubbleBottomCenterTextIcon className="h-8 w-8 text-blue-600" />
+                                icon: <DocumentTextIcon className="h-10 w-10 text-blue-600" />,
+                                title: "Automated Meeting Minutes",
+                                description: "Generate comprehensive, structured meeting notes with key decisions and action items highlighted."
                             },
                             {
-                                step: 2,
-                                title: "Select Caption Area",
-                                description: "Use CaptiOCR to select the screen area where captions appear",
-                                icon: <FaDesktop className="h-8 w-8 text-blue-600" />
+                                icon: <CheckCircleIcon className="h-10 w-10 text-green-600" />,
+                                title: "Action Item Extraction",
+                                description: "Automatically identify and compile action items, assignees, and deadlines from meeting discussions."
                             },
                             {
-                                step: 3,
-                                title: "Capture Text",
-                                description: "CaptiOCR automatically extracts and saves all caption text in real-time",
-                                icon: <FaCopy className="h-8 w-8 text-blue-600" />
+                                icon: <FaChartLine className="text-purple-600 h-10 w-10" />,
+                                title: "Sentiment Analysis",
+                                description: "Understand meeting dynamics by analyzing sentiment and engagement levels of participants."
                             },
                             {
-                                step: 4,
-                                title: "Process with AI",
-                                description: "Submit captured text to LLMs for summaries, action items, and insights",
-                                icon: <FaRobot className="h-8 w-8 text-blue-600" />
+                                icon: <ChatBubbleBottomCenterTextIcon className="h-10 w-10 text-red-600" />,
+                                title: "Meeting Summaries",
+                                description: "Create concise summaries of lengthy meetings that capture the essential points and decisions."
+                            },
+                            {
+                                icon: <SparklesIcon className="h-10 w-10 text-yellow-600" />,
+                                title: "Key Insights Extraction",
+                                description: "Identify and highlight critical information, opportunities, and challenges discussed."
+                            },
+                            {
+                                icon: <ArrowDownTrayIcon className="h-10 w-10 text-indigo-600" />,
+                                title: "Follow-up Generation",
+                                description: "Create professional follow-up emails and tasks based on meeting content and outcomes."
                             }
-                        ].map((step) => (
-                            <div key={step.step} className="relative">
-                                <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto mb-4">
-                                    {step.step}
+                        ].map((capability, index) => (
+                            <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
+                                <div className="flex items-center mb-4">
+                                    <div className="mr-4">{capability.icon}</div>
+                                    <h3 className="text-xl font-semibold">{capability.title}</h3>
                                 </div>
-                                {step.step < 4 && (
-                                    <div className="hidden md:block absolute top-6 left-full w-full h-0.5 bg-blue-300 -z-10 transform -translate-x-6"></div>
-                                )}
-                                <div className="text-center">
-                                    <div className="flex justify-center mb-3">{step.icon}</div>
-                                    <h3 className="font-semibold mb-2">{step.title}</h3>
-                                    <p className="text-sm text-gray-600">{step.description}</p>
-                                </div>
+                                <p className="text-gray-600">{capability.description}</p>
                             </div>
                         ))}
                     </div>
@@ -104,6 +107,38 @@ export default function CaptiOCRLanding() {
                                 <div className="flex justify-center mb-4">{useCase.icon}</div>
                                 <h3 className="text-xl font-semibold mb-3">{useCase.title}</h3>
                                 <p className="text-gray-600">{useCase.description}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Features Section */}
+            <section id="features" className="py-16 px-4 bg-white">
+                <div className="max-w-6xl mx-auto">
+                    <h2 className="text-3xl font-bold text-center mb-12">Powerful Features</h2>
+                    <div className="grid md:grid-cols-3 gap-8">
+                        {[
+                            {
+                                icon: <FaDesktop className="text-blue-600 h-12 w-12" />,
+                                title: "Real-Time Capture",
+                                description: "Instantly extract text from live captions in meetings and webinars with precision and speed."
+                            },
+                            {
+                                icon: <FaRobot className="text-green-600 h-12 w-12" />,
+                                title: "AI-Powered Analysis",
+                                description: "Generate summaries, extract key points, and analyze meeting sentiment using advanced LLM technology."
+                            },
+                            {
+                                icon: <FaCopy className="text-purple-600 h-12 w-12" />,
+                                title: "Seamless Integration",
+                                description: "Works with any platform that offers live captions - Microsoft Teams, Zoom, GoToWebinar, and more."
+                            }
+                        ].map((feature, index) => (
+                            <div key={index} className="text-center p-6 bg-gray-100 rounded-xl hover:shadow-lg transition-all">
+                                <div className="flex justify-center mb-4">{feature.icon}</div>
+                                <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+                                <p className="text-gray-600">{feature.description}</p>
                             </div>
                         ))}
                     </div>
@@ -183,84 +218,49 @@ export default function CaptiOCRLanding() {
                 </div>
             </section>
 
-            {/* Features Section */}
-            <section id="features" className="py-16 px-4 bg-white">
+            {/* How It Works Section - Moved up for better storytelling */}
+            <section className="py-16 px-4 bg-white">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-3xl font-bold text-center mb-12">Powerful Features</h2>
-                    <div className="grid md:grid-cols-3 gap-8">
+                    <h2 className="text-3xl font-bold text-center mb-12">How CaptiOCR Works</h2>
+                    <div className="grid md:grid-cols-4 gap-4 max-w-4xl mx-auto">
                         {[
                             {
-                                icon: <FaDesktop className="text-blue-600 h-12 w-12" />,
-                                title: "Real-Time Capture",
-                                description: "Instantly extract text from live captions in meetings and webinars with precision and speed."
+                                step: 1,
+                                title: "Enable Live Captions",
+                                description: "Turn on live captions in your meeting software (Teams, Zoom, etc.)",
+                                icon: <ChatBubbleBottomCenterTextIcon className="h-8 w-8 text-blue-600" />
                             },
                             {
-                                icon: <FaRobot className="text-green-600 h-12 w-12" />,
-                                title: "AI-Powered Analysis",
-                                description: "Generate summaries, extract key points, and analyze meeting sentiment using advanced LLM technology."
+                                step: 2,
+                                title: "Select Caption Area",
+                                description: "Use CaptiOCR to select the screen area where captions appear",
+                                icon: <FaDesktop className="h-8 w-8 text-blue-600" />
                             },
                             {
-                                icon: <FaCopy className="text-purple-600 h-12 w-12" />,
-                                title: "Seamless Integration",
-                                description: "Works with any platform that offers live captions - Microsoft Teams, Zoom, GoToWebinar, and more."
+                                step: 3,
+                                title: "Capture Text",
+                                description: "CaptiOCR automatically extracts and saves all caption text in real-time",
+                                icon: <FaCopy className="h-8 w-8 text-blue-600" />
+                            },
+                            {
+                                step: 4,
+                                title: "Process with AI",
+                                description: "Submit captured text to LLMs for summaries, action items, and insights",
+                                icon: <FaRobot className="h-8 w-8 text-blue-600" />
                             }
-                        ].map((feature, index) => (
-                            <div key={index} className="text-center p-6 bg-gray-100 rounded-xl hover:shadow-lg transition-all">
-                                <div className="flex justify-center mb-4">{feature.icon}</div>
-                                <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-                                <p className="text-gray-600">{feature.description}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* AI Capabilities Section */}
-            <section className="py-16 px-4 bg-blue-50">
-                <div className="max-w-6xl mx-auto">
-                    <h2 className="text-3xl font-bold text-center mb-4">Transform Meetings with AI</h2>
-                    <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-                        Submit captured text to AI models to unlock powerful insights and automate post-meeting tasks
-                    </p>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {[
-                            {
-                                icon: <DocumentTextIcon className="h-10 w-10 text-blue-600" />,
-                                title: "Automated Meeting Minutes",
-                                description: "Generate comprehensive, structured meeting notes with key decisions and action items highlighted."
-                            },
-                            {
-                                icon: <CheckCircleIcon className="h-10 w-10 text-green-600" />,
-                                title: "Action Item Extraction",
-                                description: "Automatically identify and compile action items, assignees, and deadlines from meeting discussions."
-                            },
-                            {
-                                icon: <FaChartLine className="text-purple-600 h-10 w-10" />,
-                                title: "Sentiment Analysis",
-                                description: "Understand meeting dynamics by analyzing sentiment and engagement levels of participants."
-                            },
-                            {
-                                icon: <ChatBubbleBottomCenterTextIcon className="h-10 w-10 text-red-600" />,
-                                title: "Meeting Summaries",
-                                description: "Create concise summaries of lengthy meetings that capture the essential points and decisions."
-                            },
-                            {
-                                icon: <SparklesIcon className="h-10 w-10 text-yellow-600" />,
-                                title: "Key Insights Extraction",
-                                description: "Identify and highlight critical information, opportunities, and challenges discussed."
-                            },
-                            {
-                                icon: <ArrowDownTrayIcon className="h-10 w-10 text-indigo-600" />,
-                                title: "Follow-up Generation",
-                                description: "Create professional follow-up emails and tasks based on meeting content and outcomes."
-                            }
-                        ].map((capability, index) => (
-                            <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
-                                <div className="flex items-center mb-4">
-                                    <div className="mr-4">{capability.icon}</div>
-                                    <h3 className="text-xl font-semibold">{capability.title}</h3>
+                        ].map((step) => (
+                            <div key={step.step} className="relative">
+                                <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                                    {step.step}
                                 </div>
-                                <p className="text-gray-600">{capability.description}</p>
+                                {step.step < 4 && (
+                                    <div className="hidden md:block absolute top-6 left-full w-full h-0.5 bg-blue-300 -z-10 transform -translate-x-6"></div>
+                                )}
+                                <div className="text-center">
+                                    <div className="flex justify-center mb-3">{step.icon}</div>
+                                    <h3 className="font-semibold mb-2">{step.title}</h3>
+                                    <p className="text-sm text-gray-600">{step.description}</p>
+                                </div>
                             </div>
                         ))}
                     </div>
