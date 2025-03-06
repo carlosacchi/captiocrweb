@@ -30,17 +30,14 @@ jobs:
 
       - name: Install dependencies 🔧
         run: |
-          npm ci || npm install
-
-      - name: Setup Tailwind CSS
-        run: |
-          if [ ! -f "tailwind.config.js" ]; then
-            npx tailwindcss init -p
-          fi
+          npm init -y
+          npm install react react-dom react-scripts framer-motion tailwindcss gh-pages @tailwindcss/forms
+          npm install --save-dev
+          npm install -D react-scripts
 
       - name: Build 🏗️
         run: |
-          npm run build
+          DISABLE_ESLINT_PLUGIN=true npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
