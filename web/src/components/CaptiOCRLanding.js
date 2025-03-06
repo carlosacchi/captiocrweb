@@ -11,18 +11,10 @@ export default function CaptiOCRLanding() {
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">CaptiOCR: Real-Time Screen Text Extraction</h1>
                     <p className="text-xl md:text-2xl mb-8">Capture Live Captions, Extract Insights, and Transform Meeting Content with AI</p>
                     <div className="flex flex-wrap justify-center gap-4">
-                        <a
-                            href="https://github.com/CarloSacchi/CaptiOCR"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="bg-white text-blue-600 hover:bg-blue-100 px-6 py-3 rounded-full font-semibold flex items-center"
-                        >
+                        <a href="https://github.com/CarloSacchi/CaptiOCR" target="_blank" rel="noreferrer" className="bg-white text-blue-600 hover:bg-blue-100 px-6 py-3 rounded-full font-semibold flex items-center">
                             <FaGithub className="mr-2" /> View on GitHub
                         </a>
-                        <a
-                            href="#capabilities"
-                            className="bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 px-6 py-3 rounded-full font-semibold"
-                        >
+                        <a href="#capabilities" className="bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 px-6 py-3 rounded-full font-semibold">
                             Learn More
                         </a>
                     </div>
