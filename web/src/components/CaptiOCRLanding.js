@@ -452,17 +452,23 @@ export default function CaptiOCRLanding() {
                     <div className="border-t border-gray-800 pt-8 text-center">
                         <p>© {new Date().getFullYear()} CaptiOCR. All rights reserved.</p>
                         <p className="text-gray-500 mt-2">
-                            Combat meeting fatigue with real-time text extraction. CaptiOCR helps you stay focused during meetings
+                            Real-time text extraction. CaptiOCR helps you during meetings
                             by capturing and processing captions automatically.
                         </p>
                         <div className="mt-6 flex justify-center space-x-6">
                             <a href="https://github.com/CarloSacchi/CaptiOCR" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out">
                                 GitHub
                             </a>
-                            <a href="https://www.captiocr.com/privacy" className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out">
+                            <a href="/legal/privacy.html"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out" >
                                 Privacy Policy
                             </a>
-                            <a href="https://www.captiocr.com/terms" className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out">
+                            <a href="/legal/terms.html"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out" >
                                 Terms of Use
                             </a>
                         </div>
