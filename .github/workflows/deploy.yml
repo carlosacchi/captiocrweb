@@ -38,6 +38,9 @@ jobs:
       - name: Build 🏗️
         run: |
           DISABLE_ESLINT_PLUGIN=true npm run build
+        env:
+          CI: false
+          PUBLIC_URL: "https://www.captiocr.com"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
