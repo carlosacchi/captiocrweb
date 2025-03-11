@@ -11,17 +11,18 @@ import {
     ScaleIcon,
     ClockIcon,
     BellAlertIcon,
-    ChartBarIcon
+    ChartBarIcon,
+    MicrophoneIcon
 } from '@heroicons/react/24/solid';
 
 export default function CaptiOCRLanding() {
     return (
         <div className="min-h-screen bg-gray-50 text-gray-900">
-            {/* Hero Section - Updated with meeting fatigue keywords */}
+            {/* Hero Section */}
             <header className="bg-blue-700 text-white py-20 px-4">
                 <div className="max-w-6xl mx-auto text-center">
                     <h1 className="text-5xl md:text-6xl font-bold mb-6">CaptiOCR</h1>
-                    <h2 className="text-3xl md:text-4xl font-semibold mb-4">Combat Meeting Fatigue with Real-Time Text Extraction</h2>
+                    <h2 className="text-3xl md:text-4xl font-semibold mb-4">Real-Time Text Extraction Tool</h2>
                     <p className="text-xl md:text-2xl mb-10">
                         Automatically extract and save meeting captions from Teams, Zoom, and other platforms to reduce meeting stress and boost productivity.
                     </p>
@@ -35,7 +36,7 @@ export default function CaptiOCRLanding() {
                             <FaGithub className="mr-3 text-2xl" /> View on GitHub
                         </a>
                         <a
-                            href="#features"
+                            href="#more"
                             className="bg-transparent border-2 border-white hover:bg-white hover:text-blue-700 px-8 py-4 rounded-full font-semibold text-lg transition duration-300 ease-in-out"
                         >
                             Learn More
@@ -45,7 +46,7 @@ export default function CaptiOCRLanding() {
             </header>
 
             {/* Meeting Fatigue Section */}
-            <section className="py-16 px-4 bg-white">
+            <section id="more" className="py-16 px-4 bg-white">
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-4xl font-bold text-center mb-6">Overcome Meeting Fatigue</h2>
                     <p className="text-xl text-center text-gray-700 mb-12 max-w-4xl mx-auto">
@@ -85,12 +86,90 @@ export default function CaptiOCRLanding() {
                 </div>
             </section>
 
-            {/* Key Benefits Section - Updated to highlight meeting productivity */}
+            {/* NEW SECTION: CaptiOCR vs Speech-to-Text Comparison */}
             <section className="py-16 px-4 bg-gray-100">
+                <div className="max-w-7xl mx-auto">
+                    <h2 className="text-4xl font-bold text-center mb-12">CaptiOCR vs. Speech-to-Text: What's Different?</h2>
+                    <div className="grid md:grid-cols-2 gap-16 items-center">
+                        <div>
+                            <h3 className="text-2xl font-semibold mb-6 text-blue-700">Why Text Extraction Beats Audio Transcription</h3>
+                            <ul className="space-y-4">
+                                <li className="flex items-start">
+                                    <CheckCircleIcon className="h-6 w-6 text-green-600 mr-2 flex-shrink-0 mt-1" />
+                                    <p><strong>Captures Speaker Information:</strong> CaptiOCR captures speaker names and roles exactly as they appear in captions, while audio-based STT usually struggles to identify who's speaking.</p>
+                                </li>
+                                <li className="flex items-start">
+                                    <CheckCircleIcon className="h-6 w-6 text-green-600 mr-2 flex-shrink-0 mt-1" />
+                                    <p><strong>Preserves Metadata:</strong> Timestamps, chat references, and other visual elements are captured by CaptiOCR but lost in audio-only transcription.</p>
+                                </li>
+                                <li className="flex items-start">
+                                    <CheckCircleIcon className="h-6 w-6 text-green-600 mr-2 flex-shrink-0 mt-1" />
+                                    <p><strong>Platform Independent:</strong> Works with any application showing captions, not limited to specific platform APIs like many STT tools.</p>
+                                </li>
+                                <li className="flex items-start">
+                                    <CheckCircleIcon className="h-6 w-6 text-green-600 mr-2 flex-shrink-0 mt-1" />
+                                    <p><strong>Immune to Audio Issues:</strong> Background noise, poor microphones, and accents don't affect CaptiOCR's accuracy, unlike audio STT solutions.</p>
+                                </li>
+                                <li className="flex items-start">
+                                    <CheckCircleIcon className="h-6 w-6 text-green-600 mr-2 flex-shrink-0 mt-1" />
+                                    <p><strong>Complete Privacy:</strong> All processing happens locally on your device, unlike cloud-based STT services that send audio to external servers.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="bg-white p-8 rounded-xl shadow-lg">
+                            <h3 className="text-2xl font-semibold mb-6 text-center">Comparison at a Glance</h3>
+                            <table className="w-full border-collapse">
+                                <thead>
+                                    <tr className="bg-blue-100">
+                                        <th className="p-3 text-left border border-gray-300">Feature</th>
+                                        <th className="p-3 text-center border border-gray-300">CaptiOCR</th>
+                                        <th className="p-3 text-center border border-gray-300">Audio STT</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td className="p-3 border border-gray-300">Speaker Identification</td>
+                                        <td className="p-3 text-center border border-gray-300 text-green-600">✓ Built-in</td>
+                                        <td className="p-3 text-center border border-gray-300 text-red-600">✗ Limited/Manual</td>
+                                    </tr>
+                                    <tr className="bg-gray-50">
+                                        <td className="p-3 border border-gray-300">Timestamps</td>
+                                        <td className="p-3 text-center border border-gray-300 text-green-600">✓ As shown</td>
+                                        <td className="p-3 text-center border border-gray-300 text-green-600">✓ Generated</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="p-3 border border-gray-300">Works Offline</td>
+                                        <td className="p-3 text-center border border-gray-300 text-green-600">✓ Yes</td>
+                                        <td className="p-3 text-center border border-gray-300 text-red-600">✗ Usually No</td>
+                                    </tr>
+                                    <tr className="bg-gray-50">
+                                        <td className="p-3 border border-gray-300">Data Privacy</td>
+                                        <td className="p-3 text-center border border-gray-300 text-green-600">✓ 100% Local</td>
+                                        <td className="p-3 text-center border border-gray-300 text-red-600">✗ Often Cloud-Based</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="p-3 border border-gray-300">Platform Compatibility</td>
+                                        <td className="p-3 text-center border border-gray-300 text-green-600">✓ Universal</td>
+                                        <td className="p-3 text-center border border-gray-300 text-red-600">✗ Platform-Specific</td>
+                                    </tr>
+                                    <tr className="bg-gray-50">
+                                        <td className="p-3 border border-gray-300">Audio Quality Dependency</td>
+                                        <td className="p-3 text-center border border-gray-300 text-green-600">✓ Not Affected</td>
+                                        <td className="p-3 text-center border border-gray-300 text-red-600">✗ Highly Dependent</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Key Benefits Section */}
+            <section className="py-16 px-4 bg-white">
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-4xl font-bold text-center mb-12">Boost Meeting Productivity</h2>
                     <div className="grid md:grid-cols-3 gap-10">
-                        <div className="text-center p-8 bg-white rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div className="text-center p-8 bg-gray-100 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
                             <div className="flex justify-center mb-6">
                                 <LockClosedIcon className="h-12 w-12 text-blue-600" />
                             </div>
@@ -99,7 +178,7 @@ export default function CaptiOCRLanding() {
                                 Unlike cloud solutions, CaptiOCR operates entirely locally. Your meeting data remains on your device, guaranteeing confidentiality and security.
                             </p>
                         </div>
-                        <div className="text-center p-8 bg-white rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div className="text-center p-8 bg-gray-100 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
                             <div className="flex justify-center mb-6">
                                 <BoltIcon className="h-12 w-12 text-yellow-500" />
                             </div>
@@ -108,7 +187,7 @@ export default function CaptiOCRLanding() {
                                 Instantly extract meeting captions as they appear, ensuring you never miss key information even during fast-paced discussions or presentations.
                             </p>
                         </div>
-                        <div className="text-center p-8 bg-white rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div className="text-center p-8 bg-gray-100 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
                             <div className="flex justify-center mb-6">
                                 <ScaleIcon className="h-12 w-12 text-green-600" />
                             </div>
@@ -121,8 +200,8 @@ export default function CaptiOCRLanding() {
                 </div>
             </section>
 
-            {/* Features Section - Refined with SEO keywords */}
-            <section id="features" className="py-20 px-4 bg-white">
+            {/* Features Section */}
+            <section id="features" className="py-20 px-4 bg-gray-100">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-4xl font-bold text-center mb-12">Meeting Transcription Made Simple</h2>
                     <div className="grid md:grid-cols-2 gap-12">
@@ -167,7 +246,7 @@ export default function CaptiOCRLanding() {
             </section>
 
             {/* Comparison Table */}
-            <section className="py-20 px-4 bg-gray-100">
+            <section className="py-20 px-4 bg-white">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-4xl font-bold text-center mb-12">Why Choose CaptiOCR?</h2>
                     <div className="overflow-x-auto">
@@ -223,8 +302,8 @@ export default function CaptiOCRLanding() {
                 </div>
             </section>
 
-            {/* Use Cases Section - Updated with meeting fatigue keywords */}
-            <section className="py-20 px-4 bg-white">
+            {/* Use Cases Section */}
+            <section className="py-20 px-4 bg-gray-100">
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-4xl font-bold text-center mb-12">Streamline Your Meeting Workflow</h2>
                     <div className="grid md:grid-cols-3 gap-10">
@@ -259,8 +338,8 @@ export default function CaptiOCRLanding() {
                 </div>
             </section>
 
-            {/* How It Works Section - Updated with caption-specific wording */}
-            <section className="py-20 px-4 bg-gray-100">
+            {/* How It Works Section */}
+            <section className="py-20 px-4 bg-white">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-4xl font-bold text-center mb-12">How to Extract Meeting Captions with CaptiOCR</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -310,31 +389,31 @@ export default function CaptiOCRLanding() {
             </section>
 
             {/* FAQ Section */}
-            <section className="py-20 px-4 bg-white">
+            <section className="py-20 px-4 bg-gray-100">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
                     <div className="space-y-8 max-w-4xl mx-auto">
-                        <div className="bg-gray-100 rounded-xl p-6 shadow-md">
+                        <div className="bg-white rounded-xl p-6 shadow-md">
                             <h3 className="text-xl font-semibold mb-3">Is CaptiOCR secure for sensitive meetings?</h3>
                             <p className="text-gray-700">Yes, CaptiOCR processes everything locally on your device. No meeting content is ever sent to the cloud or external servers, making it suitable for confidential discussions.</p>
                         </div>
-                        <div className="bg-gray-100 rounded-xl p-6 shadow-md">
+                        <div className="bg-white rounded-xl p-6 shadow-md">
                             <h3 className="text-xl font-semibold mb-3">How accurate is the caption extraction?</h3>
                             <p className="text-gray-700">CaptiOCR uses industry-standard OCR technology to achieve high accuracy. For best results, use a clear font, good contrast, and appropriate sizing in your meeting captions.</p>
                         </div>
-                        <div className="bg-gray-100 rounded-xl p-6 shadow-md">
+                        <div className="bg-white rounded-xl p-6 shadow-md">
                             <h3 className="text-xl font-semibold mb-3">Does CaptiOCR work with all meeting platforms?</h3>
                             <p className="text-gray-700">Yes, CaptiOCR works with any platform that displays captions on your screen, including Teams, Zoom, Google Meet, Webex, and others. It's a universal solution independent of specific platform APIs.</p>
                         </div>
-                        <div className="bg-gray-100 rounded-xl p-6 shadow-md">
+                        <div className="bg-white rounded-xl p-6 shadow-md">
                             <h3 className="text-xl font-semibold mb-3">How does CaptiOCR help with meeting fatigue?</h3>
                             <p className="text-gray-700">By automating the capture of meeting text, CaptiOCR reduces the cognitive load of trying to listen attentively while taking notes. This allows you to be more present and engaged during the meeting, reducing mental exhaustion.</p>
                         </div>
-                        <div className="bg-gray-100 rounded-xl p-6 shadow-md">
+                        <div className="bg-white rounded-xl p-6 shadow-md">
                             <h3 className="text-xl font-semibold mb-3">Can I customize the language settings for different meetings?</h3>
                             <p className="text-gray-700">Yes, CaptiOCR supports multiple languages including English and Italian, with more coming soon. You can save different profiles with language preferences for various meeting types.</p>
                         </div>
-                        <div className="bg-gray-100 rounded-xl p-6 shadow-md">
+                        <div className="bg-white rounded-xl p-6 shadow-md">
                             <h3 className="text-xl font-semibold mb-3">How do I optimize CaptiOCR for the best results?</h3>
                             <p className="text-gray-700">For optimal performance, select a narrow rectangular area that focuses precisely on the caption area, choose the correct language setting, and ensure captions have good contrast with their background.</p>
                         </div>
@@ -343,11 +422,11 @@ export default function CaptiOCRLanding() {
             </section>
 
             {/* Testimonials Section */}
-            <section className="py-20 px-4 bg-gray-100">
+            <section className="py-20 px-4 bg-white">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-4xl font-bold text-center mb-12">What Users Are Saying</h2>
                     <div className="grid md:grid-cols-3 gap-8">
-                        <div className="bg-white p-6 rounded-xl shadow-lg">
+                        <div className="bg-gray-100 p-6 rounded-xl shadow-lg">
                             <div className="flex items-center mb-4">
                                 <div className="w-12 h-12 bg-blue-700 rounded-full flex items-center justify-center text-white font-bold text-xl">
                                     M
@@ -361,7 +440,7 @@ export default function CaptiOCRLanding() {
                                 "CaptiOCR has transformed my meeting experience. I can finally focus on the discussion instead of frantically taking notes. The transcripts are incredibly useful for creating summaries later."
                             </p>
                         </div>
-                        <div className="bg-white p-6 rounded-xl shadow-lg">
+                        <div className="bg-gray-100 p-6 rounded-xl shadow-lg">
                             <div className="flex items-center mb-4">
                                 <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
                                     S
@@ -375,7 +454,7 @@ export default function CaptiOCRLanding() {
                                 "As someone who attends 15+ meetings weekly, meeting fatigue was real. CaptiOCR lets me capture everything without mental exhaustion. The privacy aspect is crucial for our confidential user research."
                             </p>
                         </div>
-                        <div className="bg-white p-6 rounded-xl shadow-lg">
+                        <div className="bg-gray-100 p-6 rounded-xl shadow-lg">
                             <div className="flex items-center mb-4">
                                 <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
                                     J
@@ -421,7 +500,7 @@ export default function CaptiOCRLanding() {
                 </div>
             </section>
 
-            {/* Footer with SEO-rich links */}
+            {/* Footer with SEO-rich links - UPDATED with Legal page link */}
             <footer className="bg-gray-900 text-white py-12 px-4">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid md:grid-cols-3 gap-8 mb-8">
@@ -459,17 +538,23 @@ export default function CaptiOCRLanding() {
                             <a href="https://github.com/CarloSacchi/CaptiOCR" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out">
                                 GitHub
                             </a>
-                            <a href="/legal/privacy.html"
+                            <a href="/privacy.html"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out" >
                                 Privacy Policy
                             </a>
-                            <a href="/legal/terms.html"
+                            <a href="/terms.html"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out" >
                                 Terms of Use
+                            </a>
+                            <a href="/legal.html"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out" >
+                                Legal Information
                             </a>
                         </div>
                         <p className="text-gray-600 text-sm mt-8">
