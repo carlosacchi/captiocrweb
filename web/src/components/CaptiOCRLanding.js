@@ -513,25 +513,25 @@ export default function CaptiOCRLanding() {
                             <a href="https://github.com/CarloSacchi/CaptiOCR" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out">
                                 GitHub
                             </a>
-                            <a href="privacy.html"
+                            <a href="legal/privacy.html"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out" >
                                 Privacy Policy
                             </a>
-                            <a href="terms.html"
+                            <a href="legal/terms.html"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out" >
                                 Terms of Use
                             </a>
-                            <a href="legal.html"
+                            <a href="legal/legal.html"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out" >
                                 Legal Information
                             </a>
-                            <a href="instructions.html"
+                            <a href="legal/instructions.html"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out" >
