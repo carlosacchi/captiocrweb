@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaptiOCR - Instructions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CaptiOCR Instructions</h1>
+    </header>
+    
+    <nav class="bg-gray-100 p-4 text-center">
+        <a href="../index.html" class="mx-2 text-blue-600 hover:underline">Home</a> |
+        <a href="privacy.html" class="mx-2 text-blue-600 hover:underline">Privacy</a> |
+        <a href="terms.html" class="mx-2 text-blue-600 hover:underline">Terms</a> |
+        <a href="legal.html" class="mx-2 text-blue-600 font-bold">Legal</a>
+        <a href="instructions.html" class="mx-2 text-blue-600 font-bold">Instructions</a>
+    </nav>
+    
+    <main>
+        <section id="instructions">
+            <h2>CaptiOCR User Guide</h2>
+            <p>Here's a complete guide on how to use CaptiOCR, a tool that captures and reads text from screen areas, particularly useful for captions in Teams live chats or similar programs.</p>
+
+            <h3>Prerequisites</h3>
+            <p>Before getting started, make sure you have installed:</p>
+            <ul>
+                <li>Python (if you're not using the executable version)</li>
+                <li>Tesseract OCR: the default path is <code>C:\Program Files\Tesseract-OCR\tesseract.exe</code></li>
+                <li>Tesseract language data in the folder <code>C:\Program Files\Tesseract-OCR\tessdata</code></li>
+            </ul>
+
+            <h3>Installation</h3>
+            <ol>
+                <li>Extract or copy the CaptiOCR files to a folder of your choice</li>
+                <li>If necessary, verify that the Tesseract paths in the file are correct for your system</li>
+            </ol>
+
+            <h3>Starting the Program</h3>
+            <ul>
+                <li>If you have the executable version (.exe), double-click on it</li>
+                <li>If you have the Python version (.py), run the script with Python</li>
+            </ul>
+
+            <h3>Main Interface</h3>
+            <p>The main CaptiOCR window contains:</p>
+            <ul>
+                <li>A language selector (English or Italian)</li>
+                <li>Debug options for logging</li>
+                <li>"Live Caption Optimization" option to improve caption recognition</li>
+                <li>Buttons to save and load settings</li>
+                <li>Green "Start" button to begin capturing</li>
+            </ul>
+
+            <h3>How to Use CaptiOCR</h3>
+            <ol>
+                <li><strong>Language Selection</strong>:
+                    <ul>
+                        <li>Choose the language of the captions you want to capture from the dropdown menu</li>
+                    </ul>
+                </li>
+                <li><strong>Advanced Options</strong> (optional):
+                    <ul>
+                        <li>Enable "Debug Logging" if you want to record detailed information</li>
+                        <li>Enable "Live Caption Optimization" to improve live caption recognition</li>
+                    </ul>
+                </li>
+                <li><strong>Start Capturing</strong>:
+                    <ul>
+                        <li>Click on the green "Start" button</li>
+                        <li>A transparent full-screen overlay will open</li>
+                        <li>Click and drag to select the area containing the captions</li>
+                        <li>Press Enter to confirm the selection (or ESC to cancel)</li>
+                    </ul>
+                </li>
+                <li><strong>During Capture</strong>:
+                    <ul>
+                        <li>A transparent yellow box will appear over the selected area</li>
+                        <li>The program will start capturing text every few seconds</li>
+                        <li>You can move the box by dragging it if needed</li>
+                        <li>The latest text capture will be shown in the blue bar at the top</li>
+                    </ul>
+                </li>
+                <li><strong>Stopping Capture</strong>:
+                    <ul>
+                        <li>Click on the red "STOP" button in the capture box, or</li>
+                        <li>Press Ctrl+Q from the keyboard</li>
+                    </ul>
+                </li>
+                <li><strong>Saving Results</strong>:
+                    <ul>
+                        <li>After stopping the capture, you'll be asked to enter a name for the saved file</li>
+                        <li>Enter the desired name and click OK (or cancel to use the default name)</li>
+                        <li>The processed file will be saved in the "captures" folder</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>Settings Management</h3>
+            <ul>
+                <li><strong>Save Settings</strong>:
+                    <ul>
+                        <li>Configure your desired options</li>
+                        <li>Click on "Save Settings"</li>
+                        <li>Enter a name for the settings profile</li>
+                        <li>The settings will be saved for future use</li>
+                    </ul>
+                </li>
+                <li><strong>Load Settings</strong>:
+                    <ul>
+                        <li>Click on "Load Settings"</li>
+                        <li>Select a previously saved profile</li>
+                        <li>The settings will be automatically applied</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Output Files</h3>
+            <ul>
+                <li>Original capture files are saved in the "captures" folder with the format <code>capture_YYYY-MM-DD-HH-MM-SS.txt</code></li>
+                <li>Processed files have the format <code>[custom_name]_capture_YYYY-MM-DD-HH-MM-SS_processed.txt</code></li>
+                <li>Debug logs (if enabled) are saved as <code>ocr_debug.log</code></li>
+            </ul>
+
+            <h3>Practical Tips</h3>
+            <ul>
+                <li>For optimal caption recognition, ensure high contrast between text and background</li>
+                <li>Select an area slightly larger than the captions to ensure all text is captured</li>
+                <li>If the text is moving, you can drag the capture window to follow it</li>
+                <li>Use the "Live Caption Optimization" option when capturing real-time captions</li>
+                <li>If you notice slowdowns, try selecting a smaller area</li>
+            </ul>
+
+            <h3>Troubleshooting</h3>
+            <ul>
+                <li>If Tesseract doesn't work, verify that the paths are correct</li>
+                <li>If area selection doesn't work, try restarting the program</li>
+                <li>Detailed logs are in the "logs" folder for advanced troubleshooting</li>
+            </ul>
+
+            <p>This program is particularly useful for recording captions or text that appears temporarily on the screen, allowing you to save and review information that would otherwise be lost.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 CaptiOCR | <a href="https://www.captiocr.com/">www.captiocr.com</a></p>
+    </footer>
+</body>
+</html>
