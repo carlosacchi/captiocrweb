@@ -161,44 +161,41 @@ export default function CaptiOCRLanding() {
                         </div>
                     </div>
 
-                    {/* Key differences explanation */}
-                    <div className="grid md:grid-cols-2 gap-16 items-center">
+                    {/* Key differences explanation - properly centered title and responsive columns */}
+                    <h3 className="text-2xl font-semibold mb-10 text-blue-700 text-center w-full">Key Advantages of CaptiOCR</h3>
+
+                    <div className="grid md:grid-cols-2 grid-cols-1 gap-8 md:gap-16">
                         <div>
-                            <h3 className="text-2xl font-semibold mb-6 text-blue-700 text-center">Key Advantages of CaptiOCR</h3>
+                            <ul className="space-y-4">
+                                <li className="flex items-start">
+                                    <CheckCircleIcon className="h-6 w-6 text-green-600 mr-2 flex-shrink-0 mt-1" />
+                                    <p><strong>Captures Speaker Information:</strong> CaptiOCR preserves speaker names and roles exactly as they appear in captions, while audio-based solutions struggle with speaker identification.</p>
+                                </li>
+                                <li className="flex items-start">
+                                    <CheckCircleIcon className="h-6 w-6 text-green-600 mr-2 flex-shrink-0 mt-1" />
+                                    <p><strong>Retains Visual Context:</strong> Timestamps, chat references, and other on-screen elements are captured by CaptiOCR but lost in audio-only transcription.</p>
+                                </li>
+                                <li className="flex items-start">
+                                    <CheckCircleIcon className="h-6 w-6 text-green-600 mr-2 flex-shrink-0 mt-1" />
+                                    <p><strong>Works Across Platforms:</strong> Functions with any application showing captions, not limited to specific platform APIs like many audio transcription tools.</p>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-                    <div>
-                        <div className="grid md:grid-cols-2 gap-16 items-center">
-                            <div>
-                                <ul className="space-y-4">
-                                    <li className="flex items-start">
-                                        <CheckCircleIcon className="h-6 w-6 text-green-600 mr-2 flex-shrink-0 mt-1" />
-                                        <p><strong>Captures Speaker Information:</strong> CaptiOCR preserves speaker names and roles exactly as they appear in captions, while audio-based solutions struggle with speaker identification.</p>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <CheckCircleIcon className="h-6 w-6 text-green-600 mr-2 flex-shrink-0 mt-1" />
-                                        <p><strong>Retains Visual Context:</strong> Timestamps, chat references, and other on-screen elements are captured by CaptiOCR but lost in audio-only transcription.</p>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <CheckCircleIcon className="h-6 w-6 text-green-600 mr-2 flex-shrink-0 mt-1" />
-                                        <p><strong>Works Across Platforms:</strong> Functions with any application showing captions, not limited to specific platform APIs like many audio transcription tools.</p>
-                                    </li>
-                                </ul>
-                                <ul className="space-y-4">
-                                    <li className="flex items-start">
-                                        <CheckCircleIcon className="h-6 w-6 text-green-600 mr-2 flex-shrink-0 mt-1" />
-                                        <p><strong>Immune to Audio Challenges:</strong> Background noise, poor microphones, and accents don't affect CaptiOCR's accuracy, unlike speech recognition technology.</p>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <CheckCircleIcon className="h-6 w-6 text-green-600 mr-2 flex-shrink-0 mt-1" />
-                                        <p><strong>Complete Privacy:</strong> All processing happens locally on your device, unlike cloud-based services that send audio to external servers.</p>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <CheckCircleIcon className="h-6 w-6 text-green-600 mr-2 flex-shrink-0 mt-1" />
-                                        <p><strong>No Recording Concerns:</strong> Since CaptiOCR only captures displayed text, it doesn't create the consent and legal issues associated with audio recording in many jurisdictions.</p>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div>
+                            <ul className="space-y-4">
+                                <li className="flex items-start">
+                                    <CheckCircleIcon className="h-6 w-6 text-green-600 mr-2 flex-shrink-0 mt-1" />
+                                    <p><strong>Immune to Audio Challenges:</strong> Background noise, poor microphones, and accents don't affect CaptiOCR's accuracy, unlike speech recognition technology.</p>
+                                </li>
+                                <li className="flex items-start">
+                                    <CheckCircleIcon className="h-6 w-6 text-green-600 mr-2 flex-shrink-0 mt-1" />
+                                    <p><strong>Complete Privacy:</strong> All processing happens locally on your device, unlike cloud-based services that send audio to external servers.</p>
+                                </li>
+                                <li className="flex items-start">
+                                    <CheckCircleIcon className="h-6 w-6 text-green-600 mr-2 flex-shrink-0 mt-1" />
+                                    <p><strong>No Recording Concerns:</strong> Since CaptiOCR only captures displayed text, it doesn't create the consent and legal issues associated with audio recording in many jurisdictions.</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
