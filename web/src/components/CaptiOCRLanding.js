@@ -28,7 +28,7 @@ export default function CaptiOCRLanding() {
                     </p>
                     <div className="flex flex-wrap justify-center gap-4">
                         <a
-                            href="https://github.com/CarloSacchi/CaptiOCR"
+                            href="https://github.com/carlosacchi/captiocr"
                             target="_blank"
                             rel="noreferrer"
                             className="bg-white text-blue-700 hover:bg-blue-100 px-8 py-4 rounded-full font-semibold text-lg flex items-center transition duration-300 ease-in-out"
@@ -41,6 +41,9 @@ export default function CaptiOCRLanding() {
                         >
                             Learn More
                         </a>
+                        <div className="mt-4 text-white/80 font-medium">
+                            <p>Current Version: <span id="current-version">Loading...</span></p>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -457,7 +460,7 @@ export default function CaptiOCRLanding() {
                     </p>
                     <div className="flex flex-wrap justify-center gap-4">
                         <a
-                            href="https://github.com/CarloSacchi/CaptiOCR/"
+                            href="https://github.com/carlosacchi/captiocr/releases"
                             target="_blank"
                             rel="noreferrer"
                             className="bg-white text-blue-700 hover:bg-blue-100 px-8 py-4 rounded-full font-semibold text-lg flex items-center transition duration-300 ease-in-out"
@@ -465,7 +468,7 @@ export default function CaptiOCRLanding() {
                             <ArrowDownTrayIcon className="h-6 w-6 mr-3" /> Download Now
                         </a>
                         <a
-                            href="https://github.com/CarloSacchi/CaptiOCR"
+                            href="https://github.com/carlosacchi/captiocr"
                             target="_blank"
                             rel="noreferrer"
                             className="bg-transparent border-2 border-white hover:bg-white hover:text-blue-700 px-8 py-4 rounded-full font-semibold text-lg flex items-center transition duration-300 ease-in-out"
@@ -489,9 +492,9 @@ export default function CaptiOCRLanding() {
                         <div>
                             <h3 className="text-xl font-semibold mb-4">Resources</h3>
                             <ul className="space-y-2">
-                                <li><a href="https://github.com/CarloSacchi/CaptiOCR" className="text-gray-400 hover:text-white transition">GitHub Repository</a></li>
-                                <li><a href="https://github.com/CarloSacchi/CaptiOCR/issues" className="text-gray-400 hover:text-white transition">Report Issues</a></li>
-                                <li><a href="https://github.com/CarloSacchi/CaptiOCR/releases" className="text-gray-400 hover:text-white transition">Download Latest Version</a></li>
+                                <li><a href="https://github.com/carlosacchi/captiocr" className="text-gray-400 hover:text-white transition">GitHub Repository</a></li>
+                                <li><a href="https://github.com/carlosacchi/captiocr/issues" className="text-gray-400 hover:text-white transition">Report Issues</a></li>
+                                <li><a href="https://github.com/carlosacchi/captiocr/releases" className="text-gray-400 hover:text-white transition">Download Latest Version</a></li>
                             </ul>
                         </div>
                         <div>
@@ -510,7 +513,7 @@ export default function CaptiOCRLanding() {
                             Real-time text extraction technology that helps you capture and process on-screen text automatically.
                         </p>
                         <div className="mt-6 flex justify-center space-x-6">
-                            <a href="https://github.com/CarloSacchi/CaptiOCR" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out">
+                            <a href="https://github.com/carlosacchi/captiocr" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out">
                                 GitHub
                             </a>
                             <a href="legal/privacy.html"
