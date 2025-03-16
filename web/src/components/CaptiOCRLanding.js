@@ -184,8 +184,6 @@ export default function CaptiOCRLanding() {
                                         <p><strong>Works Across Platforms:</strong> Functions with any application showing captions, not limited to specific platform APIs like many audio transcription tools.</p>
                                     </li>
                                 </ul>
-                            </div>
-                            <div>
                                 <ul className="space-y-4">
                                     <li className="flex items-start">
                                         <CheckCircleIcon className="h-6 w-6 text-green-600 mr-2 flex-shrink-0 mt-1" />
