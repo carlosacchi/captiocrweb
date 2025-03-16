@@ -476,6 +476,9 @@ export default function CaptiOCRLanding() {
                             <FaGithub className="mr-3 text-2xl" /> Contribute on GitHub
                         </a>
                     </div>
+                    <div className="mt-6 text-white/80 font-small">
+                        <p>Current Version: <span id="current-version">Loading...</span></p>
+                    </div>
                 </div>
             </section>
 
