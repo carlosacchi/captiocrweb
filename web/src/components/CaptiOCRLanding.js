@@ -495,9 +495,9 @@ export default function CaptiOCRLanding() {
                         <div>
                             <h3 className="text-xl font-semibold mb-4">Resources</h3>
                             <ul className="space-y-2">
-                                <li><a href="https://github.com/carlosacchi/captiocr" className="text-gray-400 hover:text-white transition">GitHub Repository</a></li>
-                                <li><a href="https://github.com/carlosacchi/captiocr/issues" className="text-gray-400 hover:text-white transition">Report Issues</a></li>
-                                <li><a href="https://github.com/carlosacchi/captiocr/releases" className="text-gray-400 hover:text-white transition">Download Latest Version</a></li>
+                                <li><a href="https://github.com/carlosacchi/captiocr" target="_blank" className="text-gray-400 hover:text-white transition">GitHub Repository</a></li>
+                                <li><a href="https://github.com/carlosacchi/captiocr/issues" target="_blank" className="text-gray-400 hover:text-white transition">Report Issues</a></li>
+                                <li><a href="https://github.com/carlosacchi/captiocr/releases" target="_blank" className="text-gray-400 hover:text-white transition">Download Latest Version</a></li>
                             </ul>
                         </div>
                         <div>
