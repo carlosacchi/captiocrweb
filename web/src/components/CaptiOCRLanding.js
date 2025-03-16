@@ -24,7 +24,7 @@ export default function CaptiOCRLanding() {
                     <h1 className="text-5xl md:text-6xl font-bold mb-6">CaptiOCR</h1>
                     <h2 className="text-3xl md:text-4xl font-semibold mb-4">Real-Time Text Extraction Tool</h2>
                     <p className="text-xl md:text-2xl mb-10">
-                        Automatically extract and save on-screen text from Teams, Zoom, and other platforms to enhance productivity and reduce digital strain.
+                        Automatically extract and save on-screen Live catptions text from Teams, Zoom, and other platforms to enhance productivity and reduce digital strain.
                     </p>
                     <div className="flex flex-wrap justify-center gap-4">
                         <a
@@ -165,6 +165,8 @@ export default function CaptiOCRLanding() {
                     <div className="grid md:grid-cols-2 gap-16 items-center">
                         <div>
                             <h3 className="text-2xl font-semibold mb-6 text-blue-700">Key Advantages of CaptiOCR</h3>
+                        </div>
+                        <div>
                             <ul className="space-y-4">
                                 <li className="flex items-start">
                                     <CheckCircleIcon className="h-6 w-6 text-green-600 mr-2 flex-shrink-0 mt-1" />
