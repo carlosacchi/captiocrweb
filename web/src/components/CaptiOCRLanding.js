@@ -372,7 +372,7 @@ export default function CaptiOCRLanding() {
             <section className="py-20 px-4 bg-white">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-                    <div className="grid md:grid-cols-2 grid-cols-1 gap-6 md:gap-8 max-w-5xl mx-auto">
+                    <div className="grid md:grid-cols-3 grid-cols-1 gap-6 md:gap-8 max-w-5xl mx-auto">
                         <div className="bg-gray-100 rounded-xl p-6 shadow-md">
                             <h3 className="text-xl font-semibold mb-3">Is CaptiOCR secure for sensitive conversations?</h3>
                             <p className="text-gray-700">Yes, CaptiOCR processes everything locally on your device. No content is ever sent to the cloud or external servers, making it suitable for confidential discussions.</p>
