@@ -164,7 +164,7 @@ export default function CaptiOCRLanding() {
                     {/* Key differences explanation */}
                     <div className="grid md:grid-cols-2 gap-16 items-center">
                         <div>
-                            <h3 className="text-2xl font-semibold mb-6 text-blue-700">Key Advantages of CaptiOCR</h3>
+                            <h3 className="text-2xl font-semibold mb-6 text-blue-700 text-center">Key Advantages of CaptiOCR</h3>
                         </div>
                     </div>
                     <div>
