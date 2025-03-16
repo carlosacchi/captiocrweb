@@ -41,7 +41,7 @@ export default function CaptiOCRLanding() {
                         >
                             Learn More
                         </a>
-                        <div className="mt-4 text-white/80 font-medium">
+                        <div className="mt-6 text-white/80 font-medium">
                             <p>Current Version: <span id="current-version">Loading...</span></p>
                         </div>
                     </div>
