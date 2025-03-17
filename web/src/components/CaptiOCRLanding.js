@@ -22,7 +22,7 @@ export default function CaptiOCRLanding() {
             <header className="bg-blue-700 text-white py-20 px-4">
                 <div className="max-w-6xl mx-auto text-center">
                     <h1 className="text-5xl md:text-6xl font-bold mb-6">CaptiOCR</h1>
-                    <h2 className="text-3xl md:text-4xl font-semibold mb-4">Real-Time Text Extraction Tool</h2>
+                    <h2 className="text-3xl md:text-4xl font-semibold mb-4">Real-Time Live Captions Text Extraction Tool</h2>
                     <p className="text-xl md:text-2xl mb-10">
                         Automatically extract and save on-screen Live catptions text from Teams, Zoom, and other platforms to enhance productivity and reduce digital strain.
                     </p>
@@ -516,34 +516,24 @@ export default function CaptiOCRLanding() {
                         <p className="text-gray-500 mt-2">
                             Real-time text extraction technology that helps you capture and process on-screen text automatically.
                         </p>
-                        <div className="mt-6 flex justify-center space-x-6">
-                            <a href="https://github.com/carlosacchi/captiocr" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out">
-                                GitHub
-                            </a>
-                            <a href="legal/privacy.html"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out" >
-                                Privacy Policy
-                            </a>
-                            <a href="legal/terms.html"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out" >
-                                Terms of Use
-                            </a>
-                            <a href="legal/legal.html"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out" >
-                                Legal Information
-                            </a>
-                            <a href="legal/instructions.html"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out" >
-                                Instructions
-                            </a>
+                        <div className="mt-6 flex flex-wrap justify-center space-x-2 sm:space-x-6 gap-y-2">
+                            {[
+                                { href: "https://github.com/carlosacchi/captiocr", text: "GitHub" },
+                                { href: "legal/privacy.html", text: "Privacy Policy" },
+                                { href: "legal/terms.html", text: "Terms of Use" },
+                                { href: "legal/legal.html", text: "Legal Information" },
+                                { href: "legal/instructions.html", text: "Instructions" }
+                            ].map(({ href, text }) => (
+                                <a
+                                    key={text}
+                                    href={href}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out text-sm sm:text-base"
+                                >
+                                    {text}
+                                </a>
+                            ))}
                         </div>
                         <p className="text-gray-600 text-sm mt-8">
                             Supported platforms: Microsoft Teams, Zoom, Google Meet, Webex, GoToMeeting, and more.
