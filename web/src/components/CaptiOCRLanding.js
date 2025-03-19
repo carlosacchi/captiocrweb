@@ -523,7 +523,7 @@ export default function CaptiOCRLanding() {
                                 { href: "legal/terms.html", text: "Terms of Use" },
                                 { href: "legal/legal.html", text: "Legal Information" },
                                 { href: "legal/instructions.html", text: "Instructions" },
-                                { href: "legal/transcriber-comparison.html", text: "Instructions" }
+                                { href: "legal/transcriber-comparison.html", text: "Transcribers Comparison" }
                             ].map(({ href, text }) => (
                                 <a
                                     key={text}
