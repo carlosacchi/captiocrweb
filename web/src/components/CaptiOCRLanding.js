@@ -238,43 +238,43 @@ export default function CaptiOCRLanding() {
             </section>
 
             {/* Features Section - Updated titles */}
-            <section class="py-20 px-4 bg-gray-100">
-                <div class="max-w-6xl mx-auto">
-                    <h2 class="text-4xl font-bold text-center mb-12">How CaptiOCR Simplifies Your Workflow</h2>
-                    <div class="grid md:grid-cols-2 gap-12">
+            <section id="features" className="py-20 px-4 bg-gray-100">
+                <div className="max-w-6xl mx-auto">
+                    <h2 className="text-4xl font-bold text-center mb-12">How CaptiOCR Simplifies Your Workflow</h2>
+                    <div className="grid md:grid-cols-2 gap-12">
                         <div class="text-center">
-                            <div class="flex justify-center mb-6">
-                                <i class="fas fa-desktop text-blue-700" style="font-size: 2.5rem;"></i>
+                            <div className="flex items-start mb-6">
+                                <FaDesktop className="text-blue-700 h-10 w-10 mr-4" />
+                                <h3 className="text-2xl font-semibold">Seamless Caption Extraction</h3>
                             </div>
-                            <h3 class="text-2xl font-semibold mb-4">Seamless Caption Extraction</h3>
-                            <p class="text-gray-700 text-lg">
+                            <p className="text-gray-700 text-lg ml-14">
                                 Effortlessly select any caption area on your screen and CaptiOCR will continuously extract and save the text, creating a complete record without manual effort.
                             </p>
                         </div>
                         <div class="text-center">
-                            <div class="flex justify-center mb-6">
-                                <i class="fas fa-copy text-green-600" style="font-size: 2.5rem;"></i>
+                            <div className="flex items-start mb-6">
+                                <FaCopy className="text-green-600 h-10 w-10 mr-4" />
+                                <h3 className="text-2xl font-semibold">Smart Text Processing</h3>
                             </div>
-                            <h3 class="text-2xl font-semibold mb-4">Smart Text Processing</h3>
-                            <p class="text-gray-700 text-lg">
+                            <p className="text-gray-700 text-lg ml-14">
                                 CaptiOCR intelligently filters duplicate content from captions, producing clean, readable transcripts that are ready for review or AI processing.
                             </p>
                         </div>
                         <div class="text-center">
-                            <div class="flex justify-center mb-6">
-                                <i class="fas fa-robot text-purple-600" style="font-size: 2.5rem;"></i>
+                            <div className="flex items-start mb-6">
+                                <FaRobot className="text-purple-600 h-10 w-10 mr-4" />
+                                <h3 className="text-2xl font-semibold">Information Management</h3>
                             </div>
-                            <h3 class="text-2xl font-semibold mb-4">Information Management</h3>
-                            <p class="text-gray-700 text-lg">
+                            <p className="text-gray-700 text-lg ml-14">
                                 Feed captured text to your favorite AI tools to automatically generate summaries, extract action items, and create concise reports, dramatically reducing information overload.
                             </p>
                         </div>
                         <div class="text-center">
-                            <div class="flex justify-center mb-6">
-                                <i class="fas fa-lock text-red-600" style="font-size: 2.5rem;"></i>
+                            <div className="flex items-start mb-6">
+                                <LockClosedIcon className="text-red-600 h-10 w-10 mr-4" />
+                                <h3 className="text-2xl font-semibold">Total Data Control</h3>
                             </div>
-                            <h3 class="text-2xl font-semibold mb-4">Total Data Control</h3>
-                            <p class="text-gray-700 text-lg">
+                            <p className="text-gray-700 text-lg ml-14">
                                 Unlike browser extensions or cloud services, CaptiOCR operates entirely on your local machine, ensuring sensitive content never leaves your device without your explicit consent.
                             </p>
                         </div>
