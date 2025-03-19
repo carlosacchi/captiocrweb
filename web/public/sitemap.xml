@@ -55,14 +55,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Future SEO Keyword Pages - Add these once they're created -->
-  <!-- These are commented out until you create the actual pages -->
-  <!--
   <url>
     <loc>https://www.captiocr.com/meeting-transcriber.html</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  -->
+
+  <!-- Future SEO Keyword Pages - Add these once they're created -->
+  <!-- These are commented out until you create the actual pages -->
+
 </urlset>

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaptiOCR Meeting Transcriber Software for Agile Teams | Scrum Master Documentation Tool</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="CaptiOCR meeting transcriber software automates agile meeting documentation for daily standups, sprint retrospectives, and stakeholder discussions. Perfect for Scrum Masters, Project Managers, and Agile Teams." />
+    <meta name="keywords" content="Meeting transcriber for agile, scrum meeting documentation, sprint meeting transcription, standup meeting recorder, project management documentation tool, scrum master transcription tool, stakeholder meeting notes, daily standup transcription, agile team documentation, sprint retrospective capture, performance review transcriber, agile ceremonies documentation" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Meeting Transcriber for Agile Teams | CaptiOCR" />
+    <meta property="og:description" content="Automatically capture and document agile meetings, standups, sprint discussions, and project reviews with this privacy-focused meeting transcription tool." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.captiocr.com/meeting-transcriber.html" />
+    
+    <!-- Canonical URL -->
+    <meta rel="canonical" href="https://www.captiocr.com/meeting-transcriber.html" />
+    
+    <!-- Tailwind CSS CDN - for styling similar to the React landing page -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    
+    <!-- Custom Styles to supplement Tailwind -->
+    <style>
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-900">
+    <!-- Hero Section -->
+    <header class="bg-blue-700 text-white py-20 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">CaptiOCR - Meeting Transcriber</h1>
+            <h2 class="text-3xl md:text-4xl font-semibold mb-4">Automate Agile Meeting Documentation</h2>
+            <p class="text-xl md:text-2xl mb-10">
+                Transform how your team captures daily standups, sprint planning, retrospectives, and stakeholder meetings. CaptiOCR extracts live meeting text so your team can focus on collaboration rather than note-taking.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a 
+                    href="https://github.com/carlosacchi/captiocr/releases" 
+                    target="_blank"
+                    rel="noreferrer"
+                    class="bg-white text-blue-700 hover:bg-blue-100 px-8 py-4 rounded-full font-semibold text-lg flex items-center transition duration-300 ease-in-out"
+                >
+                    <i class="fas fa-download mr-3 text-2xl"></i> Download CaptiOCR
+                </a>
+                <a
+                    href="#how-it-works"
+                    class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-700 px-8 py-4 rounded-full font-semibold text-lg transition duration-300 ease-in-out"
+                >
+                    Learn How It Works
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Benefits Section -->
+        <section class="py-16 px-4 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-6">Meeting Transcription for Agile Teams</h2>
+                <p class="text-xl text-center text-gray-700 mb-12 max-w-4xl mx-auto">
+                    Scrum Masters, Project Managers, and Stakeholders spend up to <span class="font-bold">40%</span> of their time in meetings and another <span class="font-bold">20%</span> documenting outcomes. CaptiOCR's meeting transcriber eliminates manual documentation and enhances team productivity.
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div class="text-center p-8 bg-gray-100 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex justify-center mb-6">
+                            <i class="fas fa-users text-red-500" style="font-size: 3rem;"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Daily Standup Recorder</h3>
+                        <p class="text-gray-700 text-lg">
+                            Automatically document what team members share during daily standups, capturing completed tasks, today's goals, and blockers with zero manual effort.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center p-8 bg-gray-100 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex justify-center mb-6">
+                            <i class="fas fa-chart-line text-blue-600" style="font-size: 3rem;"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Sprint Meeting Capture</h3>
+                        <p class="text-gray-700 text-lg">
+                            Extract discussions from sprint planning, review, and retrospective meetings, ensuring no valuable insight or action item is missed.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center p-8 bg-gray-100 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex justify-center mb-6">
+                            <i class="fas fa-handshake text-green-600" style="font-size: 3rem;"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Stakeholder Updates</h3>
+                        <p class="text-gray-700 text-lg">
+                            Create perfect records of stakeholder meetings and performance reviews, documenting key decisions, expectations, and commitments for future reference.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Comparison Section -->
+        <section class="py-16 px-4 bg-gray-100">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">Meeting Documentation Methods Compared</h2>
+                
+                <!-- Visual comparison chart -->
+                <div class="bg-white p-8 rounded-xl shadow-lg mb-16">
+                    <h3 class="text-2xl font-semibold mb-6 text-center">Complete Solution Comparison</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full border-collapse">
+                            <thead>
+                                <tr class="bg-blue-100">
+                                    <th class="p-3 text-left border border-gray-300">Feature</th>
+                                    <th class="p-3 text-center border border-gray-300">CaptiOCR</th>
+                                    <th class="p-3 text-center border border-gray-300">Dedicated Notetaker</th>
+                                    <th class="p-3 text-center border border-gray-300">Audio Recording</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="p-3 border border-gray-300">Participation Freedom</td>
+                                    <td class="p-3 text-center border border-gray-300 text-green-600">✓ Full Engagement</td>
+                                    <td class="p-3 text-center border border-gray-300 text-red-600">✗ One Person Distracted</td>
+                                    <td class="p-3 text-center border border-gray-300 text-yellow-600">⚠ Manual Transcription Later</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="p-3 border border-gray-300">Captures Speaker Names</td>
+                                    <td class="p-3 text-center border border-gray-300 text-green-600">✓ Automatic</td>
+                                    <td class="p-3 text-center border border-gray-300 text-yellow-600">⚠ If Noted</td>
+                                    <td class="p-3 text-center border border-gray-300 text-red-600">✗ Voice Only</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 border border-gray-300">Real-time Documentation</td>
+                                    <td class="p-3 text-center border border-gray-300 text-green-600">✓ Instant</td>
+                                    <td class="p-3 text-center border border-gray-300 text-yellow-600">⚠ Needs Cleanup</td>
+                                    <td class="p-3 text-center border border-gray-300 text-red-600">✗ Delayed</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="p-3 border border-gray-300">Data Privacy</td>
+                                    <td class="p-3 text-center border border-gray-300 text-green-600">✓ 100% Local</td>
+                                    <td class="p-3 text-center border border-gray-300 text-yellow-600">⚠ Depends on Tools</td>
+                                    <td class="p-3 text-center border border-gray-300 text-red-600">✗ Often Cloud-Based</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 border border-gray-300">Consent Requirements</td>
+                                    <td class="p-3 text-center border border-gray-300 text-green-600">✓ Minimal</td>
+                                    <td class="p-3 text-center border border-gray-300 text-green-600">✓ Minimal</td>
+                                    <td class="p-3 text-center border border-gray-300 text-red-600">✗ Legal Requirements</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="p-3 border border-gray-300">AI Integration</td>
+                                    <td class="p-3 text-center border border-gray-300 text-green-600">✓ Immediate</td>
+                                    <td class="p-3 text-center border border-gray-300 text-yellow-600">⚠ Requires Digitization</td>
+                                    <td class="p-3 text-center border border-gray-300 text-red-600">✗ Requires Transcription</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 border border-gray-300">Accuracy for Action Items</td>
+                                    <td class="p-3 text-center border border-gray-300 text-green-600">✓ High (From Captions)</td>
+                                    <td class="p-3 text-center border border-gray-300 text-yellow-600">⚠ Depends on Notetaker</td>
+                                    <td class="p-3 text-center border border-gray-300 text-red-600">✗ Requires Processing</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="p-3 border border-gray-300">Agile Framework Support</td>
+                                    <td class="p-3 text-center border border-gray-300 text-green-600">✓ All Meeting Types</td>
+                                    <td class="p-3 text-center border border-gray-300 text-green-600">✓ All Meeting Types</td>
+                                    <td class="p-3 text-center border border-gray-300 text-yellow-600">⚠ Time-Consuming</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Key advantages -->
+                <h3 class="text-2xl font-semibold mb-10 text-blue-700 text-center w-full">Key Advantages for Agile Teams</h3>
+                
+                <div class="grid md:grid-cols-2 grid-cols-1 gap-8 md:gap-16">
+                    <div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mr-2 mt-1" style="font-size: 1.5rem;"></i>
+                                <p><strong>Scrum Master Efficiency:</strong> Focus on facilitating meetings rather than simultaneously taking notes. Capture every team member's update in daily standups without dividing attention.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mr-2 mt-1" style="font-size: 1.5rem;"></i>
+                                <p><strong>Sprint Continuity:</strong> Create perfect continuity between sprint planning, reviews, and retrospectives by maintaining comprehensive documentation of decisions, action items, and planned improvements.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mr-2 mt-1" style="font-size: 1.5rem;"></i>
+                                <p><strong>Transparent Accountability:</strong> Link team members to commitments and action items with clear attribution in the transcript, creating natural accountability without additional tracking systems.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mr-2 mt-1" style="font-size: 1.5rem;"></i>
+                                <p><strong>Stakeholder Communication:</strong> Generate perfect meeting summaries for stakeholders by extracting key points from project reviews and status updates, ensuring alignment without manual documentation.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mr-2 mt-1" style="font-size: 1.5rem;"></i>
+                                <p><strong>Institutional Knowledge:</strong> Build a searchable archive of team discussions, technical decisions, and sprint outcomes that preserves knowledge even as team members change over time.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mr-2 mt-1" style="font-size: 1.5rem;"></i>
+                                <p><strong>Remote Team Support:</strong> Close the documentation gap for distributed agile teams by ensuring consistent, accurate meeting transcripts regardless of time zones or meeting attendance.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Core Advantages Section -->
+        <section class="py-16 px-4 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">Agile Meeting Transcription Features</h2>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div class="text-center p-8 bg-gray-100 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex justify-center mb-6">
+                            <i class="fas fa-bolt text-yellow-500" style="font-size: 3rem;"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Real-Time Documentation</h3>
+                        <p class="text-gray-700 text-lg">
+                            Maintain a live transcript of your meeting as it happens, capturing each team member's contributions, decisions, and action items with perfect accuracy.
+                        </p>
+                    </div>
+                    <div class="text-center p-8 bg-gray-100 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex justify-center mb-6">
+                            <i class="fas fa-tasks text-blue-600" style="font-size: 3rem;"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Action Item Extraction</h3>
+                        <p class="text-gray-700 text-lg">
+                            Use AI to automatically identify and extract action items from meeting transcripts, creating task lists and assigning ownership based on the conversation.
+                        </p>
+                    </div>
+                    <div class="text-center p-8 bg-gray-100 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex justify-center mb-6">
+                            <i class="fas fa-history text-green-600" style="font-size: 3rem;"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Meeting History</h3>
+                        <p class="text-gray-700 text-lg">
+                            Build a searchable archive of all team meetings, creating continuity between sprints and preserving context for future reference and onboarding.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-20 px-4 bg-gray-100">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">How Agile Meeting Transcription Works</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="bg-blue-700 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                            1
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Enable Captions</h3>
+                        <p class="text-gray-700">
+                            Turn on live captions in your virtual meeting platform (Teams, Zoom, Google Meet) at the start of your agile ceremonies.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-blue-700 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                            2
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Select Caption Area</h3>
+                        <p class="text-gray-700">
+                            Use CaptiOCR to define the area on your screen where meeting captions appear, targeting just the text you want to capture.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-blue-700 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                            3
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Automatic Transcription</h3>
+                        <p class="text-gray-700">
+                            As your team discusses user stories, updates progress, or conducts retrospectives, CaptiOCR silently builds a complete meeting transcript.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-blue-700 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                            4
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Process & Share</h3>
+                        <p class="text-gray-700">
+                            When the meeting ends, name and save your transcript. Extract action items, create summaries, or share the complete documentation with your team.
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-10 text-center">
+                    <p class="text-gray-700 text-lg">
+                        <strong class="text-blue-700">Works with all agile meeting types:</strong> Daily standups, sprint planning, backlog refinement, sprint reviews, retrospectives, stakeholder meetings, and one-on-ones.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Use Cases Section -->
+        <section class="py-20 px-4 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">Agile Meeting Transcription Use Cases</h2>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div class="text-center">
+                        <div class="mb-6">
+                            <i class="fas fa-coffee text-blue-600 mx-auto" style="font-size: 4rem;"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Daily Standups</h3>
+                        <p class="text-gray-700 text-lg">
+                            Transform quick 15-minute standups into documented progress updates, with clear records of completed tasks, today's goals, and identified blockers for each team member.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="mb-6">
+                            <i class="fas fa-calendar-check text-green-600 mx-auto" style="font-size: 4rem;"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Sprint Reviews & Retros</h3>
+                        <p class="text-gray-700 text-lg">
+                            Capture sprint accomplishments, stakeholder feedback, and team retrospective insights to ensure lessons learned actually influence future sprints.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="mb-6">
+                            <i class="fas fa-user-tie text-yellow-500 mx-auto" style="font-size: 4rem;"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Performance Reviews</h3>
+                        <p class="text-gray-700 text-lg">
+                            Create accurate records of performance discussions, improvement plans, and commitments made during one-on-ones and formal reviews for future reference.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Agile Frameworks Section - NEW SECTION -->
+        <section class="py-16 px-4 bg-gray-100">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">Support for All Agile Frameworks</h2>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-6 text-center text-blue-700">Scrum Documentation</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <p><strong>Sprint Planning:</strong> Document user story discussions, sprint goal establishment, and capacity planning with accuracy.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <p><strong>Daily Scrums:</strong> Record the standard three questions from each team member to track progress throughout the sprint.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <p><strong>Sprint Reviews:</strong> Capture stakeholder feedback, accomplishment demonstrations, and product backlog adjustments.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <p><strong>Sprint Retrospectives:</strong> Document team reflection on processes, tools, and relationships to formalize improvements.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-6 text-center text-blue-700">Kanban & Other Frameworks</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <p><strong>Kanban Standups:</strong> Document workflow discussions, bottlenecks, and work-in-progress analyses from team meetings.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <p><strong>Refinement Sessions:</strong> Capture detailed user story elaboration, acceptance criteria, and task breakdowns.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <p><strong>SAFe PI Planning:</strong> Document complex program increment planning discussions across multiple teams.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <p><strong>LeSS Framework:</strong> Support multi-team coordination and overall retrospective documentation needs.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="py-20 px-4 bg-gray-100">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">What Agile Teams Are Saying</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-700 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                S
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-semibold">Sarah K.</h3>
+                                <p class="text-gray-600">Scrum Master</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">
+                            "As a Scrum Master for three teams, I used to struggle keeping accurate notes while facilitating meetings. CaptiOCR changed everything - I can focus on team dynamics and coaching while still having perfect documentation of every discussion."
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                R
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-semibold">Robert M.</h3>
+                                <p class="text-gray-600">Product Owner</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">
+                            "The accuracy of our sprint reviews has improved dramatically. We capture every stakeholder comment and feature feedback perfectly, which helps me prioritize the backlog based on actual conversations rather than hastily written notes."
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                E
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-semibold">Elena D.</h3>
+                                <p class="text-gray-600">Engineering Manager</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">
+                            "For performance reviews and one-on-ones, CaptiOCR has been invaluable. I have perfect records of growth discussions, agreed-upon goals, and progress updates that we can reference in future meetings to ensure continuity."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- FAQ Section -->
+<section class="py-20 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 md:gap-8 max-w-5xl mx-auto">
+            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+                <h3 class="text-xl font-semibold mb-3">How do I integrate with JIRA?</h3>
+                <p class="text-gray-700">While CaptiOCR doesn't have direct JIRA integration, it creates plain text files that can be easily copied into JIRA tickets. Many teams use the transcripts to populate sprint notes, add context to user stories, or document acceptance criteria discussions.</p>
+            </div>
+            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+                <h3 class="text-xl font-semibold mb-3">Can it track velocity discussions?</h3>
+                <p class="text-gray-700">Yes, CaptiOCR captures all velocity-related discussions during sprint planning and retrospectives. You can search the transcripts for specific story point estimates, capacity discussions, and velocity trend analyses to maintain accountability.</p>
+            </div>
+            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+                <h3 class="text-xl font-semibold mb-3">Is it useful for remote teams?</h3>
+                <p class="text-gray-700">Absolutely! Remote and distributed agile teams benefit even more from CaptiOCR as it creates a shared, accurate record of meetings that team members can reference across time zones. This helps maintain alignment despite limited synchronous communication opportunities.</p>
+            </div>
+            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+                <h3 class="text-xl font-semibold mb-3">Can we track blockers over time?</h3>
+                <p class="text-gray-700">CaptiOCR makes it easy to track recurring blockers. By documenting daily standups consistently, you can search across multiple meeting transcripts to identify patterns and persistent blockers that need escalation or process changes.</p>
+            </div>
+            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+                <h3 class="text-xl font-semibold mb-3">Does it help new team members?</h3>
+                <p class="text-gray-700">New team members gain tremendous value from accessing historical meeting transcripts. They can quickly understand team dynamics, recurring issues, decision patterns, and project context without relying solely on team memory or sparse documentation.</p>
+            </div>
+            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+                <h3 class="text-xl font-semibold mb-3">What's the typical ROI for teams?</h3>
+                <p class="text-gray-700">Agile teams typically report saving 3-5 hours per week on documentation tasks. Additionally, they see improved accountability, better implementation of retrospective actions, and more detailed information for stakeholders, leading to fewer miscommunications and rework cycles.</p>
+            </div>
+            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+                <h3 class="text-xl font-semibold mb-3">How does it help with ISO compliance?</h3>
+                <p class="text-gray-700">For teams in regulated environments, CaptiOCR provides timestamped, consistent documentation of development decisions, requirement discussions, and process improvements. This creates an audit trail that helps satisfy ISO 9001, ISO 27001, and similar quality management requirements.</p>
+            </div>
+            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+                <h3 class="text-xl font-semibold mb-3">Does it work for all project types?</h3>
+                <p class="text-gray-700">While designed with agile ceremonies in mind, CaptiOCR works equally well for waterfall project reviews, design thinking workshops, and hybrid methodologies. Any meeting with on-screen captions can be documented regardless of project management approach.</p>
+            </div>
+            <div class="bg-gray-100 rounded-xl p-6 shadow-md">
+                <h3 class="text-xl font-semibold mb-3">What about non-English languages?</h3>
+                <p class="text-gray-700">CaptiOCR supports multiple languages including English, Italian, French, Spanish, German, and Portuguese. International or multilingual agile teams can document meetings in their preferred language as long as the caption system supports it.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-20 px-4 bg-blue-700 text-white">
+    <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Transform Your Agile Meetings Today</h2>
+        <p class="text-xl mb-10">
+            Download CaptiOCR, streamline your team's documentation, and ensure no valuable insight from your agile ceremonies is ever lost again.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a
+                href="https://github.com/carlosacchi/captiocr/releases"
+                target="_blank"
+                rel="noreferrer"
+                class="bg-white text-blue-700 hover:bg-blue-100 px-8 py-4 rounded-full font-semibold text-lg flex items-center transition duration-300 ease-in-out"
+            >
+                <i class="fas fa-download mr-3 text-2xl"></i> Download Now
+            </a>
+            <a
+                href="https://github.com/carlosacchi/captiocr"
+                target="_blank"
+                rel="noreferrer"
+                class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-700 px-8 py-4 rounded-full font-semibold text-lg flex items-center transition duration-300 ease-in-out"
+            >
+                <i class="fab fa-github mr-3 text-2xl"></i> View on GitHub
+            </a>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12 px-4">
+<div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+            <h3 class="text-xl font-semibold mb-4">CaptiOCR</h3>
+            <p class="text-gray-400">
+                Enhance productivity with real-time caption extraction and transcription for online communications.
+            </p>
+        </div>
+        <div>
+            <h3 class="text-xl font-semibold mb-4">Resources</h3>
+            <ul class="space-y-2">
+                <li><a href="https://github.com/carlosacchi/captiocr" target="_blank" class="text-gray-400 hover:text-white transition">GitHub Repository</a></li>
+                <li><a href="https://github.com/carlosacchi/captiocr/issues" target="_blank" class="text-gray-400 hover:text-white transition">Report Issues</a></li>
+                <li><a href="https://github.com/carlosacchi/captiocr/releases" target="_blank" class="text-gray-400 hover:text-white transition">Download Latest Version</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text-xl font-semibold mb-4">Related Pages</h3>
+            <ul class="space-y-2">
+                <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                <li><a href="caption-transcriber.html" class="text-gray-400 hover:text-white transition">Caption Transcriber</a></li>
+                <li><a href="live-caption-reader.html" class="text-gray-400 hover:text-white transition">Live Caption Reader</a></li>
+                <li><a href="meeting-transcriber.html" class="text-gray-400 hover:text-white transition">Meeting Transcriber</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="border-t border-gray-800 pt-8 text-center">
+        <p>© <script>document.write(new Date().getFullYear());</script> CaptiOCR. All rights reserved.</p>
+        <p class="text-gray-500 mt-2">
+            Real-time caption transcription technology that helps you capture and process on-screen text automatically.
+        </p>
+        <div class="mt-6 flex flex-wrap justify-center space-x-2 sm:space-x-6 gap-y-2">
+            <a href="https://github.com/carlosacchi/captiocr" target="_blank" rel="noreferrer" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out text-sm sm:text-base">GitHub</a>
+            <a href="legal/privacy.html" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out text-sm sm:text-base">Privacy Policy</a>
+            <a href="legal/terms.html" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out text-sm sm:text-base">Terms of Use</a>
+            <a href="legal/legal.html" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out text-sm sm:text-base">Legal Information</a>
+            <a href="legal/instructions.html" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out text-sm sm:text-base">Instructions</a>
+            <a href="legal/transcriber-comparison.html" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out text-sm sm:text-base">Transcribers Comparison</a>
+        </div>
+        <p class="text-gray-600 text-sm mt-8">
+            Caption Transcriber Software for Windows | Privacy-Focused Text Extraction from Live Captions
+        </p>
+    </div>
+</div>
+</footer>
+
+<!-- Basic script to update current version from GitHub -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('https://api.github.com/repos/carlosacchi/captiocr/releases/latest')
+        .then(response => response.json())
+        .then(data => {
+            const versionElements = document.querySelectorAll('#current-version');
+            versionElements.forEach(el => {
+                el.textContent = data.tag_name || 'v0.1.0';
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching version:', error);
+            const versionElements = document.querySelectorAll('#current-version');
+            versionElements.forEach(el => {
+                el.textContent = 'v0.1.0';
+            });
+        });
+});
+</script>
+</body>
+</html>
