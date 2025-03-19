@@ -31,20 +31,42 @@
             <h3>Supported Platform</h3>
             <p>Currently, CaptiOCR supports Microsoft Windows operating systems.</p>
 
-            <h3>Prerequisites</h3>
-            <p>Ensure you have the following installed:</p>
-            <ul>
-                <li>Python (version 3.6 or higher, if using the script version)</li>
-                <li>Tesseract OCR at <strong style='background-color: yellow;'><code>C:\Program Files\Tesseract-OCR\tesseract.exe</strong></code></li>
-                <li>Tesseract language data at <code>C:\Program Files\Tesseract-OCR\tessdata</code></li>
-            </ul>
-            <p>If Tesseract OCR is not installed, the application will offer to download and install it for you automatically.</p>
-
-            <h3>Installation</h3>
+            <h3>Installation Methods</h3>
+            
+            <h4>Method 1: Using the Executable (Recommended)</h4>
             <ol>
-                <li>Download the CaptiOCR executable (.exe) or Python script (.py)</li>
-                <li>Installation in your user documents folder is recommended as some operations may require administrator privileges</li>
-                <li>The application will create the following directories:
+                <li>Download the CaptiOCR executable (.exe) from the official website or repository</li>
+                <li>Place the executable in a folder where you have write permissions (e.g., your Documents folder)</li>
+                <li>Double-click the executable to run the application</li>
+                <li><strong>Note:</strong> On first run, the application will:
+                    <ul>
+                        <li>Create necessary directories (captures, config, logs, resources, tessdata)</li>
+                        <li>Check if Tesseract OCR is installed and offer to download it if not found</li>
+                        <li>Automatically handle all dependencies</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h4>Method 2: Using the Python Script (For Developers)</h4>
+            <ol>
+                <li>Clone or download the CaptiOCR repository from GitHub</li>
+                <li>Ensure you have Python 3.6 or higher installed</li>
+                <li>Install required Python dependencies:
+                    <pre>pip install pillow pytesseract keyboard tkinter</pre>
+                </li>
+                <li>Manually install Tesseract OCR on your system:
+                    <ul>
+                        <li>Download from <a href="https://github.com/tesseract-ocr/tesseract">Tesseract GitHub</a></li>
+                        <li>Install to the default location <code>C:\Program Files\Tesseract-OCR\</code></li>
+                    </ul>
+                </li>
+                <li>Run the script: <code>python CaptiOCR.py</code></li>
+            </ol>
+
+            <h3>Automatic Setup on First Run</h3>
+            <p>When you first run CaptiOCR, the application performs several automatic setup tasks:</p>
+            <ol>
+                <li><strong>Directory Creation:</strong> Creates the following directories:
                     <ul>
                         <li><code>captures</code> - Where all captured text files are saved</li>
                         <li><code>config</code> - For application settings</li>
@@ -53,13 +75,21 @@
                         <li><code>tessdata</code> - For custom language files if downloaded</li>
                     </ul>
                 </li>
+                <li><strong>Tesseract OCR Check:</strong> 
+                    <ul>
+                        <li>Verifies if Tesseract OCR is installed at <code>C:\Program Files\Tesseract-OCR\tesseract.exe</code></li>
+                        <li>If not found, offers to download and install it automatically</li>
+                        <li>Guides you through the installation process with a simple wizard</li>
+                    </ul>
+                </li>
+                <li><strong>Language Check:</strong>
+                    <ul>
+                        <li>Checks if language files for your selected language are available</li>
+                        <li>If missing, offers to download them automatically</li>
+                        <li>Downloads language files to a local tessdata directory for easy access</li>
+                    </ul>
+                </li>
             </ol>
-
-            <h3>Starting CaptiOCR</h3>
-            <ul>
-                <li>Executable (.exe): Double-click to start</li>
-                <li>Python script (.py): Execute via Python interpreter</li>
-            </ul>
 
             <h3>Main Interface</h3>
             <ul>
@@ -100,6 +130,7 @@
                     <ul>
                         <li>Select your desired language from the dropdown menu.</li>
                         <li>If the language data isn't available, CaptiOCR will offer to download it automatically.</li>
+                        <li>The application will check if the selected language files are installed and prompt you to download them if necessary.</li>
                     </ul>
                 </li>
                 <li><strong>Advanced Options</strong>:
@@ -112,7 +143,7 @@
                 <li><strong>Starting Capture</strong>:
                     <ul>
                         <li>Click the green <strong>Start (Select Area)</strong> button.</li>
-                        <li>A semi-transparent black overlay will appear.</li>
+                        <li>A semi-transparent black overlay will appear over your screen.</li>
                         <li>Click and drag to select the area containing the captions you want to capture.</li>
                         <li>Press <strong>Enter</strong> to confirm your selection (or <strong>ESC</strong> to cancel).</li>
                     </ul>
@@ -120,8 +151,9 @@
                 <li><strong>During Capture</strong>:
                     <ul>
                         <li>A transparent yellow window indicates the active capture area.</li>
+                        <li>This window includes a blue control bar with status information and a STOP button.</li>
                         <li>OCR results will appear in real-time in the application window.</li>
-                        <li>You can move the yellow capture window by dragging it to follow moving captions.</li>
+                        <li>You can move the yellow capture window by clicking and dragging it to follow moving captions.</li>
                         <li>The application automatically adjusts capture frequency based on content changes.</li>
                     </ul>
                 </li>
@@ -129,6 +161,7 @@
                     <ul>
                         <li>Press <strong>Ctrl+Q</strong> or click the red <strong>STOP</strong> button on the capture window.</li>
                         <li>You'll be prompted to provide a custom name for the saved file.</li>
+                        <li>If you cancel or leave the field empty, a default timestamp-based name will be used.</li>
                     </ul>
                 </li>
             </ol>
@@ -140,13 +173,19 @@
                 <li><strong>Maximum interval</strong>: Longest time between captures (default: 5 seconds)</li>
                 <li><strong>Increase after (reads)</strong>: Number of similar captures before increasing interval (default: 1)</li>
             </ul>
-            <p>The application dynamically adjusts capture frequency based on content changes to balance accuracy and resource usage.</p>
+            <p>The application dynamically adjusts capture frequency to optimize system resources:</p>
+            <ul>
+                <li>When new content is detected, the interval resets to the minimum value</li>
+                <li>When similar content is repeatedly detected, the interval gradually increases</li>
+                <li>The interval status is displayed at the bottom of the application window</li>
+            </ul>
 
             <h3>Settings Management</h3>
             <ul>
                 <li>Use <strong>File → Save Settings</strong> to save your current configuration with a custom profile name.</li>
                 <li>Use <strong>File → Load Settings</strong> to choose from previously saved profiles.</li>
                 <li>Settings are automatically saved when closing the application.</li>
+                <li>Settings include language preference, debug mode, capture intervals, and more.</li>
             </ul>
 
             <h3>Output Files</h3>
@@ -155,14 +194,16 @@
                 <li><strong>Processed files</strong>: <code>[custom_name]_capture_YYYY-MM-DD-HH-MM-SS_processed.txt</code></li>
                 <li><strong>Debug logs</strong>: <code>log_YYYY-MM-DD-HH-MM-SS.txt</code> and <code>ocr_debug.log</code></li>
             </ul>
-            <p>All files are saved in the <code>captures</code> directory by default.</p>
+            <p>All files are saved in the <code>captures</code> directory by default. You can access this folder through <strong>File → Open Captures Folder</strong>.</p>
 
             <h3>Post-Processing</h3>
             <p>When you stop a capture session, CaptiOCR automatically:</p>
             <ul>
+                <li>Analyzes the captured text to identify unique content</li>
                 <li>Removes duplicate text blocks to clean up the transcript</li>
                 <li>Organizes captured text with timestamps</li>
                 <li>Creates a processed file with the custom name you provide</li>
+                <li>Maintains the original capture file for reference</li>
             </ul>
 
             <h3>Language Support</h3>
@@ -175,25 +216,60 @@
                 <li>German (deu)</li>
                 <li>Portuguese (por)</li>
             </ul>
-            <p>Missing language files are downloaded automatically when selected, or you can download them manually.</p>
+            <p>When you select a language, the application will:</p>
+            <ol>
+                <li>Check if the language file is available in the standard Tesseract directory</li>
+                <li>If not found, check if it's in the application's custom tessdata directory</li>
+                <li>If still not found, offer to download the language file automatically</li>
+                <li>Download and install the language file when you confirm</li>
+            </ol>
 
             <h3>Troubleshooting</h3>
             <ul>
-                <li><strong>OCR not working</strong>: Verify Tesseract installation paths in the settings.</li>
-                <li><strong>Missing languages</strong>: Allow the application to download language data when prompted.</li>
-                <li><strong>Capture window issues</strong>: Try restarting the application.</li>
-                <li><strong>Poor text recognition</strong>: Enable "Live Caption Optimization" for better results with captions.</li>
-                <li><strong>High resource usage</strong>: Increase the minimum capture interval in settings.</li>
-                <li><strong>Detailed logs</strong>: Enable Debug Logging and check the logs folder for troubleshooting.</li>
+                <li><strong>Tesseract installation errors:</strong>
+                    <ul>
+                        <li>The application will attempt to install Tesseract automatically</li>
+                        <li>If automatic installation fails, download and install Tesseract manually from the <a href="https://github.com/tesseract-ocr/tesseract">official repository</a></li>
+                        <li>Ensure it's installed to <code>C:\Program Files\Tesseract-OCR\</code></li>
+                    </ul>
+                </li>
+                <li><strong>Language download issues:</strong>
+                    <ul>
+                        <li>Check your internet connection</li>
+                        <li>Try downloading the language files manually from <a href="https://github.com/tesseract-ocr/tessdata">Tesseract tessdata repository</a></li>
+                        <li>Place downloaded .traineddata files in <code>C:\Program Files\Tesseract-OCR\tessdata\</code></li>
+                    </ul>
+                </li>
+                <li><strong>Capture window issues:</strong>
+                    <ul>
+                        <li>If the selection window gets stuck, press ESC and try again</li>
+                        <li>If the capture window disappears, stop the application and restart</li>
+                    </ul>
+                </li>
+                <li><strong>Poor text recognition:</strong>
+                    <ul>
+                        <li>Enable "Live Caption Optimization" in the Settings menu</li>
+                        <li>Ensure you've selected the correct language</li>
+                        <li>Choose a smaller capture area focused only on the text</li>
+                    </ul>
+                </li>
+                <li><strong>Log files for troubleshooting:</strong>
+                    <ul>
+                        <li>Enable Debug Logging in the Settings menu</li>
+                        <li>Access logs through File → Open Log Folder</li>
+                        <li>Check both <code>log_YYYY-MM-DD-HH-MM-SS.txt</code> and <code>ocr_debug.log</code></li>
+                    </ul>
+                </li>
             </ul>
 
             <h3>Tips for Best Results</h3>
             <ul>
-                <li>Select only the caption area, avoiding other screen elements.</li>
-                <li>Use "Live Caption Optimization" for better recognition of typical captions.</li>
-                <li>For static captions, use a longer capture interval to reduce processing.</li>
-                <li>For fast-changing captions, use a shorter interval to catch more text.</li>
-                <li>Select the correct language for best recognition accuracy.</li>
+                <li>Select only the caption area, avoiding other screen elements</li>
+                <li>Use "Live Caption Optimization" for better recognition of typical captions</li>
+                <li>For static captions, use a longer capture interval to reduce processing</li>
+                <li>For fast-changing captions, use a shorter interval to catch more text</li>
+                <li>Select the correct language for best recognition accuracy</li>
+                <li>When capturing from videos, position the capture window to follow the caption area</li>
             </ul>
 
             <p>CaptiOCR is ideal for recording temporary on-screen text, particularly for meetings, webinars, or presentations with live captions. The application works locally on your machine for privacy.</p>
