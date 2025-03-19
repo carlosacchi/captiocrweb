@@ -504,6 +504,7 @@ export default function CaptiOCRLanding() {
                         <div>
                             <h3 className="text-xl font-semibold mb-4">Use Cases</h3>
                             <ul className="space-y-2">
+                                <li><a href="caption-transcriber.html" className="text-gray-400 hover:text-white transition">Caption Transcriber</a></li>
                                 <li><a href="#features" className="text-gray-400 hover:text-white transition">Remote Work Optimization</a></li>
                                 <li><a href="#features" className="text-gray-400 hover:text-white transition">Digital Communication</a></li>
                                 <li><a href="#features" className="text-gray-400 hover:text-white transition">Text Extraction</a></li>
