@@ -243,7 +243,7 @@ export default function CaptiOCRLanding() {
                     <h2 className="text-4xl font-bold text-center mb-12">How CaptiOCR Simplifies Your Workflow</h2>
                     <div className="grid md:grid-cols-2 gap-12">
                         <div>
-                            <div className="flex items-start mb-6">
+                            <div className="flex flex-col items-center justify-center text-center mb-6">
                                 <FaDesktop className="text-blue-700 h-10 w-10 mr-4" />
                                 <h3 className="text-2xl text-center font-semibold">Seamless Caption Extraction</h3>
                             </div>
@@ -252,7 +252,7 @@ export default function CaptiOCRLanding() {
                             </p>
                         </div>
                         <div>
-                            <div className="flex items-start mb-6">
+                            <div className="flex flex-col items-center justify-center text-center mb-6">
                                 <FaCopy className="text-green-600 h-10 w-10 mr-4" />
                                 <h3 className="text-2xl text-center font-semibold">Smart Text Processing</h3>
                             </div>
@@ -261,7 +261,7 @@ export default function CaptiOCRLanding() {
                             </p>
                         </div>
                         <div>
-                            <div className="flex items-start mb-6">
+                            <div className="flex flex-col items-center justify-center text-center mb-6">
                                 <FaRobot className="text-purple-600 h-10 w-10 mr-4" />
                                 <h3 className="text-2xl text-center font-semibold">Information Management</h3>
                             </div>
@@ -270,7 +270,7 @@ export default function CaptiOCRLanding() {
                             </p>
                         </div>
                         <div>
-                            <div className="flex items-start mb-6">
+                            <div className="flex flex-col items-center justify-center text-center mb-6">
                                 <LockClosedIcon className="text-red-600 h-10 w-10 mr-4" />
                                 <h3 className="text-2xl text-center font-semibold">Total Data Control</h3>
                             </div>
