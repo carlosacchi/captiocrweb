@@ -7,58 +7,55 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- SEO Keyword Pages -->
+
   <url>
     <loc>https://www.captiocr.com/caption-transcriber.html</loc>
     <lastmod>2025-03-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
-  <!-- Legal Pages -->
   <url>
     <loc>https://www.captiocr.com/legal/privacy.html</loc>
     <lastmod>2025-03-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.captiocr.com/legal/terms.html</loc>
     <lastmod>2025-03-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.captiocr.com/legal/legal.html</loc>
     <lastmod>2025-03-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
-  
-  <!-- Documentation Pages -->
+
   <url>
     <loc>https://www.captiocr.com/legal/instructions.html</loc>
     <lastmod>2025-03-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.captiocr.com/legal/transcriber-comparison.html</loc>
     <lastmod>2025-03-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
     <url>
     <loc>https://www.captiocr.com/live-caption-reader.html</loc>
     <lastmod>2025-03-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.captiocr.com/meeting-transcriber.html</loc>
     <lastmod>2025-03-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
