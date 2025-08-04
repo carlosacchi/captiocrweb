@@ -33,12 +33,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: './web/package-lock.json'
 
-      - name: Install dependencies 📦
+      - name: Clean and install dependencies 📦
         run: |
-          npm ci --prefer-offline --no-audit
+          # Ensure clean state
+          rm -rf node_modules package-lock.json
+          # Fresh install with current package.json
+          npm install --no-audit
 
       - name: Build website 🏗️
         run: |
