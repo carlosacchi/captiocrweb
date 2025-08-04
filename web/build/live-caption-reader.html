@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaptiOCR Live Caption Reader | Extract Text from Meeting Subtitles</title>
+    <meta name="robots" content="index, follow" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="CaptiOCR live caption reader automatically extracts text from on-screen captions during meetings, webinars, and online courses. Convert real-time subtitles to editable text with this privacy-focused tool." />
+    <meta name="keywords" content="live caption reader, meeting subtitle extraction, webinar caption capture, online course captions, real-time caption to text, zoom caption reader, teams caption extraction, google meet captions, subtitle to text converter, accessible meeting tools" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Live Caption Reader for Meetings & Webinars | CaptiOCR" />
+    <meta property="og:description" content="Extract text from live captions in real-time during meetings, webinars, and online courses. Convert subtitles to editable text automatically." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.captiocr.com/live-caption-reader.html" />
+    
+    <!-- Tailwind CSS CDN - for styling similar to the React landing page -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    
+    <!-- Custom Styles to supplement Tailwind -->
+    <style>
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-900">
+    <!-- Hero Section -->
+    <header class="bg-blue-700 text-white py-20 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">CaptiOCR - Live Caption Reader</h1>
+            <h2 class="text-3xl md:text-4xl font-semibold mb-4">Extract Text from Meeting & Webinar Captions in Real-Time</h2>
+            <p class="text-xl md:text-2xl mb-10">
+                Stop struggling to keep up with fast-moving subtitles. CaptiOCR automatically reads and captures live captions from meetings, webinars, and online courses, giving you complete, editable transcripts.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a 
+                    href="https://github.com/carlosacchi/captiocr/releases" 
+                    target="_blank"
+                    rel="noreferrer"
+                    class="bg-white text-blue-700 hover:bg-blue-100 px-8 py-4 rounded-full font-semibold text-lg flex items-center transition duration-300 ease-in-out"
+                >
+                    <i class="fas fa-download mr-3 text-2xl"></i> Download CaptiOCR
+                </a>
+                <a
+                    href="#how-it-works"
+                    class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-700 px-8 py-4 rounded-full font-semibold text-lg transition duration-300 ease-in-out"
+                >
+                    Learn How It Works
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Benefits Section -->
+        <section class="py-16 px-4 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-6">Why Choose CaptiOCR as Your Live Caption Reader</h2>
+                <p class="text-xl text-center text-gray-700 mb-12 max-w-4xl mx-auto">
+                    CaptiOCR's live caption reader technology helps education and business professionals capture every word from meetings, webinars, and online courses without the mental strain of manual note-taking.
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div class="text-center p-8 bg-gray-100 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex justify-center mb-6">
+                            <i class="fas fa-graduation-cap text-red-500" style="font-size: 3rem;"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Perfect for Online Learning</h3>
+                        <p class="text-gray-700 text-lg">
+                            Capture every word from online courses, lectures, and educational webinars. Review complex concepts later at your own pace.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center p-8 bg-gray-100 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex justify-center mb-6">
+                            <i class="fas fa-comments text-blue-600" style="font-size: 3rem;"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Enhanced Meeting Participation</h3>
+                        <p class="text-gray-700 text-lg">
+                            Focus on the conversation instead of frantically taking notes. CaptiOCR reads the captions while you engage fully in the discussion.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center p-8 bg-gray-100 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex justify-center mb-6">
+                            <i class="fas fa-universal-access text-green-600" style="font-size: 3rem;"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Accessibility Support</h3>
+                        <p class="text-gray-700 text-lg">
+                            Ideal for those with hearing difficulties, processing disorders, or non-native speakers who benefit from reviewing text at their own pace.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Comparison Section -->
+        <section class="py-16 px-4 bg-gray-100">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">Live Caption Reading vs Other Methods</h2>
+                
+                <!-- Visual comparison chart -->
+                <div class="bg-white p-8 rounded-xl shadow-lg mb-16">
+                    <h3 class="text-2xl font-semibold mb-6 text-center">Comparing Live Caption Reading Solutions</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full border-collapse">
+                            <thead>
+                                <tr class="bg-blue-100">
+                                    <th class="p-3 text-left border border-gray-300">Feature</th>
+                                    <th class="p-3 text-center border border-gray-300">CaptiOCR</th>
+                                    <th class="p-3 text-center border border-gray-300">Platform Built-in Tools</th>
+                                    <th class="p-3 text-center border border-gray-300">Manual Note-Taking</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="p-3 border border-gray-300">Editable Text Output</td>
+                                    <td class="p-3 text-center border border-gray-300 text-green-600">✓ Complete Transcript</td>
+                                    <td class="p-3 text-center border border-gray-300 text-red-600">✗ Often Not Available</td>
+                                    <td class="p-3 text-center border border-gray-300 text-yellow-600">⚠ Limited & Manual</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="p-3 border border-gray-300">Cross-Platform Support</td>
+                                    <td class="p-3 text-center border border-gray-300 text-green-600">✓ All Services</td>
+                                    <td class="p-3 text-center border border-gray-300 text-red-600">✗ Platform-Specific</td>
+                                    <td class="p-3 text-center border border-gray-300 text-green-600">✓ Yes</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 border border-gray-300">Maintains Full Attention</td>
+                                    <td class="p-3 text-center border border-gray-300 text-green-600">✓ Yes</td>
+                                    <td class="p-3 text-center border border-gray-300 text-yellow-600">⚠ Partial</td>
+                                    <td class="p-3 text-center border border-gray-300 text-red-600">✗ No</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="p-3 border border-gray-300">Preserves Fast-Moving Captions</td>
+                                    <td class="p-3 text-center border border-gray-300 text-green-600">✓ Captures Everything</td>
+                                    <td class="p-3 text-center border border-gray-300 text-red-600">✗ Often Lost</td>
+                                    <td class="p-3 text-center border border-gray-300 text-red-600">✗ Too Fast to Record</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 border border-gray-300">Speaker Identification</td>
+                                    <td class="p-3 text-center border border-gray-300 text-green-600">✓ Preserved</td>
+                                    <td class="p-3 text-center border border-gray-300 text-yellow-600">⚠ Sometimes</td>
+                                    <td class="p-3 text-center border border-gray-300 text-yellow-600">⚠ Manual Effort</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="p-3 border border-gray-300">Privacy Protection</td>
+                                    <td class="p-3 text-center border border-gray-300 text-green-600">✓ 100% Local</td>
+                                    <td class="p-3 text-center border border-gray-300 text-red-600">✗ Often Cloud-Based</td>
+                                    <td class="p-3 text-center border border-gray-300 text-green-600">✓ Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Key advantages -->
+                <h3 class="text-2xl font-semibold mb-10 text-blue-700 text-center w-full">Key Advantages of CaptiOCR Live Caption Reader</h3>
+                
+                <div class="grid md:grid-cols-2 grid-cols-1 gap-8 md:gap-16">
+                    <div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mr-2 mt-1" style="font-size: 1.5rem;"></i>
+                                <p><strong>Captures Fast-Moving Captions:</strong> Never miss important information again, even when captions change quickly during fast-paced discussions or lectures.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mr-2 mt-1" style="font-size: 1.5rem;"></i>
+                                <p><strong>Preserves Context:</strong> CaptiOCR maintains timestamps, speaker names, and visual information that provide valuable context to the conversation.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mr-2 mt-1" style="font-size: 1.5rem;"></i>
+                                <p><strong>Learn at Your Own Pace:</strong> Review complex webinar or course content later, making it easier to absorb difficult concepts without falling behind.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mr-2 mt-1" style="font-size: 1.5rem;"></i>
+                                <p><strong>Works with All Platforms:</strong> Unlike built-in tools, CaptiOCR reads captions from any platform including Zoom, Teams, Google Meet, Webex, and educational platforms.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mr-2 mt-1" style="font-size: 1.5rem;"></i>
+                                <p><strong>Complete Privacy:</strong> All caption reading happens locally on your device with no cloud processing, protecting sensitive meeting content and personal data.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mr-2 mt-1" style="font-size: 1.5rem;"></i>
+                                <p><strong>Language Support:</strong> Read captions in multiple languages, making it ideal for international meetings, multi-language webinars, and foreign language courses.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Core Advantages Section -->
+        <section class="py-16 px-4 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">Core Live Caption Reading Features</h2>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div class="text-center p-8 bg-gray-100 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex justify-center mb-6">
+                            <i class="fas fa-book-reader text-yellow-500" style="font-size: 3rem;"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Real-Time Caption Reading</h3>
+                        <p class="text-gray-700 text-lg">
+                            CaptiOCR continuously reads and captures on-screen captions as they appear, ensuring you never miss important information no matter how quickly the captions change.
+                        </p>
+                    </div>
+                    <div class="text-center p-8 bg-gray-100 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex justify-center mb-6">
+                            <i class="fas fa-file-alt text-blue-600" style="font-size: 3rem;"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Automatic Transcript Creation</h3>
+                        <p class="text-gray-700 text-lg">
+                            Transform ephemeral meeting captions into permanent, editable documents. Each captured session becomes a searchable text file you can reference or share.
+                        </p>
+                    </div>
+                    <div class="text-center p-8 bg-gray-100 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex justify-center mb-6">
+                            <i class="fas fa-cogs text-green-600" style="font-size: 3rem;"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Intelligent Caption Processing</h3>
+                        <p class="text-gray-700 text-lg">
+                            CaptiOCR intelligently removes duplicates, filters out system messages, and organizes content by speaker, creating clean, readable transcripts from live captions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-20 px-4 bg-gray-100">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">How Live Caption Reading Works</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="bg-blue-700 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                            1
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Enable Meeting Captions</h3>
+                        <p class="text-gray-700">
+                            Turn on live captions in your meeting, webinar, or online course platform (Zoom, Teams, Google Meet, etc.)
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-blue-700 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                            2
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Select Caption Area</h3>
+                        <p class="text-gray-700">
+                            Use CaptiOCR to draw a selection box around the area where captions appear on your screen.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-blue-700 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                            3
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Automatic Reading</h3>
+                        <p class="text-gray-700">
+                            CaptiOCR reads and captures all text that appears in the selected area, creating a running transcript in real-time.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-blue-700 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                            4
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Save & Process</h3>
+                        <p class="text-gray-700">
+                            When your session ends, CaptiOCR processes the captured captions, removing duplicates and organizing them into a clean transcript.
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-10 text-center">
+                    <p class="text-gray-700 text-lg">
+                        <strong class="text-blue-700">Works with all captioning systems:</strong> Automatic speech recognition, human-generated captions, embedded subtitles, and any text that appears on your screen.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Use Cases Section -->
+        <section class="py-20 px-4 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">Live Caption Reader Use Cases</h2>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div class="text-center">
+                        <div class="mb-6">
+                            <i class="fas fa-chalkboard-teacher text-blue-600 mx-auto" style="font-size: 4rem;"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Online Courses & Lectures</h3>
+                        <p class="text-gray-700 text-lg">
+                            Automatically capture lecture content from online courses. Review complex concepts at your own pace without missing what comes next.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="mb-6">
+                            <i class="fas fa-users text-green-600 mx-auto" style="font-size: 4rem;"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Virtual Team Meetings</h3>
+                        <p class="text-gray-700 text-lg">
+                            Focus on participating in the discussion while CaptiOCR reads and captures every important detail, decision, and action item.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="mb-6">
+                            <i class="fas fa-laptop text-yellow-500 mx-auto" style="font-size: 4rem;"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Webinars & Presentations</h3>
+                        <p class="text-gray-700 text-lg">
+                            Get complete transcripts from webinars and online presentations. Extract key information and share insights with colleagues easily.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="py-20 px-4 bg-gray-100">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 md:gap-8 max-w-5xl mx-auto">
+                    <div class="bg-white rounded-xl p-6 shadow-md">
+                        <h3 class="text-xl font-semibold mb-3">How accurately does CaptiOCR read captions?</h3>
+                        <p class="text-gray-700">CaptiOCR achieves high accuracy when reading on-screen captions because it captures the actual text displayed. It works with both automated and human-generated captions across all platforms.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-md">
+                        <h3 class="text-xl font-semibold mb-3">Can it read captions from pre-recorded videos?</h3>
+                        <p class="text-gray-700">Yes, CaptiOCR works with any visible captions, including those in pre-recorded videos, webinars, or online course materials, as long as the captions are displayed on your screen.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-md">
+                        <h3 class="text-xl font-semibold mb-3">Does it work with all video conferencing platforms?</h3>
+                        <p class="text-gray-700">Yes, CaptiOCR works with any platform that displays captions on screen, including Zoom, Microsoft Teams, Google Meet, Webex, GoToMeeting, educational platforms, and streaming services.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-md">
+                        <h3 class="text-xl font-semibold mb-3">How does it handle fast-changing captions?</h3>
+                        <p class="text-gray-700">CaptiOCR continuously monitors the caption area and captures text several times per second. This ensures it can read and record even rapidly changing captions that would be impossible to copy manually.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-md">
+                        <h3 class="text-xl font-semibold mb-3">Is my meeting content secure?</h3>
+                        <p class="text-gray-700">Absolutely. CaptiOCR processes everything locally on your device. No caption text is ever sent to external servers, making it suitable for confidential meetings, proprietary courses, and sensitive discussions.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-md">
+                        <h3 class="text-xl font-semibold mb-3">What languages are supported?</h3>
+                        <p class="text-gray-700">CaptiOCR currently supports reading captions in English, Italian, French, Spanish, German, and Portuguese. This makes it ideal for international meetings and language learning environments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="py-20 px-4 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">What Users Say About Our Live Caption Reader</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gray-100 p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-700 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                R
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-semibold">Rachel D.</h3>
+                                <p class="text-gray-600">Online Education Specialist</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">
+                            "As someone who creates and participates in online courses, CaptiOCR has transformed how I work. I can focus on the content while knowing I'll have a complete transcript to review later. My students love getting the transcripts too!"
+                        </p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                K
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-semibold">Kevin M.</h3>
+                                <p class="text-gray-600">Student with ADHD</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">
+                            "I have ADHD and often struggle to take notes while keeping up with lectures. CaptiOCR reads all the captions for me, allowing me to focus completely on understanding the material instead of frantically writing everything down."
+                        </p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                L
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-semibold">Lisa T.</h3>
+                                <p class="text-gray-600">Corporate Trainer</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">
+                            "Our company runs dozens of webinars monthly. CaptiOCR automatically reads and captures all the captions, giving us perfect transcripts without additional cost. It's more accurate than speech-to-text and works with any platform."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action -->
+        <section class="py-20 px-4 bg-blue-700 text-white">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-8">Start Reading Live Captions Today</h2>
+                <p class="text-xl mb-10">
+                    Download CaptiOCR, never miss important information again, and create perfect transcripts from all your meetings, webinars, and online courses.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a
+                        href="https://github.com/carlosacchi/captiocr/releases"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="bg-white text-blue-700 hover:bg-blue-100 px-8 py-4 rounded-full font-semibold text-lg flex items-center transition duration-300 ease-in-out"
+                    >
+                        <i class="fas fa-download mr-3 text-2xl"></i> Download Now
+                    </a>
+                    <a
+                        href="https://github.com/carlosacchi/captiocr"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-700 px-8 py-4 rounded-full font-semibold text-lg flex items-center transition duration-300 ease-in-out"
+                    >
+                        <i class="fab fa-github mr-3 text-2xl"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">CaptiOCR</h3>
+                    <p class="text-gray-400">
+                        Enhance productivity with real-time caption extraction and transcription for online communications.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://github.com/carlosacchi/captiocr" target="_blank" class="text-gray-400 hover:text-white transition">GitHub Repository</a></li>
+                        <li><a href="https://github.com/carlosacchi/captiocr/issues" target="_blank" class="text-gray-400 hover:text-white transition">Report Issues</a></li>
+                        <li><a href="https://github.com/carlosacchi/captiocr/releases" target="_blank" class="text-gray-400 hover:text-white transition">Download Latest Version</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Related Pages</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="caption-transcriber.html" class="text-gray-400 hover:text-white transition">Caption Transcriber</a></li>
+                        <li><a href="live-caption-reader.html" class="text-gray-400 hover:text-white transition">Live Caption Reader</a></li>
+                        <li><a href="meeting-transcriber.html" class="text-gray-400 hover:text-white transition">Meeting Transcriber</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p>© <script>document.write(new Date().getFullYear());</script> CaptiOCR. All rights reserved.</p>
+                <p class="text-gray-500 mt-2">
+                    Real-time caption transcription technology that helps you capture and process on-screen text automatically.
+                </p>
+                <div class="mt-6 flex flex-wrap justify-center space-x-2 sm:space-x-6 gap-y-2">
+                    <a href="https://github.com/carlosacchi/captiocr" target="_blank" rel="noreferrer" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out text-sm sm:text-base">GitHub</a>
+                    <a href="legal/privacy.html" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out text-sm sm:text-base">Privacy Policy</a>
+                    <a href="legal/terms.html" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out text-sm sm:text-base">Terms of Use</a>
+                    <a href="legal/legal.html" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out text-sm sm:text-base">Legal Information</a>
+                    <a href="legal/instructions.html" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out text-sm sm:text-base">Instructions</a>
+                    <a href="legal/transcriber-comparison.html" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out text-sm sm:text-base">Transcribers Comparison</a>
+                </div>
+                <p class="text-gray-600 text-sm mt-8">
+                    Caption Transcriber Software for Windows | Privacy-Focused Text Extraction from Live Captions
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Basic script to update current version from GitHub -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('https://api.github.com/repos/carlosacchi/captiocr/releases/latest')
+                .then(response => response.json())
+                .then(data => {
+                    const versionElements = document.querySelectorAll('#current-version');
+                    versionElements.forEach(el => {
+                        el.textContent = data.tag_name || 'v0.1.0';
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching version:', error);
+                    const versionElements = document.querySelectorAll('#current-version');
+                    versionElements.forEach(el => {
+                        el.textContent = 'v0.1.0';
+                    });
+                });
+        });
+    </script>
+</body>
+</html>

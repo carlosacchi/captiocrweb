@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Allow all robots to index the site
+# Block robots from accessing specific files or directories
+# Disallow: /assets/private/
+
+# Sitemap location
+Sitemap: https://www.captiocr.com/sitemap.xml

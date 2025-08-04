@@ -1,6 +1,6 @@
 {
     "name": "captiocr-web",
-    "version": "0.2.0",
+    "version": "0.1.0",
     "private": true,
     "homepage": "https://www.captiocr.com",
     "dependencies": {
@@ -21,7 +21,6 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "build:analyze": "npm run build && npx webpack-bundle-analyzer build/static/js/*.js",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
     },

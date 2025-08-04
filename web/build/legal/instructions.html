@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaptiOCR - Instructions</title>
+    <meta name="description" content="CaptiOCR - real-time live captions text extraction. Capture captions, enhance focus, and create transcripts automatically from live captions. Boost productivity with this open-source solution. Copy live captions, save live transcription, privacy-focused" />
+    <meta name="keywords" content="Captions on screen text extraction, live captions reader, OCR software, copy paste live text extraction, digital productivity, live transcription tool, open source OCR, privacy-focused transcription, captions to text, local text processing, save live captions, zoom, teams, webinar, meeting, google meet" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>CaptiOCR Instructions</h1>
+    </header>
+    
+    <nav class="bg-gray-100 p-4 text-center">
+        <a href="../index.html" class="mx-2 text-blue-600 hover:underline">Home</a> |
+        <a href="privacy.html" class="mx-2 text-blue-600 hover:underline">Privacy</a> |
+        <a href="terms.html" class="mx-2 text-blue-600 hover:underline">Terms</a> |
+        <a href="legal.html" class="mx-2 text-blue-600 hover:underline">Legal</a> |
+        <a href="instructions.html" class="mx-2 text-blue-600 hover:underline">Instructions</a> |
+        <a href="transcriber-comparison.html" class="mx-2 text-blue-600 hover:underline">Transcribers Comparison</a>       
+    </nav>
+    
+    <main>
+        <section id="instructions">
+            <h2>CaptiOCR User Guide</h2>
+            <p><strong>Effective Date:</strong> March 2025</p>
+            <p>CaptiOCR captures and processes on-screen captions in real-time. It's ideal for meetings, presentations, webinars, and any live sessions with captions.</p>
+
+            <h3>Supported Platform</h3>
+            <p>Currently, CaptiOCR supports Microsoft Windows operating systems.</p>
+
+            <h3>Installation Methods</h3>
+            
+            <h4>Method 1: Using the Installer (Recommended)</h4>
+            <ol>
+                <li>Download the CaptiOCR Installer (.msi) from the official website or repository</li>
+                <li>Run the installation in a folder where you have write permissions (e.g., your Documents folder)</li>
+                <li>Double-click the executable to run the application</li>
+                <li><strong>Note:</strong> On first run, the application will:
+                    <ul>
+                        <li>Create necessary directories (captures, config, logs, resources, tessdata)</li>
+                        <li>Check if Tesseract OCR is installed and offer to download it if not found</li>
+                        <li>Automatically handle all dependencies</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h4>Method 2: Using the Python Script (For Developers)</h4>
+            <ol>
+                <li>Clone or download the CaptiOCR repository from GitHub</li>
+                <li>Ensure you have Python 3.6 or higher installed</li>
+                <li>Install required Python dependencies:
+                    <pre>pip install pillow pytesseract keyboard tkinter</pre>
+                </li>
+                <li>Manually install Tesseract OCR on your system:
+                    <ul>
+                        <li>Download from <a href="https://github.com/tesseract-ocr/tesseract">Tesseract GitHub</a></li>
+                        <li>Install to the default location <code>C:\Program Files\Tesseract-OCR\</code></li>
+                    </ul>
+                </li>
+                <li>Run the script: <code>python CaptiOCR.py</code></li>
+            </ol>
+
+            <h3>Automatic Setup on First Run</h3>
+            <p>When you first run CaptiOCR, the application performs several automatic setup tasks:</p>
+            <ol>
+                <li><strong>Directory Creation:</strong> Creates the following directories:
+                    <ul>
+                        <li><code>captures</code> - Where all captured text files are saved</li>
+                        <li><code>config</code> - For application settings</li>
+                        <li><code>logs</code> - For log files</li>
+                        <li><code>resources</code> - For application resources</li>
+                        <li><code>tessdata</code> - For custom language files if downloaded</li>
+                    </ul>
+                </li>
+                <li><strong>Tesseract OCR Check:</strong> 
+                    <ul>
+                        <li>Verifies if Tesseract OCR is installed at <code>C:\Program Files\Tesseract-OCR\tesseract.exe</code></li>
+                        <li>If not found, offers to download and install it automatically</li>
+                        <li>Guides you through the installation process with a simple wizard</li>
+                    </ul>
+                </li>
+                <li><strong>Language Check:</strong>
+                    <ul>
+                        <li>Checks if language files for your selected language are available</li>
+                        <li>If missing, offers to download them automatically</li>
+                        <li>Downloads language files to a local tessdata directory for easy access</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>Main Interface</h3>
+            <ul>
+                <li><strong>Language selector</strong>: Choose from English, Italian, French, Spanish, German, Portuguese</li>
+                <li><strong>Start button</strong>: Green button to begin the capture process</li>
+                <li><strong>Status area</strong>: Shows current application status</li>
+                <li><strong>Captured text display</strong>: Shows the most recent captured text</li>
+                <li><strong>Menu options</strong>: Access to additional features and settings</li>
+                <li><strong>Interval status</strong>: Shows the current capture interval at the bottom of the window</li>
+            </ul>
+
+            <h3>Menu Options</h3>
+            <h4>File Menu</h4>
+            <ul>
+                <li><strong>Open Captures Folder</strong>: Opens the folder containing saved capture files</li>
+                <li><strong>Save Settings</strong>: Save your current configuration with a custom profile name</li>
+                <li><strong>Load Settings</strong>: Load a previously saved configuration profile</li>
+                <li><strong>Open Log Folder</strong>: Access application logs for troubleshooting</li>
+                <li><strong>Exit</strong>: Close the application</li>
+            </ul>
+
+            <h4>Settings Menu</h4>
+            <ul>
+                <li><strong>Enable Debug Logging</strong>: Toggle detailed logging for troubleshooting</li>
+                <li><strong>Live Caption Optimization</strong>: Enable special OCR settings optimized for live captions</li>
+                <li><strong>Configure Capture Interval</strong>: Set custom timing for screen captures</li>
+            </ul>
+
+            <h4>Help Menu</h4>
+            <ul>
+                <li><strong>About</strong>: View application information</li>
+                <li><strong>Instructions</strong>: Access this user guide</li>
+            </ul>
+
+            <h3>How to Use CaptiOCR</h3>
+            <ol>
+                <li><strong>Language Selection</strong>:
+                    <ul>
+                        <li>Select your desired language from the dropdown menu.</li>
+                        <li>If the language data isn't available, CaptiOCR will offer to download it automatically.</li>
+                        <li>The application will check if the selected language files are installed and prompt you to download them if necessary.</li>
+                    </ul>
+                </li>
+                <li><strong>Advanced Options</strong>:
+                    <ul>
+                        <li>Enable <strong>Debug Logging</strong> for detailed operation logs.</li>
+                        <li>Enable <strong>Live Caption Optimization</strong> for better recognition of typical caption text.</li>
+                        <li>Configure capture intervals through <strong>Settings → Configure Capture Interval</strong> to balance responsiveness and system resource usage.</li>
+                    </ul>
+                </li>
+                <li><strong>Starting Capture</strong>:
+                    <ul>
+                        <li>Click the green <strong>Start (Select Area)</strong> button.</li>
+                        <li>A semi-transparent black overlay will appear over your screen.</li>
+                        <li>Click and drag to select the area containing the captions you want to capture.</li>
+                        <li>Press <strong>Enter</strong> to confirm your selection (or <strong>ESC</strong> to cancel).</li>
+                    </ul>
+                </li>
+                <li><strong>During Capture</strong>:
+                    <ul>
+                        <li>A transparent yellow window indicates the active capture area.</li>
+                        <li>This window includes a blue control bar with status information and a STOP button.</li>
+                        <li>OCR results will appear in real-time in the application window.</li>
+                        <li>You can move the yellow capture window by clicking and dragging it to follow moving captions.</li>
+                        <li>The application automatically adjusts capture frequency based on content changes.</li>
+                    </ul>
+                </li>
+                <li><strong>Stopping Capture</strong>:
+                    <ul>
+                        <li>Press <strong>Ctrl+Q</strong> or click the red <strong>STOP</strong> button on the capture window.</li>
+                        <li>You'll be prompted to provide a custom name for the saved file.</li>
+                        <li>If you cancel or leave the field empty, a default timestamp-based name will be used.</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>Capture Interval Settings</h3>
+            <p>Access through <strong>Settings → Configure Capture Interval</strong>:</p>
+            <ul>
+                <li><strong>Minimum interval</strong>: Shortest time between captures (default: 3 seconds)</li>
+                <li><strong>Maximum interval</strong>: Longest time between captures (default: 5 seconds)</li>
+                <li><strong>Increase after (reads)</strong>: Number of similar captures before increasing interval (default: 1)</li>
+            </ul>
+            <p>The application dynamically adjusts capture frequency to optimize system resources:</p>
+            <ul>
+                <li>When new content is detected, the interval resets to the minimum value</li>
+                <li>When similar content is repeatedly detected, the interval gradually increases</li>
+                <li>The interval status is displayed at the bottom of the application window</li>
+            </ul>
+
+            <h3>Settings Management</h3>
+            <ul>
+                <li>Use <strong>File → Save Settings</strong> to save your current configuration with a custom profile name.</li>
+                <li>Use <strong>File → Load Settings</strong> to choose from previously saved profiles.</li>
+                <li>Settings are automatically saved when closing the application.</li>
+                <li>Settings include language preference, debug mode, capture intervals, and more.</li>
+            </ul>
+
+            <h3>Output Files</h3>
+            <ul>
+                <li><strong>Raw captures</strong>: <code>capture_YYYY-MM-DD-HH-MM-SS.txt</code></li>
+                <li><strong>Processed files</strong>: <code>[custom_name]_capture_YYYY-MM-DD-HH-MM-SS_processed.txt</code></li>
+                <li><strong>Debug logs</strong>: <code>log_YYYY-MM-DD-HH-MM-SS.txt</code> and <code>ocr_debug.log</code></li>
+            </ul>
+            <p>All files are saved in the <code>captures</code> directory by default. You can access this folder through <strong>File → Open Captures Folder</strong>.</p>
+
+            <h3>Post-Processing</h3>
+            <p>When you stop a capture session, CaptiOCR automatically:</p>
+            <ul>
+                <li>Analyzes the captured text to identify unique content</li>
+                <li>Removes duplicate text blocks to clean up the transcript</li>
+                <li>Organizes captured text with timestamps</li>
+                <li>Creates a processed file with the custom name you provide</li>
+                <li>Maintains the original capture file for reference</li>
+            </ul>
+
+            <h3>Language Support</h3>
+            <p>CaptiOCR supports the following languages:</p>
+            <ul>
+                <li>English (eng)</li>
+                <li>Italian (ita)</li>
+                <li>French (fra)</li>
+                <li>Spanish (spa)</li>
+                <li>German (deu)</li>
+                <li>Portuguese (por)</li>
+            </ul>
+            <p>When you select a language, the application will:</p>
+            <ol>
+                <li>Check if the language file is available in the standard Tesseract directory</li>
+                <li>If not found, check if it's in the application's custom tessdata directory</li>
+                <li>If still not found, offer to download the language file automatically</li>
+                <li>Download and install the language file when you confirm</li>
+            </ol>
+
+            <h3>Troubleshooting</h3>
+            <ul>
+                <li><strong>Tesseract installation errors:</strong>
+                    <ul>
+                        <li>The application will attempt to install Tesseract automatically</li>
+                        <li>If automatic installation fails, download and install Tesseract manually from the <a href="https://github.com/tesseract-ocr/tesseract">official repository</a></li>
+                        <li>Ensure it's installed to <code>C:\Program Files\Tesseract-OCR\</code></li>
+                    </ul>
+                </li>
+                <li><strong>Language download issues:</strong>
+                    <ul>
+                        <li>Check your internet connection</li>
+                        <li>Try downloading the language files manually from <a href="https://github.com/tesseract-ocr/tessdata">Tesseract tessdata repository</a></li>
+                        <li>Place downloaded .traineddata files in <code>C:\Program Files\Tesseract-OCR\tessdata\</code></li>
+                    </ul>
+                </li>
+                <li><strong>Capture window issues:</strong>
+                    <ul>
+                        <li>If the selection window gets stuck, press ESC and try again</li>
+                        <li>If the capture window disappears, stop the application and restart</li>
+                    </ul>
+                </li>
+                <li><strong>Poor text recognition:</strong>
+                    <ul>
+                        <li>Enable "Live Caption Optimization" in the Settings menu</li>
+                        <li>Ensure you've selected the correct language</li>
+                        <li>Choose a smaller capture area focused only on the text</li>
+                    </ul>
+                </li>
+                <li><strong>Log files for troubleshooting:</strong>
+                    <ul>
+                        <li>Enable Debug Logging in the Settings menu</li>
+                        <li>Access logs through File → Open Log Folder</li>
+                        <li>Check both <code>log_YYYY-MM-DD-HH-MM-SS.txt</code> and <code>ocr_debug.log</code></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Tips for Best Results</h3>
+            <ul>
+                <li>Select only the caption area, avoiding other screen elements</li>
+                <li>Use "Live Caption Optimization" for better recognition of typical captions</li>
+                <li>For static captions, use a longer capture interval to reduce processing</li>
+                <li>For fast-changing captions, use a shorter interval to catch more text</li>
+                <li>Select the correct language for best recognition accuracy</li>
+                <li>When capturing from videos, position the capture window to follow the caption area</li>
+            </ul>
+
+            <p>CaptiOCR is ideal for recording temporary on-screen text, particularly for meetings, webinars, or presentations with live captions. The application works locally on your machine for privacy.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CaptiOCR | <a href="https://www.captiocr.com/">www.captiocr.com</a></p>
+    </footer>
+</body>
+</html>
