@@ -4,7 +4,7 @@ import {
     LockClosedIcon, 
     ScaleIcon,
     ClockIcon,
-    BrainIcon,
+    AcademicCapIcon,
     HeartIcon
 } from '@heroicons/react/24/solid';
 import Card from '../ui/Card';
@@ -12,7 +12,7 @@ import Card from '../ui/Card';
 export default function FeaturesSection() {
     const benefits = [
         {
-            icon: BrainIcon,
+            icon: AcademicCapIcon,
             title: "Reduce Mental Load",
             description: "Focus completely on conversations while CaptiOCR captures all important text content automatically, eliminating multitasking strain during meetings."
         },
