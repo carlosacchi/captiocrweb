@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FaGithub, FaBars, FaTimes } from 'react-icons/fa';
 import { ArrowDownTrayIcon } from '@heroicons/react/24/solid';
 
@@ -19,21 +20,21 @@ export default function Header() {
                 <div className="flex justify-between h-16">
                     {/* Logo */}
                     <div className="flex items-center">
-                        <a href="/" className="flex-shrink-0 flex items-center">
+                        <Link to="/" className="flex-shrink-0 flex items-center">
                             <span className="text-2xl font-bold text-blue-700">CaptiOCR</span>
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center space-x-8">
                         {navigation.map((item) => (
-                            <a
+                            <Link
                                 key={item.name}
-                                href={item.href}
+                                to={item.href}
                                 className="text-gray-700 hover:text-blue-700 px-3 py-2 text-sm font-medium transition-colors duration-200"
                             >
                                 {item.name}
-                            </a>
+                            </Link>
                         ))}
                         
                         {/* CTA Buttons */}
@@ -75,14 +76,14 @@ export default function Header() {
                     <div className="md:hidden">
                         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
                             {navigation.map((item) => (
-                                <a
+                                <Link
                                     key={item.name}
-                                    href={item.href}
+                                    to={item.href}
                                     className="text-gray-700 hover:text-blue-700 block px-3 py-2 text-base font-medium transition-colors duration-200"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     {item.name}
-                                </a>
+                                </Link>
                             ))}
                             <div className="pt-4 border-t border-gray-200 mt-4">
                                 <a

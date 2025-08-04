@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
-import HeroSection from './components/sections/HeroSection';
-import FeaturesSection from './components/sections/FeaturesSection';
-import HowItWorksSection from './components/sections/HowItWorksSection';
-import TestimonialsSection from './components/sections/TestimonialsSection';
-import CTASection from './components/sections/CTASection';
+import HomePage from './pages/HomePage';
+import CaptionTranscriberPage from './pages/CaptionTranscriberPage';
+import LiveCaptionReaderPage from './pages/LiveCaptionReaderPage';
 import './App.css';
 
 function App() {
@@ -24,17 +23,22 @@ function App() {
     }, []);
 
     return (
-        <div className="App min-h-screen bg-gray-50">
-            <Header />
-            <main>
-                <HeroSection />
-                <FeaturesSection />
-                <HowItWorksSection />
-                <TestimonialsSection />
-                <CTASection />
-            </main>
-            <Footer />
-        </div>
+        <Router>
+            <div className="App min-h-screen bg-gray-50">
+                <Header />
+                <main>
+                    <Routes>
+                        <Route path="/" element={<HomePage />} />
+                        <Route path="/caption-transcriber" element={<CaptionTranscriberPage />} />
+                        <Route path="/live-caption-reader" element={<LiveCaptionReaderPage />} />
+                        <Route path="/meeting-transcriber" element={<CaptionTranscriberPage />} />
+                        {/* Fallback for any unmatched routes */}
+                        <Route path="*" element={<HomePage />} />
+                    </Routes>
+                </main>
+                <Footer />
+            </div>
+        </Router>
     );
 }
 
