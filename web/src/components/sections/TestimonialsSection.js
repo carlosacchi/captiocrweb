@@ -49,23 +49,22 @@ export default function TestimonialsSection() {
                     ))}
                 </div>
 
-                {/* Stats Section */}
-                <div className="grid md:grid-cols-4 gap-8 text-center">
+                {/* Key Features Highlight */}
+                <div className="grid md:grid-cols-3 gap-8 text-center">
                     <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg">
-                        <div className="text-3xl font-bold text-blue-700 mb-2">10,000+</div>
-                        <div className="text-gray-600">Downloads</div>
+                        <div className="text-2xl mb-2">🔒</div>
+                        <div className="text-lg font-bold text-blue-700 mb-2">100% Private</div>
+                        <div className="text-gray-600">All processing happens locally</div>
                     </div>
                     <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg">
-                        <div className="text-3xl font-bold text-blue-700 mb-2">500+</div>
-                        <div className="text-gray-600">GitHub Stars</div>
+                        <div className="text-2xl mb-2">⚡</div>
+                        <div className="text-lg font-bold text-blue-700 mb-2">Real-Time</div>
+                        <div className="text-gray-600">Instant text extraction</div>
                     </div>
                     <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg">
-                        <div className="text-3xl font-bold text-blue-700 mb-2">95%</div>
-                        <div className="text-gray-600">Accuracy Rate</div>
-                    </div>
-                    <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg">
-                        <div className="text-3xl font-bold text-blue-700 mb-2">6+</div>
-                        <div className="text-gray-600">Languages</div>
+                        <div className="text-2xl mb-2">🆓</div>
+                        <div className="text-lg font-bold text-blue-700 mb-2">Open Source</div>
+                        <div className="text-gray-600">Free forever, no subscriptions</div>
                     </div>
                 </div>
             </div>

@@ -44,31 +44,21 @@ export default function HeroSection() {
                             rel="noreferrer"
                             size="lg"
                             icon={ArrowDownTrayIcon}
-                            className="bg-white text-blue-700 hover:bg-blue-50 shadow-2xl hover:shadow-white/20"
+                            className="bg-white text-blue-900 hover:bg-blue-50 hover:text-blue-800 shadow-2xl font-bold"
                         >
                             Download CaptiOCR
-                        </Button>
-                        
-                        <Button
-                            href="#demo"
-                            variant="outline"
-                            size="lg"
-                            icon={PlayCircleIcon}
-                            className="border-white/30 text-white hover:bg-white hover:text-blue-700 backdrop-blur-sm"
-                        >
-                            Watch Demo
                         </Button>
                         
                         <Button
                             href="https://github.com/carlosacchi/captiocr"
                             target="_blank"
                             rel="noreferrer"
-                            variant="ghost"
+                            variant="outline"
                             size="lg"
                             icon={FaGithub}
-                            className="text-blue-100 hover:text-white hover:bg-white/10 backdrop-blur-sm"
+                            className="border-2 border-white text-white hover:bg-white hover:text-blue-900 backdrop-blur-sm font-semibold"
                         >
-                            View Source
+                            View on GitHub
                         </Button>
                     </div>
 

@@ -26,7 +26,7 @@ export default function CTASection() {
                         rel="noreferrer"
                         size="xl"
                         icon={ArrowDownTrayIcon}
-                        className="bg-white text-blue-700 hover:bg-blue-50 shadow-2xl hover:shadow-white/20"
+                        className="bg-white text-blue-900 hover:bg-blue-50 hover:text-blue-800 shadow-2xl font-bold"
                     >
                         Download for Free
                     </Button>
@@ -38,7 +38,7 @@ export default function CTASection() {
                         variant="outline"
                         size="xl"
                         icon={FaGithub}
-                        className="border-white/30 text-white hover:bg-white hover:text-blue-700 backdrop-blur-sm"
+                        className="border-2 border-white text-white hover:bg-white hover:text-blue-900 backdrop-blur-sm font-semibold"
                     >
                         View on GitHub
                     </Button>
