@@ -44,7 +44,7 @@ export default function HeroSection() {
                             rel="noreferrer"
                             size="lg"
                             icon={ArrowDownTrayIcon}
-                            className="bg-white text-blue-900 hover:bg-blue-50 hover:text-blue-800 shadow-2xl font-bold"
+                            className="!bg-white !text-blue-900 hover:!bg-blue-50 hover:!text-blue-800 shadow-2xl font-bold"
                         >
                             Download CaptiOCR
                         </Button>
