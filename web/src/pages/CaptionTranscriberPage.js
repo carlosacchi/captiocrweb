@@ -1,8 +1,10 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { ArrowDownTrayIcon, CheckCircleIcon } from '@heroicons/react/24/solid';
 import { FaGithub } from 'react-icons/fa';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
+import SchemaMarkup from '../components/SEO/SchemaMarkup';
 
 export default function CaptionTranscriberPage() {
     const benefits = [
@@ -37,8 +39,39 @@ export default function CaptionTranscriberPage() {
         }
     ];
 
+    const breadcrumbData = {
+        items: [
+            { name: 'Home', url: 'https://www.captiocr.com' },
+            { name: 'Caption Transcriber', url: 'https://www.captiocr.com/caption-transcriber' }
+        ]
+    };
+
+    const howToData = {
+        title: 'How to Use CaptiOCR Caption Transcriber',
+        description: 'Learn how to transcribe live captions from video platforms using CaptiOCR',
+        steps: steps.map(s => ({
+            name: s.title,
+            text: s.description
+        }))
+    };
+
     return (
-        <div className="min-h-screen bg-gray-50">
+        <>
+            <Helmet>
+                <title>Caption Transcriber - CaptiOCR | Real-Time Transcription Tool</title>
+                <meta name="description" content="Automatically transcribe live captions from Zoom, Teams, YouTube, and any video platform with CaptiOCR's powerful caption transcriber. Free and privacy-focused." />
+                <meta name="keywords" content="caption transcriber, live caption extraction, meeting transcription, Zoom transcription, Teams transcription, real-time OCR" />
+                <meta property="og:title" content="Caption Transcriber - CaptiOCR" />
+                <meta property="og:description" content="Transform live captions into perfect transcripts with CaptiOCR's privacy-focused caption transcriber" />
+                <meta property="og:url" content="https://www.captiocr.com/caption-transcriber" />
+                <meta name="twitter:title" content="Caption Transcriber - CaptiOCR" />
+                <meta name="twitter:description" content="Automatically transcribe live captions from any video platform with CaptiOCR" />
+            </Helmet>
+            
+            <SchemaMarkup type="breadcrumb" data={breadcrumbData} />
+            <SchemaMarkup type="howto" data={howToData} />
+            
+            <div className="min-h-screen bg-gray-50">
             {/* Hero Section */}
             <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-20 px-4">
                 <div className="max-w-6xl mx-auto text-center">
@@ -183,5 +216,6 @@ export default function CaptionTranscriberPage() {
                 </div>
             </section>
         </div>
+        </>
     );
 }
