@@ -2,11 +2,13 @@
 document.addEventListener('DOMContentLoaded', function () {
     fetch('https://raw.githubusercontent.com/carlosacchi/captiocr/main/version.txt')
         .then(response => response.text())
-        .then(version => {
+        .then(text => {
+            // Extract only the first line (version number)
+            const version = text.split('\n')[0].trim();
             // Find all elements with id="current-version" and update them
             const versionElements = document.querySelectorAll('#current-version');
             versionElements.forEach(element => {
-                element.textContent = version.trim();
+                element.textContent = version;
             });
         })
         .catch(error => {
