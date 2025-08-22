@@ -39,89 +39,137 @@
                 <p style="margin-top: 10px; font-style: italic; color: #666;">Comparison between CaptiOCR and Classical Transcription Assistants</p>
             </div>
 
-            <h3>Comprehensive Feature Comparison</h3>
+            <h3>The Fundamental Difference: Audio Recording vs Screen OCR</h3>
+            <p>All major meeting transcription services - including "privacy-focused" ones like Jamie AI - <strong>require recording your audio</strong> in some form. Whether through a visible bot (Otter.ai, Fireflies) or system-level audio capture (Jamie, Granola), they all need to process your actual conversations. This creates an inherent trust requirement: you must trust them to handle, process, and delete your audio recordings properly.</p>
+            
+            <p><strong>CaptiOCR operates on a fundamentally different principle:</strong> it reads only the text already displayed on your screen (live captions), never recording any audio. This eliminates the trust layer entirely - there's simply no audio data to worry about.</p>
+
+            <h3>Group 1: Bot-Based Meeting Recorders</h3>
+            <p>These services join your meetings with a visible bot that records and processes everything. All participants see the bot, creating transparency but also potential discomfort.</p>
+            
             <table>
                 <tr>
                     <th>Feature</th>
-                    <th>CaptiOCR</th>
-                    <th>Granola</th>
-                    <th>Otter.ai</th>
-                    <th>Fireflies</th>
-                    <th>Jamie AI</th>
+                    <th>CaptiOCR<br/><em>(Screen OCR)</em></th>
+                    <th>Otter.ai<br/><em>(Bot Recorder)</em></th>
+                    <th>Fireflies<br/><em>(Bot Recorder)</em></th>
                 </tr>
                 <tr>
-                    <td><strong>Data Privacy & Processing</strong></td>
-                    <td>✅ 100% Local - No data sent to external servers</td>
-                    <td>⚠️ Sends data to OpenAI/Anthropic for AI processing<sup><a href="#ref1">[1]</a></sup></td>
-                    <td>❌ Records beyond meeting end, uses data for training<sup><a href="#ref2">[2]</a></sup></td>
-                    <td>⚠️ Cloud processing with privacy concerns</td>
-                    <td>✅ Privacy-focused, deletes audio after transcription<sup><a href="#ref3">[3]</a></sup></td>
+                    <td><strong>Audio Recording Required</strong></td>
+                    <td>✅ NEVER - Reads only screen text</td>
+                    <td>❌ Records full meeting audio</td>
+                    <td>❌ Records full meeting audio</td>
                 </tr>
                 <tr>
-                    <td><strong>Meeting Bot Required</strong></td>
-                    <td>✅ No bot needed - Works independently</td>
-                    <td>✅ No bot - Uses existing meeting audio<sup><a href="#ref4">[4]</a></sup></td>
-                    <td>❌ Bot joins meeting (visible to all participants)</td>
-                    <td>❌ Bot joins meeting (visible to all participants)</td>
-                    <td>✅ Bot-free operation<sup><a href="#ref3">[3]</a></sup></td>
+                    <td><strong>Visible Bot in Meeting</strong></td>
+                    <td>✅ No bot - Works independently</td>
+                    <td>❌ Bot joins visibly to all participants</td>
+                    <td>❌ Bot joins visibly to all participants</td>
                 </tr>
                 <tr>
-                    <td><strong>Setup Complexity</strong></td>
-                    <td>✅ Simple - Download and run</td>
-                    <td>⚠️ Moderate - Requires account setup</td>
-                    <td>⚠️ Complex - API integrations needed</td>
-                    <td>⚠️ Complex - Platform integrations required</td>
-                    <td>⚠️ Moderate - App installation required</td>
+                    <td><strong>Privacy & Data Processing</strong></td>
+                    <td>✅ 100% Local - No audio ever recorded</td>
+                    <td>❌ Records beyond meeting end, uses data for AI training<sup><a href="#ref2">[2]</a></sup></td>
+                    <td>⚠️ Cloud processing, stores recordings</td>
                 </tr>
                 <tr>
-                    <td><strong>Cost</strong></td>
-                    <td>✅ Free & Open Source</td>
-                    <td>❌ Paid plans from $10-20/month<sup><a href="#ref5">[5]</a></sup></td>
-                    <td>❌ Paid plans from $8.33/month<sup><a href="#ref6">[6]</a></sup></td>
-                    <td>❌ Paid plans from $10/month<sup><a href="#ref7">[7]</a></sup></td>
-                    <td>❌ Paid plans from $24/month<sup><a href="#ref3">[3]</a></sup></td>
-                </tr>
-                <tr>
-                    <td><strong>Data Compliance</strong></td>
-                    <td>✅ Full compliance - No data leaves device</td>
-                    <td>⚠️ Working toward SOC 2 (not certified)<sup><a href="#ref8">[8]</a></sup></td>
+                    <td><strong>Legal Compliance Issues</strong></td>
+                    <td>✅ No recording = No consent issues</td>
                     <td>❌ Class action lawsuit for privacy violations<sup><a href="#ref2">[2]</a></sup></td>
-                    <td>⚠️ Cloud-based with standard compliance</td>
-                    <td>✅ SOC II, HIPAA compliant<sup><a href="#ref9">[9]</a></sup></td>
+                    <td>⚠️ Recording consent required in many jurisdictions</td>
                 </tr>
                 <tr>
                     <td><strong>Works Without Internet</strong></td>
                     <td>✅ Fully offline capable</td>
-                    <td>❌ Requires internet for AI processing</td>
                     <td>❌ Cloud-dependent</td>
                     <td>❌ Cloud-dependent</td>
-                    <td>✅ Offline transcription available<sup><a href="#ref3">[3]</a></sup></td>
                 </tr>
                 <tr>
-                    <td><strong>Data Retention Control</strong></td>
-                    <td>✅ User controls all data locally</td>
-                    <td>⚠️ Can delete notes, but data processed externally<sup><a href="#ref10">[10]</a></sup></td>
-                    <td>❌ Limited control over recorded data<sup><a href="#ref2">[2]</a></sup></td>
-                    <td>⚠️ Standard cloud retention policies</td>
-                    <td>✅ Audio deleted immediately after processing<sup><a href="#ref3">[3]</a></sup></td>
+                    <td><strong>Cost</strong></td>
+                    <td>✅ Free & Open Source</td>
+                    <td>❌ From $8.33/month<sup><a href="#ref6">[6]</a></sup></td>
+                    <td>❌ From $10/month<sup><a href="#ref7">[7]</a></sup></td>
                 </tr>
                 <tr>
-                    <td><strong>Third-party AI Training</strong></td>
-                    <td>✅ Never - No external data sharing</td>
-                    <td>⚠️ Claims no training use, but data sent to AI providers<sup><a href="#ref8">[8]</a></sup></td>
-                    <td>❌ Uses recordings for system training<sup><a href="#ref2">[2]</a></sup></td>
-                    <td>⚠️ Standard AI training policies apply</td>
-                    <td>✅ No data used for training</td>
-                </tr>
-                <tr>
-                    <td><strong>Enterprise Security Incidents</strong></td>
-                    <td>✅ None - No external data exposure risk</td>
-                    <td>❌ 2025: 333 user transcripts exposed in beta<sup><a href="#ref11">[11]</a></sup></td>
-                    <td>⚠️ Multiple privacy-related lawsuits<sup><a href="#ref2">[2]</a></sup></td>
-                    <td>⚠️ Standard cloud security risks</td>
-                    <td>✅ Strong security track record</td>
+                    <td><strong>Meeting Disruption</strong></td>
+                    <td>✅ Invisible to other participants</td>
+                    <td>❌ Bot announcement disrupts flow</td>
+                    <td>❌ Bot announcement disrupts flow</td>
                 </tr>
             </table>
+
+            <h3>Group 2: Bot-Free Audio Recorders</h3>
+            <p>These "privacy-focused" alternatives avoid visible bots but <strong>still record your system audio</strong>. While they promise to delete recordings after processing, you're still trusting them with your raw audio data.</p>
+            
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>CaptiOCR<br/><em>(Screen OCR)</em></th>
+                    <th>Jamie AI<br/><em>(System Audio)</em></th>
+                    <th>Granola<br/><em>(System Audio)</em></th>
+                </tr>
+                <tr>
+                    <td><strong>Audio Recording Required</strong></td>
+                    <td>✅ NEVER - Reads only screen text</td>
+                    <td>❌ Records system audio<sup><a href="#ref3">[3]</a></sup></td>
+                    <td>❌ Records meeting audio<sup><a href="#ref4">[4]</a></sup></td>
+                </tr>
+                <tr>
+                    <td><strong>Trust Requirement</strong></td>
+                    <td>✅ Zero - No audio to trust them with</td>
+                    <td>⚠️ Must trust audio deletion promise</td>
+                    <td>⚠️ Must trust data handling</td>
+                </tr>
+                <tr>
+                    <td><strong>Data Processing Location</strong></td>
+                    <td>✅ 100% Local on your device</td>
+                    <td>⚠️ Uploads audio to EU servers for processing<sup><a href="#ref3">[3]</a></sup></td>
+                    <td>⚠️ Sends to OpenAI/Anthropic for AI<sup><a href="#ref1">[1]</a></sup></td>
+                </tr>
+                <tr>
+                    <td><strong>Audio Deletion Claims</strong></td>
+                    <td>✅ N/A - Never records audio</td>
+                    <td>⚠️ "Deletes after transcription" (unverifiable)</td>
+                    <td>⚠️ Processed externally first</td>
+                </tr>
+                <tr>
+                    <td><strong>Works Without Internet</strong></td>
+                    <td>✅ Fully offline capable</td>
+                    <td>⚠️ Can record offline, needs internet to process</td>
+                    <td>❌ Requires internet for AI</td>
+                </tr>
+                <tr>
+                    <td><strong>Security Incidents</strong></td>
+                    <td>✅ None possible - No data to leak</td>
+                    <td>✅ No known incidents</td>
+                    <td>❌ 333 transcripts exposed in 2025<sup><a href="#ref11">[11]</a></sup></td>
+                </tr>
+                <tr>
+                    <td><strong>Cost</strong></td>
+                    <td>✅ Free & Open Source</td>
+                    <td>❌ From $24/month<sup><a href="#ref3">[3]</a></sup></td>
+                    <td>❌ From $10-20/month<sup><a href="#ref5">[5]</a></sup></td>
+                </tr>
+                <tr>
+                    <td><strong>Compliance Certifications</strong></td>
+                    <td>✅ N/A - No sensitive data handled</td>
+                    <td>✅ GDPR, SOC II compliant<sup><a href="#ref9">[9]</a></sup></td>
+                    <td>⚠️ Working toward SOC 2<sup><a href="#ref8">[8]</a></sup></td>
+                </tr>
+            </table>
+
+            <h3>The Critical Distinction: Recording vs Reading</h3>
+            <div style="background-color: #f0f8ff; padding: 20px; border-left: 4px solid #0066cc; margin: 20px 0;">
+                <h4 style="margin-top: 0;">Why CaptiOCR's Approach is Fundamentally Different:</h4>
+                <ul style="margin-bottom: 0;">
+                    <li><strong>Audio Recorders (All Competitors):</strong> Capture your voice → Upload/Process audio → Promise to delete → You must trust them</li>
+                    <li><strong>Screen OCR (CaptiOCR Only):</strong> Read visible text → Process locally → Nothing to delete → No trust required</li>
+                </ul>
+            </div>
+            
+            <p>Even the most "privacy-focused" competitors like Jamie AI still <strong>record your system audio</strong>, upload it to servers (even if in the EU), and process it before deletion. This creates multiple points where your sensitive conversations could be exposed, leaked, or mishandled - as demonstrated by Granola's 333 exposed transcripts and Otter.ai's privacy lawsuits.</p>
+            
+            <p>CaptiOCR eliminates this entire attack surface by never recording audio in the first place. It simply reads the text already visible on your screen - the same text you can see with your own eyes.</p>
 
             <h3>Why CaptiOCR Leads in Privacy and Security</h3>
             <ul>
