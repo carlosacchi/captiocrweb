@@ -125,7 +125,6 @@ coverage/
 *.pg_dump
 
 # CI/CD
-/.github/workflows/*
 /.circleci/*
 /.travis.yml
 /.gitlab-ci.yml
@@ -153,3 +152,5 @@ DerivedData/
 custom_exclude_folder/
 legacy_temp/
 notes_and_drafts/
+
+CLAUDE.md
