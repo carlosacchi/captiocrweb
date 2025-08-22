@@ -11,7 +11,7 @@ export default function Header() {
         { name: 'Caption Transcriber', href: '/caption-transcriber' },
         { name: 'Live Caption Reader', href: '/live-caption-reader' },
         { name: 'Meeting Transcriber', href: '/meeting-transcriber' },
-        { name: 'Documentation', href: '/legal/instructions' }
+        { name: 'Documentation', href: '/legal/instructions.html' }
     ];
 
     return (
@@ -27,15 +27,28 @@ export default function Header() {
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center space-x-8">
-                        {navigation.map((item) => (
-                            <Link
-                                key={item.name}
-                                to={item.href}
-                                className="text-gray-700 hover:text-blue-700 px-3 py-2 text-sm font-medium transition-colors duration-200"
-                            >
-                                {item.name}
-                            </Link>
-                        ))}
+                        {navigation.map((item) => {
+                            if (item.name === 'Documentation') {
+                                return (
+                                    <a
+                                        key={item.name}
+                                        href={item.href}
+                                        className="text-gray-700 hover:text-blue-700 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                                    >
+                                        {item.name}
+                                    </a>
+                                );
+                            }
+                            return (
+                                <Link
+                                    key={item.name}
+                                    to={item.href}
+                                    className="text-gray-700 hover:text-blue-700 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                                >
+                                    {item.name}
+                                </Link>
+                            );
+                        })}
                         
                         {/* CTA Buttons */}
                         <div className="flex items-center space-x-4">
@@ -75,16 +88,30 @@ export default function Header() {
                 {isMenuOpen && (
                     <div className="md:hidden">
                         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
-                            {navigation.map((item) => (
-                                <Link
-                                    key={item.name}
-                                    to={item.href}
-                                    className="text-gray-700 hover:text-blue-700 block px-3 py-2 text-base font-medium transition-colors duration-200"
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-                                    {item.name}
-                                </Link>
-                            ))}
+                            {navigation.map((item) => {
+                                if (item.name === 'Documentation') {
+                                    return (
+                                        <a
+                                            key={item.name}
+                                            href={item.href}
+                                            className="text-gray-700 hover:text-blue-700 block px-3 py-2 text-base font-medium transition-colors duration-200"
+                                            onClick={() => setIsMenuOpen(false)}
+                                        >
+                                            {item.name}
+                                        </a>
+                                    );
+                                }
+                                return (
+                                    <Link
+                                        key={item.name}
+                                        to={item.href}
+                                        className="text-gray-700 hover:text-blue-700 block px-3 py-2 text-base font-medium transition-colors duration-200"
+                                        onClick={() => setIsMenuOpen(false)}
+                                    >
+                                        {item.name}
+                                    </Link>
+                                );
+                            })}
                             <div className="pt-4 border-t border-gray-200 mt-4">
                                 <a
                                     href="https://github.com/carlosacchi/captiocr/releases"
