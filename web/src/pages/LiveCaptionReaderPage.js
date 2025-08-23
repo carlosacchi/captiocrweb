@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { ArrowDownTrayIcon, CheckCircleIcon, EyeIcon } from '@heroicons/react/24/solid';
 import { FaGithub } from 'react-icons/fa';
 import Button from '../components/ui/Button';
@@ -47,9 +48,22 @@ export default function LiveCaptionReaderPage() {
     ];
 
     return (
-        <div className="min-h-screen bg-gray-50">
-            {/* Hero Section */}
-            <section className="bg-gradient-to-br from-green-900 via-green-800 to-green-700 text-white py-20 px-4">
+        <>
+            <Helmet>
+                <title>Live Caption Reader - Online Course & Lecture Transcription | CaptiOCR</title>
+                <meta name="description" content="Best transcription service for education. Capture online course transcription, lecture notes, and webinar captions automatically. AI note taker for online training and digital note taking for calls." />
+                <meta name="keywords" content="live caption reader, online course transcription, lecture transcription, webinar captions tool, transcribe online courses, digital note taking for calls, meeting notes generator, AI note taker, transcription service for education, subtitles for online lessons, remote meeting transcription" />
+                <meta property="og:title" content="Live Caption Reader - Online Course & Lecture Transcription | CaptiOCR" />
+                <meta property="og:description" content="Capture and transcribe online courses, lectures, and webinars in real-time with CaptiOCR's live caption reader" />
+                <meta property="og:url" content="https://www.captiocr.com/live-caption-reader" />
+                <meta name="twitter:title" content="Live Caption Reader - Online Course Transcription | CaptiOCR" />
+                <meta name="twitter:description" content="AI note taker for webinars and online training. Transcribe lectures and courses automatically with CaptiOCR" />
+                <link rel="canonical" href="https://www.captiocr.com/live-caption-reader" />
+            </Helmet>
+            
+            <div className="min-h-screen bg-gray-50">
+                {/* Hero Section */}
+                <section className="bg-gradient-to-br from-green-900 via-green-800 to-green-700 text-white py-20 px-4">
                 <div className="max-w-6xl mx-auto text-center">
                     <h1 className="text-5xl md:text-6xl font-bold mb-6">
                         Live Caption Reader
@@ -207,5 +221,6 @@ export default function LiveCaptionReaderPage() {
                 </div>
             </section>
         </div>
+        </>
     );
 }
