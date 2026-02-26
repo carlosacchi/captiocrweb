@@ -2,17 +2,19 @@
 document.addEventListener('DOMContentLoaded', function () {
     fetch('https://raw.githubusercontent.com/carlosacchi/captiocr/main/version.txt')
         .then(response => response.text())
-        .then(version => {
-            // Find all elements with id="current-version" and update them
-            const versionElements = document.querySelectorAll('#current-version');
+        .then(text => {
+            // Extract only the first line (version number)
+            const version = text.split('\n')[0].trim();
+            // Update any element that opts-in to dynamic version text.
+            const versionElements = document.querySelectorAll('[data-current-version]');
             versionElements.forEach(element => {
-                element.textContent = version.trim();
+                element.textContent = version;
             });
         })
         .catch(error => {
             console.error('Error fetching version:', error);
             // Update with error message
-            const versionElements = document.querySelectorAll('#current-version');
+            const versionElements = document.querySelectorAll('[data-current-version]');
             versionElements.forEach(element => {
                 element.textContent = 'Check GitHub';
             });

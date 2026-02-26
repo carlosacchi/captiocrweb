@@ -58,14 +58,17 @@ export default function CaptionTranscriberPage() {
     return (
         <>
             <Helmet>
-                <title>Caption Transcriber - Meeting Minutes Generator | CaptiOCR</title>
-                <meta name="description" content="Automated meeting minutes generator for webinars and online lessons. Transcribe live captions from Zoom, Teams, YouTube automatically. Free lecture transcription software with real-time call transcription." />
-                <meta name="keywords" content="caption transcriber, meeting minutes generator, automated meeting minutes, webinar transcription, online lesson transcription, lecture transcription software, real-time call transcription, transcribe online courses, AI note taker for webinars, captioning tool for live online lessons" />
+                <title>Caption Transcriber - Private Live Caption Capture | CaptiOCR</title>
+                <meta
+                    name="description"
+                    content="Extract live captions from meetings, webinars, and lessons in real time. CaptiOCR converts on-screen captions to clean text locally, without mandatory cloud processing."
+                />
                 <meta property="og:title" content="Caption Transcriber - Meeting Minutes Generator | CaptiOCR" />
                 <meta property="og:description" content="Transform live captions into automated meeting minutes and webinar transcriptions with CaptiOCR's privacy-focused caption transcriber" />
                 <meta property="og:url" content="https://www.captiocr.com/caption-transcriber" />
                 <meta name="twitter:title" content="Caption Transcriber - Meeting Minutes Generator | CaptiOCR" />
                 <meta name="twitter:description" content="Automatically generate meeting minutes and transcribe webinars from live captions with CaptiOCR" />
+                <link rel="canonical" href="https://www.captiocr.com/caption-transcriber" />
             </Helmet>
             
             <SchemaMarkup type="breadcrumb" data={breadcrumbData} />

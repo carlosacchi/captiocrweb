@@ -50,9 +50,11 @@ export default function LiveCaptionReaderPage() {
     return (
         <>
             <Helmet>
-                <title>Live Caption Reader - Online Course & Lecture Transcription | CaptiOCR</title>
-                <meta name="description" content="Best transcription service for education. Capture online course transcription, lecture notes, and webinar captions automatically. AI note taker for online training and digital note taking for calls." />
-                <meta name="keywords" content="live caption reader, online course transcription, lecture transcription, webinar captions tool, transcribe online courses, digital note taking for calls, meeting notes generator, AI note taker, transcription service for education, subtitles for online lessons, remote meeting transcription" />
+                <title>Live Caption Reader - Accessibility and Focus Support | CaptiOCR</title>
+                <meta
+                    name="description"
+                    content="Read and capture live captions from meetings and online courses with a privacy-first workflow. CaptiOCR keeps caption processing local and improves accessibility for daily collaboration."
+                />
                 <meta property="og:title" content="Live Caption Reader - Online Course & Lecture Transcription | CaptiOCR" />
                 <meta property="og:description" content="Capture and transcribe online courses, lectures, and webinars in real-time with CaptiOCR's live caption reader" />
                 <meta property="og:url" content="https://www.captiocr.com/live-caption-reader" />

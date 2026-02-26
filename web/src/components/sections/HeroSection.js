@@ -65,7 +65,7 @@ export default function HeroSection() {
                     {/* Version Info */}
                     <div className="inline-flex items-center px-4 py-2 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
                         <span className="text-blue-200 text-sm mr-2">Current Version:</span>
-                        <span id="current-version" className="text-white font-mono text-sm">
+                        <span data-current-version className="text-white font-mono text-sm">
                             Loading...
                         </span>
                     </div>

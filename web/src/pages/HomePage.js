@@ -10,9 +10,11 @@ export default function HomePage() {
     return (
         <>
             <Helmet>
-                <title>CaptiOCR - Meeting Transcription & Minutes Software | Free Audio to Text</title>
-                <meta name="description" content="Best software for meeting transcription and minutes. Generate automated meeting notes, call transcription, and webinar transcription with CaptiOCR. Free audio to text converter with complete privacy." />
-                <meta name="keywords" content="meeting transcription, meeting minutes, call transcription, webinar transcription, audio to text, automated meeting notes, meeting notes generator, real-time captions, automatic meeting minutes generator for Zoom Teams, secure call transcription for business" />
+                <title>CaptiOCR - Local-First Meeting Caption Transcription</title>
+                <meta
+                    name="description"
+                    content="Capture live meeting captions and create private transcripts directly on your device. CaptiOCR helps teams document calls without routing content through cloud transcription services."
+                />
                 <link rel="canonical" href="https://www.captiocr.com/" />
             </Helmet>
             

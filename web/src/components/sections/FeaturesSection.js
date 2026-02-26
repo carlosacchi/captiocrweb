@@ -56,9 +56,9 @@ export default function FeaturesSection() {
                             Reclaim Your Focus & Attention
                         </h2>
                         <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                            The average professional spends <span className="font-semibold text-blue-700">21.5 hours per week</span> in 
-                            online meetings, with over <span className="font-semibold text-blue-700">71%</span> reporting digital exhaustion. 
-                            CaptiOCR helps you preserve mental energy and enhance productivity.
+                            Modern teams spend a large portion of their workday in online meetings. CaptiOCR
+                            reduces note-taking overhead so people can stay present in discussions and document
+                            outcomes with less cognitive load.
                         </p>
                     </div>
                     

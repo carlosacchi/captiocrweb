@@ -13,7 +13,8 @@ export default function Footer() {
         useCases: [
             { href: "/caption-transcriber", text: "Caption Transcriber" },
             { href: "/live-caption-reader", text: "Live Caption Reader" },
-            { href: "/meeting-transcriber", text: "Meeting Transcriber" }
+            { href: "/meeting-transcriber", text: "Meeting Transcriber" },
+            { href: "/data-sovereignty", text: "Data Sovereignty" }
         ],
         legal: [
             { href: "/legal/privacy", text: "Privacy Policy" },
@@ -116,7 +117,7 @@ export default function Footer() {
                         
                         <div className="flex items-center space-x-1">
                             <span className="text-gray-500 text-xs">Version:</span>
-                            <span id="current-version" className="text-gray-400 text-xs font-mono">
+                            <span data-current-version className="text-gray-400 text-xs font-mono">
                                 Loading...
                             </span>
                         </div>

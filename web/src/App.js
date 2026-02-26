@@ -5,6 +5,8 @@ import Footer from './components/layout/Footer';
 import HomePage from './pages/HomePage';
 import CaptionTranscriberPage from './pages/CaptionTranscriberPage';
 import LiveCaptionReaderPage from './pages/LiveCaptionReaderPage';
+import MeetingTranscriberPage from './pages/MeetingTranscriberPage';
+import DataSovereigntyPage from './pages/DataSovereigntyPage';
 import './App.css';
 
 function App() {
@@ -31,7 +33,8 @@ function App() {
                         <Route path="/" element={<HomePage />} />
                         <Route path="/caption-transcriber" element={<CaptionTranscriberPage />} />
                         <Route path="/live-caption-reader" element={<LiveCaptionReaderPage />} />
-                        <Route path="/meeting-transcriber" element={<CaptionTranscriberPage />} />
+                        <Route path="/meeting-transcriber" element={<MeetingTranscriberPage />} />
+                        <Route path="/data-sovereignty" element={<DataSovereigntyPage />} />
                         {/* Fallback for any unmatched routes */}
                         <Route path="*" element={<HomePage />} />
                     </Routes>

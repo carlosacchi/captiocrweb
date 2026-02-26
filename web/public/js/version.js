@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(text => {
             // Extract only the first line (version number)
             const version = text.split('\n')[0].trim();
-            // Find all elements with id="current-version" and update them
-            const versionElements = document.querySelectorAll('#current-version');
+            // Update any element that opts-in to dynamic version text.
+            const versionElements = document.querySelectorAll('[data-current-version]');
             versionElements.forEach(element => {
                 element.textContent = version;
             });
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(error => {
             console.error('Error fetching version:', error);
             // Update with error message
-            const versionElements = document.querySelectorAll('#current-version');
+            const versionElements = document.querySelectorAll('[data-current-version]');
             versionElements.forEach(element => {
                 element.textContent = 'Check GitHub';
             });
