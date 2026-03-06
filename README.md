@@ -18,6 +18,7 @@ The CaptiOCR website provides an overview of the tool's features, benefits, and 
 
 The website is hosted on GitHub Pages and is automatically updated through a GitHub Actions workflow.
 The web app is built with Node 20 in CI. For local builds, use the version declared in `web/.nvmrc`.
+The sitemap is generated automatically from `web/public` via `npm run generate:sitemap` and refreshed before every build.
 
 ## Related Repository
 
