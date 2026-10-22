@@ -25,6 +25,7 @@
     "scripts": {
         "start": "react-scripts start",
         "generate:sitemap": "node scripts/generate-sitemap.js",
+        "generate:og": "node scripts/generate-og-images.js",
         "prebuild": "npm run generate:sitemap",
         "build": "react-scripts build",
         "postbuild": "node scripts/inject-build-data.js",
