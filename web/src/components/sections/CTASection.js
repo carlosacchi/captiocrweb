@@ -1,7 +1,7 @@
 import React from 'react';
-import { ArrowDownTrayIcon } from '@heroicons/react/24/solid';
 import { FaGithub } from 'react-icons/fa';
 import Button from '../ui/Button';
+import { LatestVersions, PlatformDownloadButtons } from '../ui/PlatformDownloads';
 
 export default function CTASection() {
     return (
@@ -15,28 +15,19 @@ export default function CTASection() {
                     Ready to Transform Your Meetings?
                 </h2>
                 <p className="text-xl md:text-2xl mb-10 text-blue-100 max-w-3xl mx-auto leading-relaxed">
-                    Join thousands of professionals who have already improved their productivity 
-                    and reduced digital fatigue with CaptiOCR.
+                    Free and open source for Windows and macOS. Capture live captions locally,
+                    improve your productivity and reduce digital fatigue with CaptiOCR.
                 </p>
 
-                <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-                    <Button
-                        href="https://github.com/carlosacchi/captiocr/releases"
-                        target="_blank"
-                        rel="noreferrer"
-                        size="xl"
-                        icon={ArrowDownTrayIcon}
-                        className="!bg-white !text-blue-900 hover:!bg-blue-50 hover:!text-blue-800 shadow-2xl font-bold"
-                    >
-                        Download for Free
-                    </Button>
-                    
+                <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 mb-12">
+                    <PlatformDownloadButtons size="lg" />
+
                     <Button
                         href="https://github.com/carlosacchi/captiocr"  
                         target="_blank"
                         rel="noreferrer"
                         variant="outline"
-                        size="xl"
+                        size="lg"
                         icon={FaGithub}
                         className="border-2 border-white text-white hover:bg-white hover:text-blue-900 backdrop-blur-sm font-semibold"
                     >
@@ -64,12 +55,7 @@ export default function CTASection() {
                 </div>
 
                 {/* Version Info */}
-                <div className="mt-12 inline-flex items-center px-4 py-2 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
-                    <span className="text-blue-200 text-sm mr-2">Latest Version:</span>
-                    <span data-current-version className="text-white font-mono text-sm">
-                        Loading...
-                    </span>
-                </div>
+                <LatestVersions label="Latest Version" className="mt-12" />
             </div>
 
             {/* Decorative Elements */}

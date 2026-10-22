@@ -81,14 +81,12 @@ export default function LiveCaptionReaderPage() {
                     
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <Button
-                            href="https://github.com/carlosacchi/captiocr/releases"
-                            target="_blank"
-                            rel="noreferrer"
+                            href="/download"
                             size="lg"
                             icon={ArrowDownTrayIcon}
                             className="!bg-white !text-green-900 hover:!bg-green-50 hover:!text-green-800 shadow-2xl font-bold"
                         >
-                            Download CaptiOCR
+                            Download for Windows & macOS
                         </Button>
                         
                         <Button
@@ -211,9 +209,7 @@ export default function LiveCaptionReaderPage() {
                         Make every meeting more accessible and inclusive with enhanced caption reading.
                     </p>
                     <Button
-                        href="https://github.com/carlosacchi/captiocr/releases"
-                        target="_blank"
-                        rel="noreferrer"
+                        href="/download"
                         size="xl"
                         icon={ArrowDownTrayIcon}
                         className="!bg-white !text-green-900 hover:!bg-green-50 hover:!text-green-800 shadow-2xl font-bold"

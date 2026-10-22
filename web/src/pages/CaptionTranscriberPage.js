@@ -92,14 +92,12 @@ export default function CaptionTranscriberPage() {
                     
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <Button
-                            href="https://github.com/carlosacchi/captiocr/releases"
-                            target="_blank"
-                            rel="noreferrer"
+                            href="/download"
                             size="lg"
                             icon={ArrowDownTrayIcon}
                             className="!bg-white !text-blue-900 hover:!bg-blue-50 hover:!text-blue-800 shadow-2xl font-bold"
                         >
-                            Download CaptiOCR
+                            Download for Windows & macOS
                         </Button>
                         
                         <Button
@@ -207,9 +205,7 @@ export default function CaptionTranscriberPage() {
                         Download CaptiOCR and transform how you capture and process meeting content.
                     </p>
                     <Button
-                        href="https://github.com/carlosacchi/captiocr/releases"
-                        target="_blank"
-                        rel="noreferrer"
+                        href="/download"
                         size="xl"
                         icon={ArrowDownTrayIcon}
                         className="!bg-white !text-blue-900 hover:!bg-blue-50 hover:!text-blue-800 shadow-2xl font-bold"

@@ -3,65 +3,183 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CaptiOCR - Real-Time Screen Live Captions Saving Tool</title>
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="CaptiOCR captures live on-screen captions and creates private transcripts on your own device. Local-first transcription workflow for meetings, webinars, and online collaboration." />
-    <meta property="og:title" content="CaptiOCR - Free Real-Time Screen Text Extraction Tool" />
-    <meta property="og:description" content="CaptiOCR extracts text from on-screen captions in real-time. Create automated notes, transcripts, and summaries while maintaining complete privacy with this free, open-source tool." />
-    <meta property="og:url" content="https://www.captiocr.com" />
+    <title>CaptiOCR - Free Live Caption Transcriber for Windows &amp; macOS</title>
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta name="theme-color" content="#1d4ed8" />
+    <meta name="description" content="Free, open-source app for Windows and macOS that turns live captions from Teams, Zoom and Google Meet into private transcripts. 100% local OCR: no cloud, no bot, no account." />
+    <meta name="author" content="Carlo Sacchi" />
+    <meta property="og:site_name" content="CaptiOCR" />
+    <meta property="og:title" content="CaptiOCR - Free Live Caption Transcriber for Windows &amp; macOS" />
+    <meta property="og:description" content="Turn live captions from Teams, Zoom and Google Meet into private transcripts. Free, open source and 100% local on Windows and macOS." />
+    <meta property="og:url" content="https://www.captiocr.com/" />
     <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="CaptiOCR - Enhance Focus with Real-Time Text Extraction" />
-    <meta name="twitter:description" content="Reclaim your attention with CaptiOCR's free, privacy-focused text extraction. Create automated transcripts and summaries from any platform with on-screen captions." />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CaptiOCR - Free Live Caption Transcriber for Windows &amp; macOS" />
+    <meta name="twitter:description" content="Turn live captions from Teams, Zoom and Google Meet into private transcripts. Free, open source and 100% local." />
     <link rel="canonical" href="https://www.captiocr.com/" />
-    
+    <link rel="alternate" type="text/plain" title="CaptiOCR summary for LLMs" href="https://www.captiocr.com/llms.txt" />
+
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    
-    <!-- Schema.org Structured Data -->
+
+    <!-- Schema.org structured data. Version and FAQ placeholders are filled by scripts/inject-build-data.js -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "SoftwareApplication",
-          "name": "CaptiOCR",
-          "applicationCategory": "ProductivityApplication",
-          "operatingSystem": "Windows, macOS",
-          "description": "Real-time screen text extraction and transcription tool for capturing live captions from video conferences, webinars, and streaming platforms",
-          "url": "https://www.captiocr.com",
-          "downloadUrl": "https://github.com/carlosacchi/captiocr/releases",
-          "softwareVersion": "Latest",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-          },
-          "author": {
-            "@type": "Organization",
-            "name": "CaptiOCR",
-            "url": "https://www.captiocr.com"
-          }
+          "@type": "Person",
+          "@id": "https://www.captiocr.com/#author",
+          "name": "Carlo Sacchi",
+          "url": "https://github.com/carlosacchi",
+          "sameAs": ["https://github.com/carlosacchi"]
         },
         {
           "@type": "WebSite",
+          "@id": "https://www.captiocr.com/#website",
           "name": "CaptiOCR",
-          "url": "https://www.captiocr.com",
-          "description": "Official website for CaptiOCR - Real-time screen text extraction tool",
-          "potentialAction": {
-            "@type": "DownloadAction",
-            "target": "https://github.com/carlosacchi/captiocr/releases"
-          }
+          "url": "https://www.captiocr.com/",
+          "inLanguage": "en",
+          "description": "Official website of CaptiOCR, the free and open-source live caption transcriber for Windows and macOS.",
+          "publisher": { "@id": "https://www.captiocr.com/#author" }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://www.captiocr.com/#windows",
+          "name": "CaptiOCR for Windows",
+          "alternateName": "CaptiOCR",
+          "applicationCategory": "ProductivityApplication",
+          "applicationSubCategory": "Meeting transcription",
+          "operatingSystem": "Windows 10, Windows 11",
+          "softwareVersion": "__WINDOWS_VERSION__",
+          "downloadUrl": "__WINDOWS_RELEASE_URL__",
+          "installUrl": "https://www.captiocr.com/download",
+          "fileFormat": "application/x-msi",
+          "description": "Real-time screen OCR tool that turns live captions from Microsoft Teams, Zoom, Google Meet, Webex and other apps into local text transcripts. No cloud processing, no meeting bot, no account.",
+          "url": "https://www.captiocr.com/",
+          "license": "https://opensource.org/licenses/MIT",
+          "isAccessibleForFree": true,
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "author": { "@id": "https://www.captiocr.com/#author" },
+          "sameAs": ["https://github.com/carlosacchi/captiocr"]
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://www.captiocr.com/#macos",
+          "name": "CaptiOCR for macOS",
+          "alternateName": "CaptiOCR",
+          "applicationCategory": "ProductivityApplication",
+          "applicationSubCategory": "Meeting transcription",
+          "operatingSystem": "macOS (Apple Silicon, arm64)",
+          "processorRequirements": "Apple Silicon (arm64)",
+          "softwareVersion": "__MACOS_VERSION__",
+          "downloadUrl": "__MACOS_RELEASE_URL__",
+          "installUrl": "https://www.captiocr.com/download",
+          "fileFormat": "application/x-apple-diskimage",
+          "description": "Native macOS build of CaptiOCR for Apple Silicon. Turns live captions shown on the primary display into local text transcripts with bundled Tesseract OCR. No cloud processing, no meeting bot, no account.",
+          "url": "https://www.captiocr.com/",
+          "license": "https://opensource.org/licenses/MIT",
+          "isAccessibleForFree": true,
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "author": { "@id": "https://www.captiocr.com/#author" },
+          "sameAs": ["https://github.com/carlosacchi/captiocr"]
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "CaptiOCR source code",
+          "codeRepository": "https://github.com/carlosacchi/captiocr",
+          "programmingLanguage": "Python",
+          "license": "https://opensource.org/licenses/MIT",
+          "author": { "@id": "https://www.captiocr.com/#author" }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.captiocr.com/#faq",
+          "mainEntity": "__FAQ_MAIN_ENTITY__"
         }
       ]
     }
     </script>
-    
+
+    <style>
+      /* Static content shown before React mounts and to crawlers that do not run JavaScript. */
+      .prerender { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; max-width: 960px; margin: 0 auto; padding: 32px 16px; color: #111827; line-height: 1.6; }
+      .prerender h1 { font-size: 2.5rem; color: #1d4ed8; margin: 0 0 8px; }
+      .prerender h2 { font-size: 1.5rem; margin: 32px 0 8px; }
+      .prerender h3 { font-size: 1.1rem; margin: 20px 0 4px; }
+      .prerender a { color: #1d4ed8; }
+    </style>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <script src="%PUBLIC_URL%/js/version.js"></script>
+    <noscript>JavaScript is disabled: you are viewing the static version of CaptiOCR.com.</noscript>
+    <div id="root">
+      <div class="prerender">
+        <header>
+          <h1>CaptiOCR</h1>
+          <p><strong>Free, open-source live caption transcriber for Windows and macOS.</strong></p>
+          <p>
+            CaptiOCR turns the live captions shown on your screen by Microsoft Teams, Zoom, Google Meet, Webex
+            and other apps into a text transcript. It reads the caption area in real time with Tesseract OCR,
+            entirely on your own computer: no cloud processing, no meeting bot, no audio recording and no account.
+          </p>
+        </header>
+
+        <main>
+          <section>
+            <h2>Download CaptiOCR</h2>
+            <ul>
+              <li>
+                <a href="__WINDOWS_RELEASE_URL__">CaptiOCR for Windows</a> &ndash; latest version __WINDOWS_VERSION__
+                (Windows 10/11, .msi installer or portable .exe)
+              </li>
+              <li>
+                <a href="__MACOS_RELEASE_URL__">CaptiOCR for macOS</a> &ndash; latest version __MACOS_VERSION__
+                (Apple Silicon, .dmg with bundled Tesseract)
+              </li>
+            </ul>
+            <p>See the <a href="/download">download page</a> for system requirements and installation steps.</p>
+          </section>
+
+          <section>
+            <h2>Features</h2>
+            <ul>
+              <li>100% local processing: screenshots, OCR and transcripts never leave your device.</li>
+              <li>Works with any app that shows captions on screen: Teams, Zoom, Google Meet, Webex, YouTube and more.</li>
+              <li>Duplicate filtering that keeps only new caption text in a clean .txt transcript.</li>
+              <li>OCR languages: English, Italian, French, German and Portuguese.</li>
+              <li>Free and open source under the MIT license, with no subscription or usage limits.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>How it works</h2>
+            <ol>
+              <li>Turn on live captions in your meeting or video app.</li>
+              <li>Select the caption area on screen in CaptiOCR.</li>
+              <li>CaptiOCR reads the captions as they appear and saves a local transcript you can summarize, search or share.</li>
+            </ol>
+          </section>
+
+          <section>
+            <h2>Frequently asked questions</h2>
+            __FAQ_HTML__
+          </section>
+
+          <nav>
+            <h2>Learn more</h2>
+            <ul>
+              <li><a href="/caption-transcriber">Caption transcriber</a></li>
+              <li><a href="/live-caption-reader">Live caption reader</a></li>
+              <li><a href="/meeting-transcriber">Meeting transcriber</a></li>
+              <li><a href="/data-sovereignty">Data sovereignty</a></li>
+              <li><a href="/legal/transcriber-comparison.html">CaptiOCR vs cloud transcribers</a></li>
+              <li><a href="/legal/instructions.html">Instructions</a></li>
+              <li><a href="https://github.com/carlosacchi/captiocr">Source code on GitHub</a></li>
+            </ul>
+          </nav>
+        </main>
+      </div>
+    </div>
   </body>
 </html>

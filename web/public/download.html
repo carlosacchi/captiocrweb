@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download CaptiOCR for Windows &amp; macOS (Free) | CaptiOCR</title>
+    <meta name="robots" content="index, follow, max-snippet:-1" />
+    <meta name="description" content="Download CaptiOCR, the free open-source live caption transcriber. Windows 10/11 (.msi or portable .exe) and macOS on Apple Silicon (.dmg). Latest versions, requirements and install steps." />
+    <meta name="author" content="Carlo Sacchi" />
+
+    <meta property="og:site_name" content="CaptiOCR" />
+    <meta property="og:title" content="Download CaptiOCR for Windows &amp; macOS" />
+    <meta property="og:description" content="Free, open-source live caption transcriber. 100% local OCR for Teams, Zoom and Google Meet captions on Windows and macOS." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.captiocr.com/download" />
+    <link rel="canonical" href="https://www.captiocr.com/download" />
+
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+    <!-- Version placeholders are filled at build time by scripts/inject-build-data.js -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.captiocr.com/download",
+          "url": "https://www.captiocr.com/download",
+          "name": "Download CaptiOCR for Windows & macOS",
+          "description": "Latest CaptiOCR releases for Windows 10/11 and macOS on Apple Silicon, with system requirements and installation steps.",
+          "isPartOf": { "@type": "WebSite", "name": "CaptiOCR", "url": "https://www.captiocr.com/" },
+          "mainEntity": [
+            { "@id": "https://www.captiocr.com/#windows" },
+            { "@id": "https://www.captiocr.com/#macos" }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.captiocr.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Download", "item": "https://www.captiocr.com/download" }
+          ]
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://www.captiocr.com/#windows",
+          "name": "CaptiOCR for Windows",
+          "applicationCategory": "ProductivityApplication",
+          "operatingSystem": "Windows 10, Windows 11",
+          "softwareVersion": "__WINDOWS_VERSION__",
+          "downloadUrl": "__WINDOWS_RELEASE_URL__",
+          "license": "https://opensource.org/licenses/MIT",
+          "isAccessibleForFree": true,
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "author": { "@type": "Person", "name": "Carlo Sacchi", "url": "https://github.com/carlosacchi" }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://www.captiocr.com/#macos",
+          "name": "CaptiOCR for macOS",
+          "applicationCategory": "ProductivityApplication",
+          "operatingSystem": "macOS (Apple Silicon, arm64)",
+          "processorRequirements": "Apple Silicon (arm64)",
+          "softwareVersion": "__MACOS_VERSION__",
+          "downloadUrl": "__MACOS_RELEASE_URL__",
+          "license": "https://opensource.org/licenses/MIT",
+          "isAccessibleForFree": true,
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "author": { "@type": "Person", "name": "Carlo Sacchi", "url": "https://github.com/carlosacchi" }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Does CaptiOCR run on Intel Macs?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Not at the moment. The macOS build is provided for Apple Silicon (arm64) Macs only." }
+            },
+            {
+              "@type": "Question",
+              "name": "Is there a Linux version of CaptiOCR?",
+              "acceptedAnswer": { "@type": "Answer", "text": "There is no packaged Linux release. Linux support is experimental and requires running CaptiOCR from source with Python 3.9+ and Tesseract OCR installed." }
+            },
+            {
+              "@type": "Question",
+              "name": "Why are the Windows and macOS version numbers different?",
+              "acceptedAnswer": { "@type": "Answer", "text": "The macOS port has its own release line (tags starting with macos-v) and is published independently from the Windows releases, so the two versions can differ and features may reach Windows first." }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I update CaptiOCR?",
+              "acceptedAnswer": { "@type": "Answer", "text": "CaptiOCR checks GitHub Releases for a newer version of your platform on startup. To update, download the new release from this page and install it over the previous version." }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        pre { white-space: pre-wrap; word-break: break-all; }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-900">
+    <nav class="bg-white shadow">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="/" class="text-2xl font-bold text-blue-700">CaptiOCR</a>
+            <div class="flex items-center gap-4 text-sm font-medium">
+                <a href="/" class="text-gray-700 hover:text-blue-700">Home</a>
+                <a href="/legal/instructions.html" class="text-gray-700 hover:text-blue-700">Docs</a>
+                <a href="https://github.com/carlosacchi/captiocr" target="_blank" rel="noreferrer" class="text-gray-700 hover:text-blue-700" title="View on GitHub"><i class="fab fa-github text-xl"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-blue-700 text-white py-16 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Download CaptiOCR for Windows and macOS</h1>
+            <p class="text-xl md:text-2xl max-w-4xl mx-auto">
+                Free and open source (MIT). Turn live captions from Teams, Zoom, Google Meet and Webex into private transcripts,
+                processed 100% on your computer.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Platform downloads -->
+        <section class="py-16 px-4">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+                <article id="windows" class="bg-white rounded-3xl shadow-lg p-8 flex flex-col">
+                    <h2 class="text-3xl font-bold mb-2 flex items-center"><i class="fab fa-windows text-blue-600 mr-3"></i>CaptiOCR for Windows</h2>
+                    <p class="text-gray-600 mb-6">
+                        Latest version: <strong class="font-mono" data-current-version>__WINDOWS_VERSION__</strong>
+                        <span class="text-gray-400">&middot;</span> released __WINDOWS_DATE__
+                    </p>
+                    <ul class="space-y-2 text-gray-700 mb-8">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Windows 10 or Windows 11</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i><code>.msi</code> installer or portable <code>.exe</code> (no installation)</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Multi-monitor and mixed-DPI setups</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i><code>SHA256SUMS.txt</code> and GitHub build-provenance attestations</li>
+                    </ul>
+                    <a href="__WINDOWS_RELEASE_URL__" data-windows-download target="_blank" rel="noreferrer"
+                       class="mt-auto bg-blue-700 text-white hover:bg-blue-800 px-8 py-4 rounded-full font-semibold text-lg flex items-center justify-center transition">
+                        <i class="fas fa-download mr-3"></i> Download for Windows
+                    </a>
+                </article>
+
+                <article id="macos" class="bg-white rounded-3xl shadow-lg p-8 flex flex-col">
+                    <h2 class="text-3xl font-bold mb-2 flex items-center"><i class="fab fa-apple text-gray-800 mr-3"></i>CaptiOCR for macOS</h2>
+                    <p class="text-gray-600 mb-6">
+                        Latest version: <strong class="font-mono" data-macos-version>__MACOS_VERSION__</strong>
+                        <span class="text-gray-400">&middot;</span> released __MACOS_DATE__
+                    </p>
+                    <ul class="space-y-2 text-gray-700 mb-8">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Mac with Apple Silicon (M-series, arm64)</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i><code>.dmg</code> with Python and Tesseract bundled (no Homebrew needed)</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Native Retina resolution for more accurate OCR</li>
+                        <li><i class="fas fa-info-circle text-blue-600 mr-2"></i>Captures the primary display only</li>
+                    </ul>
+                    <a href="__MACOS_RELEASE_URL__" data-macos-download target="_blank" rel="noreferrer"
+                       class="mt-auto bg-gray-900 text-white hover:bg-black px-8 py-4 rounded-full font-semibold text-lg flex items-center justify-center transition">
+                        <i class="fas fa-download mr-3"></i> Download for macOS
+                    </a>
+                </article>
+            </div>
+            <p class="max-w-6xl mx-auto text-center text-gray-600 mt-8">
+                All versions and release notes are on <a href="https://github.com/carlosacchi/captiocr/releases" target="_blank" rel="noreferrer" class="text-blue-700 underline">GitHub Releases</a>.
+                Windows releases are tagged <code>vX.Y.Z</code>, macOS releases <code>macos-vX.Y.Z</code>.
+            </p>
+        </section>
+
+        <!-- Installation -->
+        <section class="py-16 px-4 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">How to Install CaptiOCR</h2>
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4"><i class="fab fa-windows text-blue-600 mr-2"></i>On Windows</h3>
+                        <ol class="list-decimal pl-6 space-y-3 text-gray-700">
+                            <li>Download <code>CaptiOCR-v<span data-current-version>__WINDOWS_VERSION__</span>-installer.msi</code> (or the portable <code>.exe</code>) from the release page.</li>
+                            <li>Run the installer, or start the portable <code>.exe</code> directly.</li>
+                            <li>On first launch CaptiOCR checks for Tesseract OCR and offers to download it from the official source if it is missing.</li>
+                            <li>Turn on live captions in your meeting app, select the caption area and start capturing.</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4"><i class="fab fa-apple text-gray-800 mr-2"></i>On macOS</h3>
+                        <ol class="list-decimal pl-6 space-y-3 text-gray-700">
+                            <li>Download <code>CaptiOCR-v<span data-macos-version>__MACOS_VERSION__</span>-macos-arm64.dmg</code> from the release page.</li>
+                            <li>Open the <code>.dmg</code> and drag CaptiOCR into the <strong>Applications</strong> folder.</li>
+                            <li>Enable CaptiOCR in <strong>System Settings &rsaquo; Privacy &amp; Security &rsaquo; Screen &amp; System Audio Recording</strong>, then restart the app.</li>
+                            <li>If macOS blocks the first launch, open <strong>System Settings &rsaquo; Privacy &amp; Security</strong> and choose <strong>Open Anyway</strong>.</li>
+                            <li>Keep the caption window on the primary (menu-bar) display, select the caption area and start capturing.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Verify -->
+        <section class="py-16 px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-6">Verify Your Download</h2>
+                <p class="text-lg text-gray-700 mb-6 text-center">
+                    Every release ships a <code>SHA256SUMS.txt</code> file. Compare it with the hash of the file you downloaded:
+                </p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="font-semibold mb-2">Windows (PowerShell)</h3>
+                        <pre class="bg-gray-900 text-gray-100 rounded-xl p-4 text-sm">Get-FileHash .\CaptiOCR-v*-installer.msi -Algorithm SHA256</pre>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold mb-2">macOS (Terminal)</h3>
+                        <pre class="bg-gray-900 text-gray-100 rounded-xl p-4 text-sm">shasum -a 256 CaptiOCR-v*-macos-arm64.dmg</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requirements -->
+        <section class="py-16 px-4 bg-white">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-8">System Requirements</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse text-left">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="p-3 border border-gray-300"></th>
+                                <th class="p-3 border border-gray-300">Windows</th>
+                                <th class="p-3 border border-gray-300">macOS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="p-3 border border-gray-300 font-semibold">Operating system</td><td class="p-3 border border-gray-300">Windows 10, Windows 11</td><td class="p-3 border border-gray-300">macOS on Apple Silicon (arm64)</td></tr>
+                            <tr><td class="p-3 border border-gray-300 font-semibold">Package</td><td class="p-3 border border-gray-300">.msi installer or portable .exe</td><td class="p-3 border border-gray-300">.dmg</td></tr>
+                            <tr><td class="p-3 border border-gray-300 font-semibold">OCR engine</td><td class="p-3 border border-gray-300">Tesseract (downloaded on first run if missing)</td><td class="p-3 border border-gray-300">Tesseract (bundled)</td></tr>
+                            <tr><td class="p-3 border border-gray-300 font-semibold">Displays</td><td class="p-3 border border-gray-300">Multiple monitors supported</td><td class="p-3 border border-gray-300">Primary display only</td></tr>
+                            <tr><td class="p-3 border border-gray-300 font-semibold">Memory</td><td class="p-3 border border-gray-300" colspan="2">4 GB RAM minimum, 8 GB recommended</td></tr>
+                            <tr><td class="p-3 border border-gray-300 font-semibold">Disk space</td><td class="p-3 border border-gray-300" colspan="2">100 MB+ for the app and OCR language files</td></tr>
+                            <tr><td class="p-3 border border-gray-300 font-semibold">OCR languages</td><td class="p-3 border border-gray-300" colspan="2">English, Italian, French, German, Portuguese</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-gray-600 mt-4">
+                    Linux is experimental and only available by running CaptiOCR from source (Python 3.9+ and Tesseract OCR).
+                </p>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-16 px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-8">Download FAQ</h2>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Does CaptiOCR run on Intel Macs?</h3>
+                        <p class="text-gray-700">Not at the moment. The macOS build is provided for Apple Silicon (arm64) Macs only.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Is there a Linux version of CaptiOCR?</h3>
+                        <p class="text-gray-700">There is no packaged Linux release. Linux support is experimental and requires running CaptiOCR from source with Python 3.9+ and Tesseract OCR installed.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Why are the Windows and macOS version numbers different?</h3>
+                        <p class="text-gray-700">The macOS port has its own release line (tags starting with <code>macos-v</code>) and is published independently from the Windows releases, so the two versions can differ and features may reach Windows first.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">How do I update CaptiOCR?</h3>
+                        <p class="text-gray-700">CaptiOCR checks GitHub Releases for a newer version of your platform on startup. To update, download the new release from this page and install it over the previous version.</p>
+                    </div>
+                </div>
+                <p class="text-center text-gray-600 mt-8">
+                    More questions? Read the <a href="/legal/instructions.html" class="text-blue-700 underline">instructions</a>
+                    or <a href="https://github.com/carlosacchi/captiocr/issues" target="_blank" rel="noreferrer" class="text-blue-700 underline">open an issue on GitHub</a>.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">CaptiOCR</h3>
+                    <p class="text-gray-400">
+                        Free, open-source live caption transcriber for Windows and macOS. 100% local processing.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://github.com/carlosacchi/captiocr" target="_blank" rel="noreferrer" class="text-gray-400 hover:text-white transition">GitHub Repository</a></li>
+                        <li><a href="https://github.com/carlosacchi/captiocr/issues" target="_blank" rel="noreferrer" class="text-gray-400 hover:text-white transition">Report Issues</a></li>
+                        <li><a href="https://github.com/carlosacchi/captiocr/releases" target="_blank" rel="noreferrer" class="text-gray-400 hover:text-white transition">All Releases</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Related Pages</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="/caption-transcriber" class="text-gray-400 hover:text-white transition">Caption Transcriber</a></li>
+                        <li><a href="/live-caption-reader" class="text-gray-400 hover:text-white transition">Live Caption Reader</a></li>
+                        <li><a href="/meeting-transcriber" class="text-gray-400 hover:text-white transition">Meeting Transcriber</a></li>
+                        <li><a href="/data-sovereignty" class="text-gray-400 hover:text-white transition">Data Sovereignty</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p>© <script>document.write(new Date().getFullYear());</script> CaptiOCR. All rights reserved.</p>
+                <div class="mt-6 flex flex-wrap justify-center space-x-2 sm:space-x-6 gap-y-2">
+                    <a href="/legal/privacy.html" class="text-gray-400 hover:text-blue-500 transition text-sm sm:text-base">Privacy Policy</a>
+                    <a href="/legal/terms.html" class="text-gray-400 hover:text-blue-500 transition text-sm sm:text-base">Terms of Use</a>
+                    <a href="/legal/legal.html" class="text-gray-400 hover:text-blue-500 transition text-sm sm:text-base">Legal Information</a>
+                    <a href="/legal/instructions.html" class="text-gray-400 hover:text-blue-500 transition text-sm sm:text-base">Instructions</a>
+                    <a href="/legal/transcriber-comparison.html" class="text-gray-400 hover:text-blue-500 transition text-sm sm:text-base">Transcribers Comparison</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/version.js" defer></script>
+</body>
+</html>

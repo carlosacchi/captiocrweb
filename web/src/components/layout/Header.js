@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaGithub, FaBars, FaTimes } from 'react-icons/fa';
 import { ArrowDownTrayIcon } from '@heroicons/react/24/solid';
+import { DOWNLOAD_PAGE_URL } from '../../config/releases';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -85,9 +86,7 @@ export default function Header() {
                                 <FaGithub className="h-5 w-5" />
                             </a>
                             <a
-                                href="https://github.com/carlosacchi/captiocr/releases"
-                                target="_blank"
-                                rel="noreferrer"
+                                href={DOWNLOAD_PAGE_URL}
                                 className="bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-800 transition-all duration-200 flex items-center"
                             >
                                 <ArrowDownTrayIcon className="h-4 w-4 mr-2" />
@@ -137,13 +136,11 @@ export default function Header() {
                             })}
                             <div className="pt-4 border-t border-gray-200 mt-4">
                                 <a
-                                    href="https://github.com/carlosacchi/captiocr/releases"
-                                    target="_blank"
-                                    rel="noreferrer"
+                                    href={DOWNLOAD_PAGE_URL}
                                     className="bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-800 transition-all duration-200 flex items-center justify-center mx-3"
                                 >
                                     <ArrowDownTrayIcon className="h-4 w-4 mr-2" />
-                                    Download CaptiOCR
+                                    Download for Windows &amp; macOS
                                 </a>
                             </div>
                         </div>

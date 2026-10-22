@@ -60,14 +60,12 @@ export default function DataSovereigntyPage() {
 
                         <div className="flex justify-center">
                             <Button
-                                href="https://github.com/carlosacchi/captiocr/releases"
-                                target="_blank"
-                                rel="noreferrer"
+                                href="/download"
                                 size="lg"
                                 icon={ArrowDownTrayIcon}
                                 className="!bg-white !text-slate-900 hover:!bg-slate-100 hover:!text-slate-800 shadow-2xl font-bold"
                             >
-                                Download CaptiOCR
+                                Download for Windows & macOS
                             </Button>
                         </div>
                     </div>

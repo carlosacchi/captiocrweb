@@ -1,0 +1,41 @@
+# CaptiOCR
+
+> CaptiOCR is a free, open-source (MIT) desktop app for Windows and macOS that turns the live captions shown on screen by Microsoft Teams, Zoom, Google Meet, Webex and other apps into a local text transcript. It uses Tesseract OCR on a screen region you select and runs 100% on the user's computer: no cloud processing, no meeting bot, no audio recording, no account and no telemetry.
+
+Key facts:
+
+- Platforms: Windows 10/11 (.msi installer or portable .exe) and macOS on Apple Silicon / arm64 (.dmg with Python and Tesseract bundled). Linux is experimental, from source only.
+- Latest Windows version: __WINDOWS_VERSION__ (released __WINDOWS_DATE__): __WINDOWS_RELEASE_URL__
+- Latest macOS version: __MACOS_VERSION__ (released __MACOS_DATE__): __MACOS_RELEASE_URL__
+- Windows and macOS are released independently: Windows tags are `vX.Y.Z`, macOS tags are `macos-vX.Y.Z`. The current version numbers are also published at https://raw.githubusercontent.com/carlosacchi/captiocr/main/version.txt (Windows) and https://raw.githubusercontent.com/carlosacchi/captiocr/macos/version.txt (macOS).
+- macOS limitations: Apple Silicon only (no Intel build), captures the primary display only, requires Screen Recording permission.
+- How it works: the user turns on live captions in their meeting app, selects the caption area, and CaptiOCR screenshots that region at a fixed interval, runs OCR locally, removes duplicate lines and appends new text to a .txt transcript.
+- Requirement: captions must be visible on screen. CaptiOCR does not transcribe audio and never accesses the microphone or system audio.
+- OCR languages: English, Italian, French, German, Portuguese (language files downloadable on demand).
+- Network access is limited to checking GitHub Releases for updates and, on request, downloading Tesseract or OCR language files from their official sources.
+- Price: free. License: MIT. Author: Carlo Sacchi.
+- Typical use: free, private alternative to paid AI meeting note-takers (Microsoft 365 Copilot, Zoom AI Companion, Gemini for Workspace, Otter.ai, Fireflies) when the user only needs a written record of captioned meetings, webinars or videos.
+
+## Download
+
+- [Download page (Windows & macOS)](https://www.captiocr.com/download): latest versions, system requirements, installation steps and checksum verification
+- [GitHub Releases](https://github.com/carlosacchi/captiocr/releases): all Windows and macOS builds with SHA256SUMS.txt
+
+## Use cases
+
+- [Caption transcriber](https://www.captiocr.com/caption-transcriber): convert live captions into editable text
+- [Live caption reader](https://www.captiocr.com/live-caption-reader): read and save captions from meetings, webinars and online courses
+- [Meeting transcriber](https://www.captiocr.com/meeting-transcriber): document Teams, Zoom and Google Meet calls, agile ceremonies and interviews
+- [Data sovereignty](https://www.captiocr.com/data-sovereignty): local-first transcription for sensitive or regulated meeting data
+
+## Docs
+
+- [Instructions](https://www.captiocr.com/legal/instructions.html): installation, usage and troubleshooting
+- [CaptiOCR vs cloud transcribers](https://www.captiocr.com/legal/transcriber-comparison.html): privacy comparison with Otter.ai, Fireflies, Granola and Jamie AI
+- [Source code and README](https://github.com/carlosacchi/captiocr)
+
+## Optional
+
+- [Privacy policy](https://www.captiocr.com/legal/privacy.html)
+- [Terms of use](https://www.captiocr.com/legal/terms.html)
+- [Legal information](https://www.captiocr.com/legal/legal.html)

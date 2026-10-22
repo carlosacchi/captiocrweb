@@ -43,12 +43,10 @@
             </p>
             <div class="flex flex-wrap justify-center gap-4">
                 <a 
-                    href="https://github.com/carlosacchi/captiocr/releases" 
-                    target="_blank"
-                    rel="noreferrer"
+                    href="/download"
                     class="bg-white text-blue-700 hover:bg-blue-100 px-8 py-4 rounded-full font-semibold text-lg flex items-center transition duration-300 ease-in-out"
                 >
-                    <i class="fas fa-download mr-3 text-2xl"></i> Download CaptiOCR
+                    <i class="fas fa-download mr-3 text-2xl"></i> Download for Windows &amp; macOS
                 </a>
                 <a
                     href="#how-it-works"
@@ -57,6 +55,11 @@
                     Learn How It Works
                 </a>
             </div>
+            <p class="mt-8 text-sm opacity-90">
+                Free for <a href="/download#windows" class="underline">Windows 10/11</a> and <a href="/download#macos" class="underline">macOS (Apple Silicon)</a>
+                &middot; Latest: Windows <span class="font-mono" data-current-version>__WINDOWS_VERSION__</span>
+                &middot; macOS <span class="font-mono" data-macos-version>__MACOS_VERSION__</span>
+            </p>
         </div>
     </header>
     
@@ -341,7 +344,7 @@
                     </div>
                     <div class="bg-white rounded-xl p-6 shadow-md">
                         <h3 class="text-xl font-semibold mb-3">Does it work with all video conferencing platforms?</h3>
-                        <p class="text-gray-700">Yes, CaptiOCR works with any platform that displays captions on screen, including Zoom, Microsoft Teams, Google Meet, Webex, GoToMeeting, educational platforms, and streaming services.</p>
+                        <p class="text-gray-700">Yes, CaptiOCR works with any platform that displays captions on screen, including Zoom, Microsoft Teams, Google Meet, Webex, GoToMeeting, educational platforms, and streaming services. CaptiOCR runs on Windows 10/11 and on macOS with Apple Silicon.</p>
                     </div>
                     <div class="bg-white rounded-xl p-6 shadow-md">
                         <h3 class="text-xl font-semibold mb-3">How does it handle fast-changing captions?</h3>
@@ -419,12 +422,10 @@
                 </p>
                 <div class="flex flex-wrap justify-center gap-4">
                     <a
-                        href="https://github.com/carlosacchi/captiocr/releases"
-                        target="_blank"
-                        rel="noreferrer"
+                        href="/download"
                         class="bg-white text-blue-700 hover:bg-blue-100 px-8 py-4 rounded-full font-semibold text-lg flex items-center transition duration-300 ease-in-out"
                     >
-                        <i class="fas fa-download mr-3 text-2xl"></i> Download Now
+                        <i class="fas fa-download mr-3 text-2xl"></i> Download for Windows &amp; macOS
                     </a>
                     <a
                         href="https://github.com/carlosacchi/captiocr"
@@ -454,7 +455,7 @@
                     <ul class="space-y-2">
                         <li><a href="https://github.com/carlosacchi/captiocr" target="_blank" class="text-gray-400 hover:text-white transition">GitHub Repository</a></li>
                         <li><a href="https://github.com/carlosacchi/captiocr/issues" target="_blank" class="text-gray-400 hover:text-white transition">Report Issues</a></li>
-                        <li><a href="https://github.com/carlosacchi/captiocr/releases" target="_blank" class="text-gray-400 hover:text-white transition">Download Latest Version</a></li>
+                        <li><a href="/download" class="text-gray-400 hover:text-white transition">Download (Windows &amp; macOS)</a></li>
                     </ul>
                 </div>
                 <div>
@@ -482,31 +483,12 @@
                     <a href="/legal/transcriber-comparison.html" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out text-sm sm:text-base">Transcribers Comparison</a>
                 </div>
                 <p class="text-gray-600 text-sm mt-8">
-                    Caption Transcriber Software for Windows | Privacy-Focused Text Extraction from Live Captions
+                    Caption Transcriber Software for Windows &amp; macOS | Privacy-Focused Text Extraction from Live Captions
                 </p>
             </div>
         </div>
     </footer>
 
-    <!-- Basic script to update current version from GitHub -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            fetch('https://api.github.com/repos/carlosacchi/captiocr/releases/latest')
-                .then(response => response.json())
-                .then(data => {
-                    const versionElements = document.querySelectorAll('#current-version');
-                    versionElements.forEach(el => {
-                        el.textContent = data.tag_name || 'v0.1.0';
-                    });
-                })
-                .catch(error => {
-                    console.error('Error fetching version:', error);
-                    const versionElements = document.querySelectorAll('#current-version');
-                    versionElements.forEach(el => {
-                        el.textContent = 'v0.1.0';
-                    });
-                });
-        });
-    </script>
+    <script src="/js/version.js" defer></script>
 </body>
 </html>

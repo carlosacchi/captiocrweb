@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
@@ -10,20 +10,6 @@ import DataSovereigntyPage from './pages/DataSovereigntyPage';
 import './App.css';
 
 function App() {
-    // Load GitHub version script
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.src = '/js/version.js';
-        script.async = true;
-        document.body.appendChild(script);
-
-        return () => {
-            if (document.body.contains(script)) {
-                document.body.removeChild(script);
-            }
-        };
-    }, []);
-
     return (
         <Router>
             <div className="App min-h-screen bg-gray-50">

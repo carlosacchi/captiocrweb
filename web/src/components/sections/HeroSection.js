@@ -1,7 +1,8 @@
 import React from 'react';
-import { ArrowDownTrayIcon, PlayCircleIcon } from '@heroicons/react/24/solid';
 import { FaGithub } from 'react-icons/fa';
 import Button from '../ui/Button';
+import { LatestVersions, PlatformDownloadButtons } from '../ui/PlatformDownloads';
+import { DOWNLOAD_PAGE_URL } from '../../config/releases';
 
 export default function HeroSection() {
     return (
@@ -16,7 +17,7 @@ export default function HeroSection() {
                     <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8">
                         <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
                         <span className="text-sm font-medium">
-                            Privacy-focused • Local processing • Open source
+                            Privacy-focused • Local processing • Open source • Windows &amp; macOS
                         </span>
                     </div>
 
@@ -37,18 +38,9 @@ export default function HeroSection() {
                     </p>
 
                     {/* CTA Buttons */}
-                    <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-                        <Button
-                            href="https://github.com/carlosacchi/captiocr/releases"
-                            target="_blank"
-                            rel="noreferrer"
-                            size="lg"
-                            icon={ArrowDownTrayIcon}
-                            className="!bg-white !text-blue-900 hover:!bg-blue-50 hover:!text-blue-800 shadow-2xl font-bold"
-                        >
-                            Download CaptiOCR
-                        </Button>
-                        
+                    <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 mb-4">
+                        <PlatformDownloadButtons size="lg" />
+
                         <Button
                             href="https://github.com/carlosacchi/captiocr"
                             target="_blank"
@@ -62,13 +54,15 @@ export default function HeroSection() {
                         </Button>
                     </div>
 
+                    <p className="text-sm text-blue-200 mb-8">
+                        Windows 10/11 (.msi installer or portable .exe) • macOS on Apple Silicon (.dmg) •{' '}
+                        <a href={DOWNLOAD_PAGE_URL} className="underline hover:text-white">
+                            System requirements
+                        </a>
+                    </p>
+
                     {/* Version Info */}
-                    <div className="inline-flex items-center px-4 py-2 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10">
-                        <span className="text-blue-200 text-sm mr-2">Current Version:</span>
-                        <span data-current-version className="text-white font-mono text-sm">
-                            Loading...
-                        </span>
-                    </div>
+                    <LatestVersions label="Current Version" />
                 </div>
 
                 {/* Stats Section */}

@@ -95,14 +95,12 @@ export default function MeetingTranscriberPage() {
 
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
                             <Button
-                                href="https://github.com/carlosacchi/captiocr/releases"
-                                target="_blank"
-                                rel="noreferrer"
+                                href="/download"
                                 size="lg"
                                 icon={ArrowDownTrayIcon}
                                 className="!bg-white !text-blue-900 hover:!bg-blue-50 hover:!text-blue-800 shadow-2xl font-bold"
                             >
-                                Download CaptiOCR
+                                Download for Windows & macOS
                             </Button>
 
                             <Button

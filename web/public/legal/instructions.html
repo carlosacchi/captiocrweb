@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CaptiOCR - Instructions</title>
-    <meta name="description" content="Official CaptiOCR setup and usage instructions for local caption extraction, language configuration, and troubleshooting." />
+    <title>CaptiOCR Instructions - Install &amp; Use on Windows and macOS</title>
+    <meta name="description" content="Official CaptiOCR setup and usage instructions for Windows and macOS: installation, local caption extraction, language configuration, and troubleshooting." />
     <link rel="canonical" href="https://www.captiocr.com/legal/instructions.html" />
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
@@ -16,7 +16,7 @@
     </header>
     
     <nav class="bg-gray-100 p-4 text-center">
-        <a href="../index.html" class="mx-2 text-blue-600 hover:underline">Home</a> |
+        <a href="/" class="mx-2 text-blue-600 hover:underline">Home</a> |
         <a href="privacy.html" class="mx-2 text-blue-600 hover:underline">Privacy</a> |
         <a href="terms.html" class="mx-2 text-blue-600 hover:underline">Terms</a> |
         <a href="legal.html" class="mx-2 text-blue-600 hover:underline">Legal</a> |
@@ -30,10 +30,23 @@
             <p><strong>Effective Date:</strong> August 2025</p>
             <p>CaptiOCR captures and processes on-screen captions in real-time. It's ideal for meetings, presentations, webinars, and any live sessions with captions.</p>
 
-            <h3>Supported Platform</h3>
-            <p>Currently, CaptiOCR supports Microsoft Windows operating systems.</p>
+            <h3>Supported Platforms</h3>
+            <ul>
+                <li><strong>Windows 10 and Windows 11</strong> &ndash; <code>.msi</code> installer or portable <code>.exe</code> (releases tagged <code>vX.Y.Z</code>).</li>
+                <li><strong>macOS on Apple Silicon (arm64)</strong> &ndash; <code>.dmg</code> with Python and Tesseract bundled (releases tagged <code>macos-vX.Y.Z</code>). Capture is limited to the primary display.</li>
+            </ul>
+            <p>Download the latest version for your system from the <a href="/download">download page</a>. The macOS version is released independently from the Windows version, so version numbers and features can differ.</p>
 
-            <h3>Installation Methods</h3>
+            <h3>Installation on macOS</h3>
+            <ol>
+                <li>Download <code>CaptiOCR-vX.Y.Z-macos-arm64.dmg</code> from the latest <code>macos-v</code> release</li>
+                <li>Open the <code>.dmg</code> and drag CaptiOCR into the <strong>Applications</strong> folder (do this before granting permissions)</li>
+                <li>Enable CaptiOCR in <strong>System Settings &rsaquo; Privacy &amp; Security &rsaquo; Screen &amp; System Audio Recording</strong>, then restart the app. If macOS shows an additional screen-access confirmation, allow it before capturing</li>
+                <li>Keep the caption window and your whole selection on the primary (menu-bar) display. Additional displays are not supported on macOS</li>
+                <li>For short-lived captions, try a capture interval of 1&ndash;2 seconds in the interval settings</li>
+            </ol>
+
+            <h3>Installation on Windows</h3>
             
             <h4>Method 1: Using the Installer (Recommended)</h4>
             <ol>

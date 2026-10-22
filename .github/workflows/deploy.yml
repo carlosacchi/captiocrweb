@@ -7,6 +7,10 @@ on:
       - "web/**"
       - ".github/workflows/**"
   workflow_dispatch:
+  # Daily rebuild so the app versions baked into the static HTML, JSON-LD and llms.txt
+  # follow new Windows/macOS releases even when the website itself does not change.
+  schedule:
+    - cron: "17 5 * * *"
 
 permissions:
   contents: read
@@ -28,6 +32,9 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+        with:
+          # Full history: the sitemap uses each page's last commit date as lastmod.
+          fetch-depth: 0
 
       - name: Setup Node.js 🟢
         uses: actions/setup-node@v4

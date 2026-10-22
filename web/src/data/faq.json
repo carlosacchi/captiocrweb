@@ -1,0 +1,34 @@
+[
+    {
+        "question": "What is CaptiOCR?",
+        "answer": "CaptiOCR is a free, open-source (MIT) desktop app for Windows and macOS that turns the live captions shown on your screen into a text transcript. You select the caption area of Microsoft Teams, Zoom, Google Meet, Webex or any other app, and CaptiOCR reads it in real time with Tesseract OCR, entirely on your own computer."
+    },
+    {
+        "question": "Is CaptiOCR available for Mac?",
+        "answer": "Yes. A native macOS build for Apple Silicon (arm64) is distributed as a .dmg file on GitHub Releases, with tags starting with macos-v. Python and Tesseract are bundled, so Homebrew is not required. On macOS, capture works on the primary display and the app needs Screen Recording permission. Intel Macs are not currently supported."
+    },
+    {
+        "question": "Which versions of Windows are supported?",
+        "answer": "CaptiOCR supports Windows 10 and Windows 11. Each Windows release on GitHub provides an .msi installer and a portable .exe, together with a SHA256SUMS.txt file to verify the download."
+    },
+    {
+        "question": "Does CaptiOCR send my meeting data to the cloud?",
+        "answer": "No. Screenshots, OCR and transcripts are processed and stored locally. CaptiOCR has no account, no telemetry and no remote storage. Network access is limited to checking GitHub Releases for updates and, when you ask for it, downloading Tesseract or OCR language files from their official sources."
+    },
+    {
+        "question": "Does CaptiOCR record audio or join my meeting as a bot?",
+        "answer": "No. CaptiOCR never accesses the microphone or system audio and nothing joins the call. It only reads the captions that your meeting app already displays on screen, so live captions must be turned on in Teams, Zoom, Google Meet or the platform you use."
+    },
+    {
+        "question": "Is CaptiOCR free?",
+        "answer": "Yes. CaptiOCR is free and open source under the MIT license, with no subscription, account or usage limits. The source code is on GitHub at github.com/carlosacchi/captiocr."
+    },
+    {
+        "question": "Which languages can CaptiOCR read?",
+        "answer": "CaptiOCR supports English, Italian, French, German and Portuguese. Language files for Tesseract OCR can be downloaded on demand from inside the app."
+    },
+    {
+        "question": "How is CaptiOCR different from Otter.ai, Fireflies or Microsoft Copilot?",
+        "answer": "Cloud meeting assistants record or stream meeting audio to their servers and usually require a subscription. CaptiOCR works offline on the captions already visible on screen, keeps transcripts on your device and is free. It does not generate AI summaries itself, but you can paste its local .txt transcripts into the tool of your choice."
+    }
+]

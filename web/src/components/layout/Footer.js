@@ -1,26 +1,31 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
+import { DOWNLOAD_PAGE_URL, RELEASES_URL } from '../../config/releases';
+import useLatestVersions, { versionLabel } from '../../hooks/useLatestVersions';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
+    const versions = useLatestVersions();
 
     const footerLinks = {
         resources: [
             { href: "https://github.com/carlosacchi/captiocr", text: "GitHub Repository", external: true },
             { href: "https://github.com/carlosacchi/captiocr/issues", text: "Report Issues", external: true },
-            { href: "https://github.com/carlosacchi/captiocr/releases", text: "Download Latest", external: true }
+            { href: DOWNLOAD_PAGE_URL, text: "Download (Windows & macOS)" },
+            { href: RELEASES_URL, text: "All Releases", external: true }
         ],
         useCases: [
             { href: "/caption-transcriber", text: "Caption Transcriber" },
             { href: "/live-caption-reader", text: "Live Caption Reader" },
             { href: "/meeting-transcriber", text: "Meeting Transcriber" },
-            { href: "/data-sovereignty", text: "Data Sovereignty" }
+            { href: "/data-sovereignty", text: "Data Sovereignty" },
+            { href: "/legal/transcriber-comparison.html", text: "Transcriber Comparison" }
         ],
         legal: [
-            { href: "/legal/privacy", text: "Privacy Policy" },
-            { href: "/legal/terms", text: "Terms of Use" },
-            { href: "/legal/legal", text: "Legal Information" },
-            { href: "/legal/instructions", text: "Instructions" }
+            { href: "/legal/privacy.html", text: "Privacy Policy" },
+            { href: "/legal/terms.html", text: "Terms of Use" },
+            { href: "/legal/legal.html", text: "Legal Information" },
+            { href: "/legal/instructions.html", text: "Instructions" }
         ]
     };
 
@@ -116,10 +121,11 @@ export default function Footer() {
                         </div>
                         
                         <div className="flex items-center space-x-1">
-                            <span className="text-gray-500 text-xs">Version:</span>
-                            <span data-current-version className="text-gray-400 text-xs font-mono">
-                                Loading...
-                            </span>
+                            <span className="text-gray-500 text-xs">Windows:</span>
+                            <span className="text-gray-400 text-xs font-mono">{versionLabel(versions, 'windows')}</span>
+                            <span className="text-gray-600 text-xs px-1">•</span>
+                            <span className="text-gray-500 text-xs">macOS:</span>
+                            <span className="text-gray-400 text-xs font-mono">{versionLabel(versions, 'macos')}</span>
                         </div>
                     </div>
                 </div>

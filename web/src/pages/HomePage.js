@@ -4,16 +4,17 @@ import HeroSection from '../components/sections/HeroSection';
 import FeaturesSection from '../components/sections/FeaturesSection';
 import HowItWorksSection from '../components/sections/HowItWorksSection';
 import TestimonialsSection from '../components/sections/TestimonialsSection';
+import FAQSection from '../components/sections/FAQSection';
 import CTASection from '../components/sections/CTASection';
 
 export default function HomePage() {
     return (
         <>
             <Helmet>
-                <title>CaptiOCR - Local-First Meeting Caption Transcription</title>
+                <title>CaptiOCR - Free Live Caption Transcriber for Windows &amp; macOS</title>
                 <meta
                     name="description"
-                    content="Capture live meeting captions and create private transcripts directly on your device. CaptiOCR helps teams document calls without routing content through cloud transcription services."
+                    content="Free, open-source app for Windows and macOS that turns live captions from Teams, Zoom and Google Meet into private transcripts. 100% local OCR: no cloud, no bot, no account."
                 />
                 <link rel="canonical" href="https://www.captiocr.com/" />
             </Helmet>
@@ -22,6 +23,7 @@ export default function HomePage() {
             <FeaturesSection />
             <HowItWorksSection />
             <TestimonialsSection />
+            <FAQSection />
             <CTASection />
         </>
     );
